@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理中心</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+	<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/arrange.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+	<!-- <div class="header">
+		<p class="tip">本站仅提供国内网络节点，不提供境外网络节点，本站产品禁止用于任何非法用途，不能访问境外封闭网站，不能跨域来联网，只能用于国内网络加速，使用过程中产生的一切责任用户自行承担，与本公司和客服无关 <span>X</span></p>
+		<div class="head_down">
+			<div class="container">
+				<div class="head_text">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="pptp.html">PPTP</a></li>
+						<li><a href="list.html">地区列表</a></li>
+						<li><a href="###">使用说明</a></li>
+						<li><a href="###">代理合作</a></li>
+						<li><a class="arrange" href="###">管理中心</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<div class="content common_box clearfix">
+		<div class="title_of_arr">
+		<!-- <p class="tip">本站仅提供国内网络节点，不提供境外网络节点，本站产品禁止用于任何非法用途，不能访问境外封闭网站，不能跨域来联网，只能用于国内网络加速，使用过程中产生的一切责任用户自行承担，与本公司和客服无关 <span>X</span></p> -->
+		<div class="head_down">
+			<div class="container">
+				<div class="head_text">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="pptp.html">PPTP</a></li>
+						<li><a href="list.html">地区列表</a></li>
+						<li><a href="introduce.html">使用说明</a></li>
+						<li><a href="agency.html">代理合作</a></li>
+						<li><a class="arrange" href="arrange.html">管理中心</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+		<img class="bgs" src="images/321.jpg">
+		<div class="box">
+			<p class="lar">
+				<span>登录</span>
+				<a class="register" href="register.html">立即注册</a>
+			</p>
+			<input class="int account" type="text" placeholder="登录账号" />
+			<input class="int password" type="password" placeholder="登录密码" />
+			<div class="pass">
+				<div class="remember">
+					<em></em>
+					<span>记住密码</span>
+				</div>
+				<a href="###">忘记密码</a>
+			</div>
+			<a class="log" href="backstage.html">登 录</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(".tip span").click(function(){
+			$(".tip").css("display","none")
+		});
+
+		var h = $(window).height();
+		$(".bgs").css("height",h);
+
+		$(".remember").click(function(){
+			if( $(this).children("em").hasClass("picked") ){
+				$(this).children("em").removeClass("picked")
+			}else{
+				$(this).children("em").addClass("picked")
+			}
+		});
+
+		if( !('placeholder' in document.createElement('input')) ){     
+	        $('input[placeholder],textarea[placeholder]').each(function(){      
+	            var that = $(this),      
+	            text= that.attr('placeholder');      
+	            if(that.val()===""){      
+	            that.val(text).addClass('placeholder');      
+	        }      
+	        that.focus(function(){   
+	            if(that.val()===text){  
+	                that.val("").removeClass('placeholder');      
+	            }      
+	        })      
+	        .blur(function(){      
+	            if(that.val()===""){      
+	                that.val(text).addClass('placeholder');      
+	            }      
+	        })      
+	        .closest('form').submit(function(){      
+	            if(that.val() === text){      
+	                that.val('');      
+	            }      
+	        });      
+	        });    
+	    };
+	</script>
+</body>
+</html>
+
+

@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/layui.css">
+    <link rel="stylesheet" href="fontes/iconfont.css">
+    <link rel="stylesheet" href="css/images_scan.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--表情-->
+    <link rel="stylesheet" href="css/sprites.css">
+    <link rel="stylesheet" href="css/emojionearea.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <a href="index.html" class="logo headleft">Hotel&Inn</a>
+        <div class="area headleft">
+            <p>UK</p>
+            <ul>
+                <li><a href="###">London</a></li>
+                <li><a href="###">Scotland</a></li>
+                <li><a href="###">Edinburgh</a></li>
+                <li><a href="###">Cardiff</a></li>
+                <li><a href="###">Cambridge</a></li>
+                <li><a href="###">Manchester</a></li>
+            </ul>
+        </div>
+        <div class="headleft headsearch">
+            <input type="text" placeholder="搜索您感兴趣的内容">
+            <a href="search.html" class="comser iconfont icon-search"></a>
+        </div>
+        <ul class="nav headleft">
+            <li><a href="index.html" class="active">首页</a></li>
+            <li><a href="houses.html">房源</a></li>
+            <li><a href="furniture.html">转手卖</a></li>
+            <li><a href="essay.html">社区</a></li>
+            <li><a href="concern.html">关注</a></li>
+            <li><a href="publish.html">发布信息</a></li>
+        </ul>
+        <div class="nav_vice">
+            <a href="log.html" class="log">登录</a>
+            <a href="register.html">注册</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <a href="###" id="backUp"></a>
+</div>
+<div class="content index_content">
+    <div class="container">
+        <div class="commain">
+            <div class="comside">
+                <div class="edit">
+                    <p class="edit_title">发表一下你最近的趣事吧！</p>
+                    <textarea name="edit" id="editrect"></textarea>
+                    <div id="app">
+                        <div class="hello">
+                            <div class="upload">
+                                <div class="upload_warp">
+                                    <div class="upload_warp_left" @click="fileClick">
+                                        <a href="###" class="uploadpic">图片</a>
+                                    </div>
+                                    <a class="submitbtn" href="###">发布</a>
+                                </div>
+                                <div class="upload_warp_text">
+                                    选中{{imgList.length}}张图片，共{{bytesToSize(this.size)}}，还能上传{{this.surplus - imgList.length}}张
+                                </div>
+                                <input @change="fileChange($event)" type="file" id="upload_file" multiple style="display: none"/>
+                                <div class="upload_warp_img" v-show="imgList.length!=0">
+                                    <div class="upload_warp_img_div" v-for="(item,index) of imgList">
+                                        <div class="upload_warp_img_div_top">
+                                            <div class="upload_warp_img_div_text">
+                                                {{item.file.name}}
+                                            </div>
+                                            <img src="images/del.png" class="upload_warp_img_div_del" @click="fileDel(index)">
+                                        </div>
+                                        <img :src="item.file.src">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Topic">
+                    <div class="indexCabin" index="0">
+                        <div class="cabin_title">
+                            <a href="###" class="portrait"><img src="images/occupy.png" alt=""></a>
+                            <div class="title_text" index="0">
+                                <a href="###">娱乐圈无小事儿</a>
+                                <a href="###" class="level1"></a>
+                                <p>今天 来自 可可的小喵咪</p>
+                                <span class="add_concern" data-status="0" index="0"><i>+</i><em>关注</em></span>
+                                <span class="concern_list" index="0">特别关注</span>
+                            </div>
+                        </div>
+                        <div class="cabin_main">
+                            <div class="main_context">
+                                <!--<p class="context_hide" index="0">是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热</p>-->
+                                <p class="context_show" index="0">是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适</p>
+                                <span index="0" data-status="0" class="read_more_context">阅读全文</span>
+                            </div>
+                            <div class="cabinPics1"></div>
+                        </div>
+                        <div class="cabin_tail">
+                            <div href="###" class="bar share_bar clearfix">
+                                <i class="shareIcon"></i>
+                                分享
+                                <p>
+                                    <a class="share_qq" index="0" href="###" title="qq分享"></a>
+                                    <a class="share_wechat" index="0" href="###" title="微信分享"></a>
+                                </p>
+                                <div class="cover_img qq_img" index="0">
+                                    <span></span>
+                                    <img src="images/code.png" alt="">
+                                </div>
+                                <div class="cover_img wechat_img" index="0">
+                                    <span></span>
+                                    <img src="images/code.png" alt="">
+                                </div>
+                            </div>
+                            <a href="###" class="bar evubox" data-status="0" index="0"><i class="evaluationIcon iconfont icon-pinglun"></i><span>3</span></a>
+                            <a href="###" class="bar praise_bar" data-status="0" index="0"><i class="praiseIcon"></i><span>赞</span></a>
+                            <div class="evaluation" index="0">
+                                <div class="publish">
+                                    <a href="###" class="head_pic"><img src="images/ocean3.jpg" alt=""></a>
+                                    <div class="sendmsg">
+                                        <div class="face"></div>
+                                        <a href="###" class="subMsg" index="0" data-status="0">发布</a>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="###" class="head_pic"><img src="images/ocean3.jpg" alt=""></a>
+                                        <div class="add_eva">
+                                            <a class="name" href=""###>宝宝</a>
+                                            <a href="###" class="level3"></a>
+                                            <span>可以一遍吃火锅，还能一边烤肉天气慢慢开始冷了，约几个朋友一起吃烤肉喝啤酒啊~ ​​​​心动不如行动呀错过感觉就亏了！！！</span>
+                                            <p>11月11日 21:00</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="###" class="head_pic"><img src="images/ocean3.jpg" alt=""></a>
+                                        <div class="add_eva">
+                                            <a class="name" href=""###>宝宝</a>
+                                            <a href="###" class="level4"></a>
+                                            <span>可以一遍吃火锅，还能一边烤肉天气慢慢开始冷了，约几个朋友一起吃烤肉喝啤酒啊~ </span>
+                                            <p>11月11日 21:00</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="###" class="head_pic"><img src="images/ocean3.jpg" alt=""></a>
+                                        <div class="add_eva">
+                                            <a class="name" href=""###>宝宝</a>
+                                            <a href="###" class="level5"></a>
+                                            <span>可以一遍吃火锅，还能一边烤肉天气慢慢开始冷了，约几个朋友一起吃烤肉喝啤酒啊~ ​​​​心动不如行动呀错过感觉就亏了！！！</span>
+                                            <p>11月11日 21:00</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advpic"></div>
+                    <div class="indexCabin" index="1">
+                        <div class="cabin_title">
+                            <a href="###" class="portrait"><img src="images/occupy.png" alt=""></a>
+                            <div class="title_text" index="1">
+                                <a href="###">娱乐圈无小事儿</a>
+                                <a href="###" class="level1"></a>
+                                <p>今天 来自 可可的小喵咪</p>
+                                <span class="add_concern" data-status="0" index="1"><i>+</i><em>关注</em></span>
+                                <span class="concern_list" index="1">特别关注</span>
+                            </div>
+                        </div>
+                        <div class="cabin_main">
+                            <div class="main_context">
+                                <p class="context_show" index="1">是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热</p>
+                                <!--<p class="context_hide" index="1">是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适</p>-->
+                                <span index="1" data-status="0" class="read_more_context">阅读全文</span>
+                            </div>
+                            <div class="cabinPics2"></div>
+                        </div>
+                        <div class="cabin_tail">
+                            <div href="###" class="bar share_bar clearfix">
+                                <i class="shareIcon"></i>
+                                分享
+                                <p>
+                                    <a class="share_qq" index="1" href="###" title="qq分享"></a>
+                                    <a class="share_wechat" index="1" href="###" title="微信分享"></a>
+                                </p>
+                                <div class="cover_img qq_img" index="1">
+                                    <span></span>
+                                    <img src="images/code.png" alt="">
+                                </div>
+                                <div class="cover_img wechat_img" index="1">
+                                    <span></span>
+                                    <img src="images/code.png" alt="">
+                                </div>
+                            </div>
+                            <a href="###" class="bar evubox" data-status="0" index="1"><i class="evaluationIcon iconfont icon-pinglun"></i><span>评论</span></a>
+                            <a href="###" class="bar praise_bar" data-status="0" index="1"><i class="praiseIcon"></i><span>1</span></a>
+                            <div class="evaluation" index="1">
+                                <div class="publish">
+                                    <a href="###" class="head_pic"><img src="images/ocean3.jpg" alt=""></a>
+                                    <div class="sendmsg">
+                                        <div class="face"></div>
+                                        <a href="###" class="subMsg" index="1" data-status="0">发布</a>
+                                    </div>
+                                </div>
+                                <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="indexCabin" index="2">
+                        <div class="cabin_title">
+                            <a href="###" class="portrait"><img src="images/occupy.png" alt=""></a>
+                            <div class="title_text" index="2">
+                                <a href="###">娱乐圈无小事儿</a>
+                                <a href="###" class="level1"></a>
+                                <p>今天 来自 可可的小喵咪</p>
+                                <span class="add_concern" data-status="0" index="2"><i>+</i><em>关注</em></span>
+                                <span class="concern_list" index="2">特别关注</span>
+                            </div>
+                        </div>
+                        <div class="cabin_main">
+                            <div class="main_context">
+                                <p class="context_show">是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适</p>
+                                <span index="2" data-status="0" class="read_more_context">阅读全文</span>
+                            </div>
+                            <div class="cabinPics1"></div>
+                        </div>
+                        <div class="cabin_tail">
+                            <div href="###" class="bar share_bar clearfix">
+                                <i class="shareIcon"></i>
+                                分享
+                                <p>
+                                    <a class="share_qq" index="2" href="###" title="qq分享"></a>
+                                    <a class="share_wechat" index="2" href="###" title="微信分享"></a>
+                                </p>
+                                <div class="cover_img qq_img" index="2">
+                                    <span></span>
+                                    <img src="images/code.png" alt="">
+                                </div>
+                                <div class="cover_img wechat_img" index="2">
+                                    <span></span>
+                                    <img src="images/code.png" alt="">
+                                </div>
+                            </div>
+                            <a href="###" class="bar evubox" data-status="0" index="2"><i class="evaluationIcon iconfont icon-pinglun"></i><span>2</span></a>
+                            <a href="###" class="bar praise_bar" data-status="0" index="2"><i
+                                    class="praiseIcon"></i><span>5</span></a>
+                            <div class="evaluation" index="2">
+                                <div class="publish">
+                                    <a href="###" class="head_pic"><img src="images/ocean3.jpg" alt=""></a>
+                                    <div class="sendmsg">
+                                        <div class="face"></div>
+                                        <a href="###" class="subMsg" index="2" data-status="0">发布</a>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="###" class="head_pic"><img src="images/ocean3.jpg" alt=""></a>
+                                        <div class="add_eva">
+                                            <a class="name" href=""###>宝宝</a>
+                                            <a href="###" class="level3"></a>
+                                            <span>可以一遍吃火锅，还能一边烤肉天气慢慢开始冷了，约几个朋友一起吃烤肉喝啤酒啊~ ​​​​心动不如行动呀错过感觉就亏了！！！</span>
+                                            <p>11月11日 21:00</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="###" class="head_pic"><img src="images/ocean3.jpg" alt=""></a>
+                                        <div class="add_eva">
+                                            <a class="name" href=""###>宝宝</a>
+                                            <a href="###" class="level4"></a>
+                                            <span>可以一遍吃火锅，还能一边烤肉天气慢慢开始冷了，约几个朋友一起吃烤肉喝啤酒啊~ </span>
+                                            <p>11月11日 21:00</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="indexCabin" index="3">
+                        <div class="cabin_title">
+                            <a href="###" class="portrait"><img src="images/occupy.png" alt=""></a>
+                            <div class="title_text" index="3">
+                                <a href="###">娱乐圈无小事儿</a>
+                                <a href="###" class="level1"></a>
+                                <p>今天 来自 可可的小喵咪</p>
+                                <span class="add_concern" data-status="0" index="3"><i>+</i><em>关注</em></span>
+                                <span class="concern_list" index="3">特别关注</span>
+                            </div>
+                        </div>
+                        <div class="cabin_main">
+                            <div class="main_context">
+                                <p class="context_show">是薄款的但聚热效果不错！保暖又舒适男女款都有！线下实体店里要99，190g重面料，是薄款的但聚热效果不错！保暖又舒适</p>
+                                <span index="3" data-status="0" class="read_more_context">阅读全文</span>
+                            </div>
+                            <div class="cabinPics1"></div>
+                        </div>
+                        <div class="cabin_tail">
+                            <div href="###" class="bar share_bar clearfix">
+                                <i class="shareIcon"></i>
+                                分享
+                                <p>
+                                    <a class="share_qq" index="3" href="###" title="qq分享"></a>
+                                    <a class="share_wechat" index="3" href="###" title="微信分享"></a>
+                                </p>
+                                <div class="cover_img qq_img" index="3">
+                                    <span></span>
+                                    <img src="images/code.png" alt="">
+                                </div>
+                                <div class="cover_img wechat_img" index="3">
+                                    <span></span>
+                                    <img src="images/code.png" alt="">
+                                </div>
+                            </div>
+                            <a href="###" class="bar evubox" data-status="0" index="3"><i class="evaluationIcon iconfont icon-pinglun"></i><span>2</span></a>
+                            <a href="###" class="bar praise_bar" data-status="0" index="3"><i class="praiseIcon"></i><span>5</span></a>
+                            <div class="evaluation" index="3">
+                                <div class="publish">
+                                    <a href="###" class="head_pic"><img src="images/ocean3.jpg" alt=""></a>
+                                    <div class="sendmsg">
+                                        <div class="face"></div>
+                                        <a href="###" class="subMsg" index="3" data-status="0">发布</a>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="###" class="head_pic"><img src="images/ocean3.jpg" alt=""></a>
+                                        <div class="add_eva">
+                                            <a class="name" href=""###>宝宝</a>
+                                            <a href="###" class="level3"></a>
+                                            <span>可以一遍吃火锅，还能一边烤肉天气慢慢开始冷了，约几个朋友一起吃烤肉喝啤酒啊~ ​​​​心动不如行动呀错过感觉就亏了！！！</span>
+                                            <p>11月11日 21:00</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="###" class="head_pic"><img src="images/ocean3.jpg" alt=""></a>
+                                        <div class="add_eva">
+                                            <a class="name" href=""###>宝宝</a>
+                                            <a href="###" class="level4"></a>
+                                            <span>可以一遍吃火锅，还能一边烤肉天气慢慢开始冷了，约几个朋友一起吃烤肉喝啤酒啊~ </span>
+                                            <p>11月11日 21:00</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pageNum">
+                    <div id="demo1"></div>
+                </div>
+            </div>
+            <div class="comnews">
+                <div class="account">
+                    <img class="bgs" src="images/bg.jpg" alt="">
+                    <a href="concern.html" class="person"><img src="images/ocean3.jpg" title="尚酷贝利"></a>
+                    <p class="name"><a href="concern.html" title="尚酷贝利">尚酷贝利</a><a href="concern.html" title="等级2" class="level2"></a></p>
+                    <ul class="user_info">
+                        <li><a href="concern.html"><span>66</span><p>关注</p></a></li>
+                        <li><a href="essay.html"><span>30</span><p>动态</p></a></li>
+                        <li><a href="concern.html"><span>80</span><p>有趣指数</p></a></li>
+                        <!--<li><a href="concern.html"><span>优</span><p>信誉程度</p></a></li>-->
+                    </ul>
+                </div>
+                <div class="today">
+                    <p>今日一角</p>
+                    <img src="images/f5.jpg" alt="">
+                    <div class="func">
+                        <div><i class="iconfont icon-zan"></i><span>666</span></div>
+                        <div><a href="essay.html">Read more</a></div>
+                    </div>
+                </div>
+                <div class="flow">
+                    <h3>公告部落</h3>
+                    <p>浏览量：<span class="countNum">2560</span></p>
+                    <p>注册人数：<span class="countNum">2563</span></p>
+                    <p>活跃度：<span class="countNum">66</span></p>
+                </div>
+                <div class="advbox">
+                    <a class="advimg1" href="###"><img src="images/adv1.png" alt=""></a>
+                    <a class="advimg2" href="###"><img src="images/adv2.jpg" alt=""></a>
+                </div>
+                <div class="hotlist">
+                    <h3>今日推荐</h3>
+                    <ul>
+                        <li>
+                            <img src="images/h1.jpg" alt="">
+                            <a href="essay_details.html">免费区块链技术与金融应用发展论坛香港站教科书的立法会收</a>
+                        </li>
+                        <li>
+                            <img src="images/h1.jpg" alt="">
+                            <a href="###">免费区块链技术与金融应用发展论坛香港站教科书的立货付款了华盛</a>
+                        </li>
+                        <li>
+                            <img src="images/h1.jpg" alt="">
+                            <a href="###">免费区块链技术与金融应用发展论坛香港站教科书的立法会货付款了华盛</a>
+                        </li>
+                        <li>
+                            <img src="images/h1.jpg" alt="">
+                            <a href="###">免费区块链技术与金融应用发展论坛香港站教科书的立法会收付款了华盛</a>
+                        </li>
+                        <li>
+                            <img src="images/h1.jpg" alt="">
+                            <a href="###">免费区块链技术与金融应用发展论坛香港站教科书的立法会收到货胜多负少款了华盛</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="lasttwo">
+                    <div class="topic">
+                        <p><span>活动社团</span><a href="###"><i class="iconfont icon-icchange"></i>换一批</a></p>
+                        <ul>
+                            <li>
+                                <a href="essay.html">篮球</a>
+                                <a href="###">足球</a>
+                                <a href="###">羽毛球</a>
+                            </li>
+                            <li>
+                                <a href="###">音乐</a>
+                                <a href="###">电影</a>
+                                <a href="###">娱乐</a>
+                            </li>
+                            <li>
+                                <a href="###">音乐</a>
+                                <a href="###">电影</a>
+                                <a href="###">娱乐</a>
+                            </li>
+                        </ul>
+                        <a href="essay.html" class="more">查看更多 ></a>
+                    </div>
+                    <div class="fresh">
+                        <h3>热门话题</h3>
+                        <ul>
+                            <li>
+                                <a href="essay_details.html">
+                                    <img src="images/n1.jpg" alt="">
+                                    <span class="left"><i>徐某某的最新动态资讯徐某某的最新动态资讯</i><em>11月25日</em></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="images/n1.jpg" alt="">
+                                    <span class="left"><i>徐某某的最新动态资讯</i><em>11月25日</em></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="images/n1.jpg" alt="">
+                                    <span class="left"><i>徐某某的最新动态资讯</i><em>11月25日</em></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="images/n1.jpg" alt="">
+                                    <span class="left"><i>徐某某的最新动态资讯</i><em>11月25日</em></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer_info">
+            <ul class="left">
+                <li>
+                    <p class="footername">关于我们</p>
+                    <p><a href="###">关于我们</a></p>
+                    <p><a href="###">联系我们</a></p>
+                    <p><a href="###">加入我们</a></p>
+                </li>
+                <li>
+                    <p class="footername">业务服务</p>
+                    <p><a href="###">业务体系</a></p>
+                    <p><a href="###">相关服务</a></p>
+                    <p><a href="###">相关产品</a></p>
+                </li>
+                <li>
+                    <p class="footername">关注我们</p>
+                    <p><a href="###">住宿微信</a></p>
+                    <p><a href="###">下载APP</a></p>
+                </li>
+            </ul>
+            <div class="right">
+                <div class="code">
+                    <img src="images/code.png" alt="">
+                    <span>下载APP</span>
+                </div>
+                <div class="code">
+                    <img src="images/code.png" alt="">
+                    <span>关注微信</span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="copyright">
+            <span>E-mail：<a href="###">info@ynweb.com</a></span>
+            <span>Copyright © 2004-2018 Ynweb All Rights Reserved.</span>
+            <span><a href="###"> 滇ICP备15008235号</a></span><br/>
+            <a href="###" class="securitynum">滇公网安备 53011202000074号</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/waypoint.min.js"></script>
+<script type="text/javascript" src="js/jquery.countup.min.js"></script>
+<script type="text/javascript" src="js/images_scan.js"></script>
+<script type="text/javascript" src="layui.js"></script>
+<script type="text/javascript" src="js/emojionearea.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/vue.min.js"></script>
+</body>
+</html>

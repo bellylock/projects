@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>预订资料</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+    <link rel="stylesheet" href="css/book.css" />
+    <script src="js/jquery-3.3.1min.js"></script>
+    <script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon iconfont icon-return-o mui-pull-left"></a>
+        <h1 class="mui-title">预订资料</h1>
+    </header>
+    <nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active" id="index">
+	        <span class="mui-icon iconfont icon-caidaniconshouyehui"></span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon iconfont icon_mid icon-PCbofangye_tuijian"></span>
+	        <span class="mui-tab-label">推荐</span>
+	    </a>
+	    <a class="mui-tab-item" id='user'>
+	        <span class="iconfont icon-user mui-icon"></span>
+	        <span class="mui-tab-label">我的</span>
+	    </a>
+	</nav>
+    <div class="mui-content content">
+    	<div class="title">
+    		<img src="images/book.jpg" alt="" />
+    		<h5>恭喜您预订成功</h5>
+    		<span>预付款</span>
+    		<em>￥</em>
+    		<i>588</i>
+    	</div>
+    	<div class="space"></div>
+    	<ul class="mui-table-view">
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right" id='orderDetail'>
+	            	 订单详情               
+	            </a>
+	        </li>
+	    </ul>
+	    <div class="space"></div>
+	    <ul class="mui-table-view pay_way">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right special_nav">
+                                                  支付方式
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media ">
+                <a href="javascript:;">
+                	<div class="mui-input-row mui-radio">
+						<label>
+							<img class="mui-media-object mui-pull-left" src="images/wechat.jpg">
+		                    <div class="mui-media-body medias"  > 
+		                        微信支付
+		                        <p class="mui-ellipsis">推荐安装微信5.0及以上版本的用户使用</p>
+		                    </div>
+						</label>
+						<input name="radio1" type="radio" checked>
+					</div>
+                    
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media ">
+                <a href="javascript:;">
+                	<div class="mui-input-row mui-radio">
+						<label>
+							<img class="mui-media-object mui-pull-left" src="images/zhi.jpg">
+		                    <div class="mui-media-body medias"  > 
+		                        支付宝支付
+		                        <p class="mui-ellipsis">推荐有支付宝账户的用户使用</p>
+		                    </div>
+						</label>
+						<input name="radio1" type="radio">
+					</div>
+                </a>
+            </li>
+        </ul>
+        <button type="button" class="mui-btn mui-btn-blue btn" id='confirm'>确认支付</button>
+    </div>
+    <script type="text/javascript">
+    	mui.init();
+    	document.getElementById("confirm").addEventListener('tap',function(){
+    		mui.openWindow({
+    			url:"order_detail.html",
+    			id:'order_detail'
+    		})
+    	});
+    	
+    	document.getElementById("index").addEventListener('tap',function(){
+    		mui.openWindow({
+    			url:"index.html",
+    			id:'index'
+    		})
+    	});
+    	
+    	document.getElementById("user").addEventListener('tap',function(){
+    		mui.openWindow({
+    			url:"myorder.html",
+    			id:'myorder'
+    		})
+    	});
+    	
+    	document.getElementById("orderDetail").addEventListener('tap',function(){
+    		mui.openWindow({
+    			url:"book_order.html",
+    			id:'orderDetail'
+    		})
+    	})
+    </script>
+</body>
+</html>

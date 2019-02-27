@@ -1,0 +1,38 @@
+.content h3{
+	text-align: center;
+}
+.c6{
+	text-align: center;
+	height: 150px;
+	background-size: 80% !important;
+	padding-top: 50px;
+}
+.c1{
+	background: url(../images/fuwu.png) no-repeat center;
+}
+.c2{
+	background: url(../images/shuju.png) no-repeat center;
+}
+.c3{
+	background: url(../images/dizhi.png) no-repeat center;
+}
+.c4{
+	background: url(../images/ipv6.png) no-repeat center;
+}
+.c6 span{
+	font-size: 30px;
+	color: #333
+}
+.c6 em{
+	font-size: 24px;
+	color: #333
+}
+.c6 p{
+	font-size: 15px;
+	color: #333
+}
+.adv{
+	font-size: 14px;
+    padding: 15px 15px 0 15px;
+    text-align: justify;
+}

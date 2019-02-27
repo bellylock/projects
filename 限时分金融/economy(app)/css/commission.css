@@ -1,0 +1,30 @@
+.top{
+	overflow: hidden;
+	margin-bottom: 6px;
+}
+.top span{
+	float: left;
+	font-size: 0.3rem;
+}
+.top em{
+	float: right;
+	font-style: normal;
+	font-size: 0.26rem;
+}
+.down{
+	overflow: hidden;
+}
+.down span{
+	float: left;
+	font-size: 0.3rem;
+	color: #ff6600;
+}
+.down em{
+	float: right;
+	font-style: normal;
+	font-size: 0.3rem;
+	color: #ff6600;
+}
+.mui-table-view-cell:after{
+	left: 0;
+}

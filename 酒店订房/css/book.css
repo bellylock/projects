@@ -1,0 +1,87 @@
+*{
+			font-family: "微软雅黑" !important;
+		}
+		body{
+			background-color: white;
+		}
+		.content{
+			padding-bottom: 0 !important;
+			background-color: #fff !important;
+		}
+		.mui-bar-nav{
+			background-color: #4299ff;
+		}
+		.mui-title{
+			color: white;
+		}
+		.mui-pull-left{
+			color: white;
+		}
+		.title{
+			text-align: center;
+			background-color: white;
+			padding: 15px 0;
+		}
+		.title img{
+			width: 28%;
+		}
+		.title h5{
+			font-size: 16px;
+			color: #000;
+			font-weight: bold;
+		}
+		.title span{
+			font-size: 15px;
+		}
+		.title em{
+			font-style: normal;
+			font-size: 15px;
+			color: red;
+		}
+		.title i{
+			font-style:normal;
+			font-size: 18px;
+			color: red;
+		}
+		.space{
+			width: 100%;
+			height: 15px;
+			background-color: #efeff4 !important;
+		}
+		.mui-table-view-cell{
+			padding: 11px 12px !important;
+		}
+		.mui-media{
+			padding:11px 12px 5px 12px !important
+		}
+		.mui-table-view-cell:after{
+			left:0;
+		}
+		.special_nav:after{
+			content:none
+		}
+		.medias{
+			float: left;
+		}
+		.medias p{
+			font-size: 12px !important;
+			line-height: 32px;
+		}
+		.mui-input-row label{
+			padding: 0 !important;
+		}
+		.mui-radio input[type=radio]{
+			top: 8px;
+			right: 0;
+		}
+		.btn{
+			background-color: #33a0f5;
+		    border: none;
+		    width: 85%;
+		    font-size: 16px;
+		    display: block;
+		    margin: 30px auto auto auto;
+		    border-radius: 30px;
+		    box-shadow: 0 5px 12px #8dccfd;
+		    line-height: 22px;
+		}

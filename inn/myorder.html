@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>我的订单</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+    <link rel="stylesheet" href="css/myorder.css" />
+    <script src="js/jquery-3.3.1min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon iconfont icon-return-o mui-pull-left"></a>
+        <h1 class="mui-title">我的订单</h1>
+    </header>
+    <nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item" id='index'>
+	        <span class="mui-icon iconfont icon-caidaniconshouyehui"></span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon iconfont icon_mid icon-PCbofangye_tuijian"></span>
+	        <span class="mui-tab-label">推荐</span>
+	    </a>
+	    <a class="mui-tab-item mui-active" id='user'>
+	        <span class="iconfont icon-user mui-icon"></span>
+	        <span class="mui-tab-label">我的</span>
+	    </a>
+	</nav>
+    <div class="mui-content">
+    	<div class="mui-slider">
+		    <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+		        <a class="mui-control-item mui-active" href="#item1">全部订单</a> 
+		        <a class="mui-control-item" href="#item2">待付款</a>
+		        <a class="mui-control-item" href="#item3">待评价</a>
+		    </div>
+    		<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+    		<div class="mui-slider-group">
+    		    <div id="item1" class="mui-slider-item mui-control-content mui-active">
+		        	<div class="box" index='0' id='confirmBtn'>
+		        		<div class="top">
+		        			<h5>如家快捷酒店普陀区金沙江路店</h5>
+    		        		<p>
+    		        			<i class="iconfont icon-position1"></i>
+    		        			<span>普陀区金沙江路427号</span>
+    		        		</p>
+    		        		<p>
+    		        			<i class="iconfont icon-weibiao45127"></i>
+    		        			<span class="time"><span>06-14</span>至<span>06-16</span></span>
+    		        			<span><span>1</span>晚/<span>1</span>间</span>
+    		        		</p>
+		        		</div>
+		        		<div class="down">
+		        			<div class="status">
+		        				<span>状态：</span>
+    		        			<span>已付</span>
+    		        			<i class="prices">528</i>
+    		        			<i>￥</i>
+		        			</div>
+		        			<div class="bun">
+		        				<a class="comment" href="###">点评</a>
+		        				<a class="cancel" index='0' href="###">取消</a>
+		        			</div>
+		        		</div>
+		        	</div>
+		        	<div class="box" index='1'>
+		        		<div class="top">
+		        			<h5>喜来登度假酒店金沙江路店</h5>
+    		        		<p>
+    		        			<i class="iconfont icon-position1"></i>
+    		        			<span>三亚开发区喜来登度假酒店大厦</span>
+    		        		</p>
+    		        		<p>
+    		        			<i class="iconfont icon-weibiao45127"></i>
+    		        			<span class="time"><span>06-14</span>至<span>06-16</span></span>
+    		        			<span><span>1</span>晚/<span>1</span>间</span>
+    		        		</p>
+		        		</div>
+		        		<div class="down">
+		        			<div class="status">
+		        				<span>状态：</span>
+    		        			<span>已付</span>
+    		        			<i class="prices">528</i>
+    		        			<i>￥</i>
+		        			</div>
+		        			<div class="bun">
+		        				<a class="comment" href="###">点评</a>
+		        				<a class="cancel" index='1' href="###">取消</a>
+		        			</div>
+		        		</div>
+		        	</div>
+    		    </div>
+		        <div id="item2" class="mui-slider-item mui-control-content">
+		        	<div class="box" index='2'>
+		        		<div class="top">
+		        			<h5>如家快捷酒店普陀区金沙江路店</h5>
+    		        		<p>
+    		        			<i class="iconfont icon-position1"></i>
+    		        			<span>普陀区金沙江路427号</span>
+    		        		</p>
+    		        		<p>
+    		        			<i class="iconfont icon-weibiao45127"></i>
+    		        			<span class="time"><span>06-14</span>至<span>06-16</span></span>
+    		        			<span><span>1</span>晚/<span>1</span>间</span>
+    		        		</p>
+		        		</div>
+		        		<div class="down">
+		        			<div class="status">
+		        				<span>状态：</span>
+    		        			<span>待付款</span>
+    		        			<i class="prices">528</i>
+    		        			<i>￥</i>
+		        			</div>
+		        			<div class="bun">
+		        				<a class="comment" href="###">点评</a>
+		        				<a class="cancel" index='2' href="###">取消</a>
+		        			</div>
+		        		</div>
+		        	</div>
+		        </div>
+		        <div id="item3" class="mui-slider-item mui-control-content">
+		        	<div class="box" index='3'>
+		        		<div class="top">
+		        			<h5>如家快捷酒店普陀区金沙江路店</h5>
+    		        		<p>
+    		        			<i class="iconfont icon-position1"></i>
+    		        			<span>普陀区金沙江路427号</span>
+    		        		</p>
+    		        		<p>
+    		        			<i class="iconfont icon-weibiao45127"></i>
+    		        			<span class="time"><span>06-14</span>至<span>06-16</span></span>
+    		        			<span><span>1</span>晚/<span>1</span>间</span>
+    		        		</p>
+		        		</div>
+		        		<div class="down">
+		        			<div class="status">
+		        				<span>状态：</span>
+    		        			<span>待评价</span>
+    		        			<i class="prices">528</i>
+    		        			<i>￥</i>
+		        			</div>
+		        			<div class="bun">
+		        				<a class="comment" href="###">点评</a>
+		        				<a class="cancel" index='3' href="###">取消</a>
+		        			</div>
+		        		</div>
+		        	</div>
+		        </div>
+    		</div>
+    	</div>
+    </div>
+    <script type="text/javascript">
+    	mui.init();
+    	mui('.mui-slider').slider().stopped = true;
+    	
+    	var btns = $(".top");
+    	btns.each(function(i,btn){
+    		btn.addEventListener('tap',function(){
+    			mui.openWindow({
+    				url:"hotel_comment.html",
+    				id:"hotel_comment"
+    			})
+    		})
+    	});
+    	    	
+    	var coms = $(".comment");
+    	coms.each(function(i,btn){
+    		btn.addEventListener('tap',function(){
+    			mui.openWindow({
+    				url:"comment.html",
+    				id:"comment"
+    			})
+    		})
+    	});
+    	
+    	document.getElementById("index").addEventListener('tap',function(){
+    		mui.openWindow({
+    			url:"index.html",
+    			id:'index'
+    		})
+    	});
+    	
+    	document.getElementById("user").addEventListener('tap',function(){
+    		mui.openWindow({
+    			url:"myorder.html",
+    			id:'myorder'
+    		})
+    	});
+    	
+    	$(".box").on('click','.cancel', function(event){
+    		var index = $(this).attr("index");
+    		var btnArray = ['否', '是'];
+            mui.confirm('确定要删除？', '提示', btnArray, function(e) {
+                if (e.index == 1) {
+            		$($(".box")[index]).css("display","none");
+                } else {}
+        	});
+            event.stopPropagation(); 
+        });          	
+  
+    </script>
+</body>
+</html>

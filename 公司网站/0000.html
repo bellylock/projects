@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+<body>
+	<style type="text/css">
+
+		.rights{
+			width:9px ;
+			height:15px ;
+			float: right;
+		}
+		.a1:hover{
+			color: #00c1de;
+		}
+		.l1:hover .icon-right{
+			color: #00c1de;
+		}
+		.sidebars{
+			display: none;
+			position: absolute;
+			top: 2%;
+			left:0;
+		}
+		.introduce{
+			width: 500px !important;
+			height: auto !important;
+			background: red !important;
+			background: #191d20!important;
+		}
+		.last{
+			width: 60%;
+			float: left;
+			background-color: #2c3033 !important;
+			border-right: 1px solid #ccc;
+		}
+		.lasts{
+			width: 40%;
+			height: auto !important;
+			float: left;
+		}
+		.thi{
+			width: 100%;
+			float: left;
+		}
+		.first{
+			background-color: #24282b;
+			border-right: 1px solid #999;
+		}
+		.second{
+			background-color:#24282b !important;
+		}
+	</style>
+
+	<main class="cd-main-content">
+		<button class="btn">456</button>
+		<nav class="cd-side-nav sidebars">
+			
+
+			<ul class="first">
+				<li class="has-children bookmarks l1">
+					<a href="#0" class="a1">Bookmarks <i class="rights icon-right iconfont"></i></a>
+					
+					<ul class="l1 second">
+						<li class="has-children">
+							<a href="#0">All Bookmarks <i class="rights icon-right iconfont"></i></a>
+							<ul class="introduce">
+								<li class="last">
+									
+									<a class="thi" href="###">001</a>
+									<a class="thi" href="###">002</a>
+									<a class="thi" href="###">003</a>
+									
+								
+								</li>
+								<li class="lasts">
+									<a class="this" href="###">456</a>
+									<a class="this" href="###">456</a>
+									
+								</li>
+							</ul>
+						</li>
+						<li><a href="#0">Edit Bookmark</a></li>
+						<li><a href="#0">Import Bookmark</a></li>
+					</ul>
+				</li>
+				<li class="has-children images ">
+					<a href="#0">Images</a>
+					
+					<ul>
+						<li><a href="#0">All Images</a></li>
+						<li><a href="#0">Edit Image</a></li>
+					</ul>
+				</li>
+
+				<li class="has-children users ">
+					<a href="#0">Users</a>
+					
+					<ul>
+						<li><a href="#0">All Users</a></li>
+						<li><a href="#0">Edit User</a></li>
+						<li><a href="#0">Add User</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</nav>
+
+	</main> <!-- .cd-main-content -->
+	
+	
+	<script src="js/jquery.menu-aim.js"></script>
+	<script src="js/main.js"></script> 
+	<!-- Resource jQuery -->
+
+	<script type="text/javascript">
+		$(function(){
+			$(".btn").hover(function(){
+				// $(".sidebars").css("display","block")
+				$(".sidebars").toggle()
+			});
+
+			
+
+			$(".sidebars").on("mouseenter mouseleave",function(event){
+				if(event.type == "mouseenter"){
+					$(this).css("display","block")
+				}else{
+					$(this).css("display","none")
+				}
+			})
+			
+		})
+	</script>
+
+</body>
+</html>

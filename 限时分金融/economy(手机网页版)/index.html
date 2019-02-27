@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>首页</title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="fontes/iconfont.css"/>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/mui.min.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">限时分</h1>
+	</header>
+	<nav class="mui-bar mui-bar-tab">
+	    <a class="actived" href="index.html">
+	        <img class="navimg" src="images/nav11.png" alt="" />
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class=" " href="project.html">
+	        <img class="navimg" src="images/nav2.png" alt="" />
+	        <span class="mui-tab-label">购售项目</span>
+	    </a>
+	    <a class="" href="bondtransfer.html">
+	        <img class="navimg" src="images/nav3.png" alt="" />
+	        <span class="mui-tab-label">债券转让</span>
+	    </a>
+	    <a class="" href="user.html">
+	        <img class="navimg" src="images/nav4.png" alt="" />
+	        <span class="mui-tab-label">我的</span>
+	    </a>
+	</nav>
+	<div class="mui-content content"> 
+		<div id="slider" class="mui-slider">
+		  <div class="mui-slider-group mui-slider-loop">
+		    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="images/banner2.jpg">
+		      </a>
+		    </div>
+		    <!-- 第一张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="images/banner1.jpg">
+		      </a>
+		    </div>
+		    <!-- 第二张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="images/banner2.jpg">
+		      </a>
+		    </div>
+		    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="images/banner1.jpg">
+		      </a>
+		    </div>
+		  </div>
+		  <div class="mui-slider-indicator">
+		    <div class="mui-indicator mui-active"></div>
+		    <div class="mui-indicator"></div>
+		  </div>
+		</div>
+		<div class="fontbox">
+			<ul class="mui-table-view mui-grid-view mui-grid-9 list">
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				    <a href="#">
+				        <img class="mimg" src="images/m1.png" alt="" />
+				        <span class="mspan1">购售项目</span>
+				    </a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				    <a href="#">
+				        <img class="mimg" src="images/m3.png" alt="" />
+				        <span class="mspan2">债权转让</span>
+				    </a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				    <a href="#">
+				        <img class="mimg" src="images/m2.png" alt="" />
+				        <span class="mspan3">自动购售</span>
+				    </a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				    <a href="#">
+				        <img class="mimg" src="images/m4.png" alt="" />
+				        <span class="mspan4">服务热线</span>
+				    </a>
+				</li>
+			</ul>
+		</div>
+		<div class="voice">
+			<img src="images/news.png" alt="" />
+			<div class="run">
+				<a href="###">现投资现回报，买了就是赚...</a>
+			</div>
+		</div>
+		<div class="card">
+			<div class="top">
+				<img src="images/hot.png" alt="" />
+				<span>肯定盈新手标第5期</span>
+			</div>
+			<div class="mid">
+				<p>到期分红率</p>
+				<h1>20%</h1>
+			</div>
+			<div class="down">
+				<div class="bars bar">
+					<span>300万</span>
+					<p>购售总额 (元)</p>
+				</div>
+				<div class="bars bar">
+					<span>100吨</span>
+					<p>购售数量</p>
+				</div>
+				<div class="bars bar">
+					<span>3天</span>
+					<p>购售周期</p>
+				</div>
+			</div>
+			<a href="###" class="sale">立即购售</a>
+			<img class="index_sail" src="images/sailing.png" alt="" />
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		mui.init();
+      	var gallery = mui('.mui-slider');
+		gallery.slider({
+			interval:2000
+		});
+		
+//		(function($){
+//		    $(".content").scroll({
+//		        bounce: true,//滚动条是否有弹力默认是true
+//		        indicators: true //是否显示滚动条,默认是true 
+//		    });
+//		    
+//		})(mui);
+	</script>
+	
+</body>
+</html>

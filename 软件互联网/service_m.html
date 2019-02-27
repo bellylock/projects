@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>服务简介</title>
+    <link type="text/css" rel="stylesheet" href="css/demo_m.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.positioning.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="dist/aos.css">
+    <link rel="stylesheet" href="css/index_m.css">
+</head>
+<body>
+<div id="page">
+    <header id="header">
+        <a id="menubtn" href="#menu"></a>
+        <a id="home" href="index_m.html">同讯互联网</a>
+    </header>
+    <div id="content">
+        <img src="images/banner12.jpg" aos="zoom-in" class="bannerdraw" alt="">
+        <div class="Cabin">
+            <div class="service_box" aos="slide-left">
+                <h3>网站建设</h3>
+                <p>企业形象网站：展示企业介绍、案例展示、产品展示等。品牌形象网站：以品牌形象为主，树立品牌形象。商城B2B网站：电商交易平台网站，多种产品销售。</p>
+            </div>
+            <div class="service_box" aos="slide-right">
+                <h3>手机端开发</h3>
+                <p>手机网站建设，定制您专属的网站；<br />微信官网开发、微信公众号申请，微信主流一站式服务。</p>
+            </div>
+            <div class="service_box" aos="slide-left">
+                <h3>软件开发</h3>
+                <p>软件定制开发，开发，测试，部署，管理和维护技术服务能力，10年经验程序员满足您的开发需求</p>
+            </div>
+            <div class="service_box" aos="slide-right">
+                <h3>互联网需求服务</h3>
+                <p>满足各互联网创新项目需求，实现您的各种想法</p>
+            </div>
+        </div>
+        <ul class="service_case">
+            <li aos="slide-up"><a href="http://ynweb.com/index.html"><img src="images/g10.jpg" alt=""></a><p>生鲜商城</p></li>
+            <li aos="slide-up"><a href="###"><img src="images/g10.jpg" alt=""></a><p>生鲜商城</p></li>
+            <li aos="slide-up"><a href="###"><img src="images/g10.jpg" alt=""></a><p>生鲜商城</p></li>
+            <li aos="slide-up"><a href="###"><img src="images/g10.jpg" alt=""></a><p>生鲜商城</p></li>
+            <li aos="slide-up"><a href="###"><img src="images/g10.jpg" alt=""></a><p>生鲜商城</p></li>
+            <li aos="slide-up"><a href="###"><img src="images/g10.jpg" alt=""></a><p>生鲜商城</p></li>
+        </ul>
+        <a href="###" id="loadmore" aos="zoom-in">加载更多</a>
+    </div>
+    <div class="footer">
+        <p>地址：昆明市西山区滇池柏悦5栋33楼</p>
+        <p>电话：0871-63935390</p>
+        <p>邮箱：info@ynweb.com</p>
+        <img src="images/code.png" alt="">
+        <span>微信公众号</span>
+        <p>Copyright © 2009 - 2014 Cld , All Rights Reserved</p>
+    </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="index_m.html">首页</a></li>
+            <li><a href="about_m.html">关于我们</a></li>
+            <li><a href="service_m.html" class="active">服务简介</a></li>
+            <li><a href="news_m.html">新闻动态</a></li>
+            <li><a href="contact_m.html">联系我们</a></li>
+        </ul>
+    </nav>
+</div>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="dist/aos.js"></script>
+<script type="text/javascript">
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+
+    $(function() {
+        var $html 	= $('html'),
+            $menu	= $('nav#menu'),
+            $both	= $html.add( $menu );
+
+        $menu.mmenu();
+
+        var swiper = new Swiper('.swiperBanner', {
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false
+            },
+        });
+
+    });
+</script>
+</body>
+</html>
+
+
+

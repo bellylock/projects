@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>问题详情</title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="fontes/iconfont.css"/>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/mui.min.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		.title{
+			font-size: 15px;
+			color: #515151;
+			background-color: white;
+			text-align: center;
+			margin-bottom: 0;
+			padding: 10px 0;
+		}
+		.text{
+			background-color: white;
+		    margin: 10px 0;
+		    padding: 15px;
+		    text-align: justify;
+		    line-height: 30px;
+		}
+	</style>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left back"></a>
+	    <h1 class="mui-title">问题详情</h1>
+	</header>
+	<div class="mui-content content fontes">
+		<p class="title">投资购买说明</p>
+		<p class="text">
+			隔行如隔山，但各行各业只要精于研究，自己很拿手了就更容易赚到钱，如果自己什么都不懂，胡乱投资，财富很有可能就会是负增长。除了银行理财和余额宝的理财
+		方式，可以从自己身边的行业入手，我认识一个朋友，他本身学历并不高，少年时就跟从师傅学手艺步入社会，学修车，开车，看见师傅买货车来出租能增加收入，自己也
+		跟着去买货车来出租，因为他自己本身就很懂车的性能，也会自己修理，所以入手都可以挑到性价比好的车，买下后出租，数年坚持下来，每年的租金和卖旧车的操作模式，
+		坚持下来本金回报率也是远超10%。
+		</p>
+	</div>
+	
+	
+    <script src="js/echarts-all.js"></script>
+	<script type="text/javascript">
+		mui.init();	
+		$(".sum").on("input",function(){
+			this.value = this.value.replace(/\D/g,"")
+		})
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+    <link rel="stylesheet" href="css/order_detail.css" />
+    <script src="js/jquery-3.3.1min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon iconfont icon-return-o mui-pull-left"></a>
+        <h1 class="mui-title">订单详情</h1>
+    </header>
+    <nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active" id='index'>
+	        <span class="mui-icon iconfont icon-caidaniconshouyehui"></span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon iconfont icon_mid icon-PCbofangye_tuijian"></span>
+	        <span class="mui-tab-label">推荐</span>
+	    </a>
+	    <a class="mui-tab-item" id='user'>
+	        <span class="iconfont icon-user mui-icon"></span>
+	        <span class="mui-tab-label">我的</span>
+	    </a>
+	</nav>
+	<div class="mui-content">
+		<div class="title">
+			<img src="images/detail.jpg" alt="" />
+			<h5>恭喜您支付成功</h5>
+			<span>￥</span>
+			<em>588</em>
+			<p>您可至前台验证身份领取房卡</p>
+		</div>
+		<div class="fee">
+			<div class="left">
+				<img src="images/fee.jpg" alt="" />
+			</div>
+			<div class="right">
+				<p>
+					<span class="dates"><span class="date">2018.09.15</span>(<span class="roomNum">1</span>间)</span>
+					<span class="price"><em>￥</em><i>588</i></span>
+				</p>
+				<p>
+					<span class="dates"><span class="date">2018.09.25</span>(<span class="roomNum">1</span>间)</span>
+					<span class="price"><em>￥</em><i>288</i></span>
+				</p>
+				<p class="dropdown">
+					<span class="dates"><span class="date">2018.10.8</span>(<span class="roomNum">1</span>间)</span>
+					<span class="price"><em>￥</em><i>388</i></span>
+				</p>
+				<span class="iconfont icon-up3-copy drop" data-status='0'></span>
+			</div>
+		</div>
+		<div class="room_details">
+			<p>
+				<img src="images/keep.jpg" alt="" />
+				<span>房间保留19:00</span>
+			</p>
+			<p>
+				<img src="images/delate.jpg" alt="" />
+				<span>延迟退房14:00</span>
+			</p>
+		</div>
+		<ul class="mui-table-view name">
+	        <li class="mui-table-view-cell hotel_name">
+	            <a class="mui-navigate-right">
+	                <p>如家快捷开酒店普陀区金沙江路店</p>
+	                <span>商务大床房</span>
+	                <span>1间</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell context">
+	            <a class="mui-navigate-right special_nav">
+	                <p>
+	                	<span>入住时间：</span>
+	                	<i>12月12日</i>
+	                	<i>22:00前</i>
+	                </p>
+	                <p>
+	                	<span>离店时间：</span>
+	                	<i>12月14日</i>
+	                	<i>共2晚</i>
+	                </p>
+	                <p>
+	                	<span>订单状态：</span>
+	                	<i>已支付</i>
+	                </p>
+	            </a>
+	        </li>
+	    </ul>
+	    <div class="dels">
+	    	<p>
+	    		<span class="per">入住人：</span>
+	    		<i>李四</i>
+	    	</p>
+	    	<p>
+	    		<span>联系手机：</span>
+	    		<i>18182563865</i>
+	    	</p>
+	    </div>
+	    <div class="dels bills">
+	    	<p>
+	    		<span>发　　票：</span>
+	    		<i>台州市如家酒店管理有限公司</i>
+	    	</p>
+	    </div>
+	</div>
+    
+    <script type="text/javascript">
+    	mui.init();
+    	$(".drop").click(function(){
+    		var status = $(this).attr("data-status");
+    		if( status == 0){
+    			$(".dropdown").css("display","block");
+    			$(this).attr("data-status",1);
+    			$(this).removeClass("icon-up3-copy").addClass("icon-up3")
+    		}else{
+    			$(".dropdown").css("display","none");
+    			$(this).attr("data-status",0);
+    			$(this).removeClass("icon-up3").addClass("icon-up3-copy")
+    		}
+    	});
+    	
+    	document.getElementById("index").addEventListener('tap',function(){
+    		mui.openWindow({
+    			url:"index.html",
+    			id:'index'
+    		})
+    	});
+    	
+    	document.getElementById("user").addEventListener('tap',function(){
+    		mui.openWindow({
+    			url:"myorder.html",
+    			id:'myorder'
+    		})
+    	})
+    </script>
+</body>
+</html>

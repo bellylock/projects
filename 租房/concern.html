@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关注</title>
+    <link rel="stylesheet" href="fontes/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--上传图片-->
+    <link rel="stylesheet" href="css/cropper.min.css">
+    <link rel="stylesheet" href="css/ImgCropping.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <a href="index.html" class="logo headleft">Hotel&Inn</a>
+        <div class="area headleft">
+            <p>UK</p>
+            <ul>
+                <li><a href="###">London</a></li>
+                <li><a href="###">Scotland</a></li>
+                <li><a href="###">Edinburgh</a></li>
+                <li><a href="###">Cardiff</a></li>
+                <li><a href="###">Cambridge</a></li>
+                <li><a href="###">Manchester</a></li>
+            </ul>
+        </div>
+        <div class="headleft headsearch">
+            <input type="text" placeholder="搜索您感兴趣的内容">
+            <a href="search.html" class="comser iconfont icon-search"></a>
+        </div>
+        <ul class="nav headleft">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="houses.html">房源</a></li>
+            <li><a href="furniture.html">转手卖</a></li>
+            <li><a href="essay.html">社区</a></li>
+            <li><a href="concern.html" class="active">关注</a></li>
+            <li><a href="publish.html">发布信息</a></li>
+        </ul>
+        <div class="nav_vice">
+            <a href="log.html" class="log">登录</a>
+            <a href="register.html">注册</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <a href="###" id="backUp"></a>
+</div>
+<div class="content cen_content">
+    <div class="name">
+        <a href="###" class="user_img" id="replaceImg"><img id="finalImg" src="images/f10.jpg" alt=""></a>
+        <p><span>尚酷贝利</span><i class="level6"></i></p>
+    </div>
+    <!--图片裁剪框 start-->
+    <div style="display: none" class="tailoring-container">
+        <div class="black-cloth" onclick="closeTailor(this)"></div>
+        <div class="tailoring-content">
+            <div class="tailoring-content-one">
+                <label title="上传图片" for="chooseImg" class="l-btn choose-btn">
+                    <input type="file" accept="image/jpg,image/jpeg,image/png" name="file" id="chooseImg" class="hidden" onchange="selectImg(this)">
+                    选择图片
+                </label>
+                <div class="close-tailoring"  onclick="closeTailor(this)">×</div>
+            </div>
+            <div class="tailoring-content-two">
+                <div class="tailoring-box-parcel">
+                    <img id="tailoringImg">
+                </div>
+                <div class="preview-box-parcel">
+                    <p>图片预览：</p>
+                    <div class="square previewImg"></div>
+                    <div class="circular previewImg"></div>
+                </div>
+            </div>
+            <div class="tailoring-content-three">
+                <button class="l-btn cropper-reset-btn">复位</button>
+                <button class="l-btn cropper-rotate-btn">旋转</button>
+                <button class="l-btn cropper-scaleX-btn">换向</button>
+                <button class="l-btn sureCut" id="sureCut">确定</button>
+            </div>
+        </div>
+    </div>
+    <!--图片裁剪框 end-->
+    <div class="user">
+        <div class="side">
+            <ul class="user_info user_cer">
+                <li><a href="###"><span>66</span><p>关注</p></a></li>
+                <li><a href="user.html"><span>30</span><p>动态</p></a></li>
+                <li><a href="###"><span>80</span><p>有趣指数</p></a></li>
+                <!--<li><a href="###"><span>优</span><p>信誉程度</p></a></li>-->
+            </ul>
+            <ul class="cerlist">
+                <li class="activeli"><a href="###">全部关注<span>10</span></a></li>
+                <li><a href="###">特别关注<span>2</span></a></li>
+                <li><a href="###">收藏<span>1</span></a></li>
+                <li><a href="###">我的发布<span>6</span></a></li>
+            </ul>
+            <div class="news_corner concren_corner">
+                <h3>精彩焦点</h3>
+                <ul>
+                    <li>
+                        <a href="essay_details.html">
+                            <em class="magnifyImg"><img src="images/f4.jpg" alt=""></em>
+                            <span>躺尸还能挣钱天理何在啊，你大爷的妈卖批找谁说理去我了个乖乖</span>
+                        </a>
+                        <a href="###">
+                            <em class="magnifyImg"><img src="images/f5.jpg" alt=""></em>
+                            <span>躺尸还能挣钱天理何在，你大爷的妈卖批</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="###">
+                            <em class="magnifyImg"><img src="images/f6.jpg" alt=""></em>
+                            <span>躺尸还能挣钱天理何在啊，你大爷的妈卖批找谁说理去我了个乖乖</span>
+                        </a>
+                        <a href="###">
+                            <em class="magnifyImg"><img src="images/f7.jpg" alt=""></em>
+                            <span>躺尸还能挣钱天理何在，你大爷的妈卖批</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="###">
+                            <em class="magnifyImg"><img src="images/f8.jpg" alt=""></em>
+                            <span>躺尸还能挣钱天理何在啊，你大爷的妈卖批找谁说理去我了个乖乖</span>
+                        </a>
+                        <a href="###">
+                            <em class="magnifyImg"><img src="images/f9.jpg" alt=""></em>
+                            <span>躺尸还能挣钱天理何在，你大爷的妈卖批</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <h4>全部关注</h4>
+            <ul class="conBoxs">
+                <li class="conBox">
+                    <img src="images/f3.jpg" alt="">
+                    <div class="conBoxText">
+                        <a href="###">仙尊大盗</a><i class="level5"></i>
+                        <p>已关注</p>
+                    </div>
+                </li>
+                <li class="conBox">
+                    <img src="images/f5.jpg" alt="">
+                    <div class="conBoxText">
+                        <a href="###">仙尊大盗</a><i class="level3"></i>
+                        <p>已关注</p>
+                    </div>
+                </li>
+                <li class="conBox">
+                    <img src="images/f7.jpg" alt="">
+                    <div class="conBoxText">
+                        <a href="###">仙尊大盗</a><i class="level6"></i>
+                        <p>已关注</p>
+                    </div>
+                </li>
+                <li class="conBox">
+                    <img src="images/f7.jpg" alt="">
+                    <div class="conBoxText">
+                        <a href="###">仙尊大盗</a><i class="level6"></i>
+                        <p>已关注</p>
+                    </div>
+                </li>
+                <li class="conBox">
+                    <img src="images/f7.jpg" alt="">
+                    <div class="conBoxText">
+                        <a href="###">仙尊大盗</a><i class="level6"></i>
+                        <p>已关注</p>
+                    </div>
+                </li>
+                <li class="conBox">
+                    <img src="images/f7.jpg" alt="">
+                    <div class="conBoxText">
+                        <a href="###">仙尊大盗</a><i class="level6"></i>
+                        <p>已关注</p>
+                    </div>
+                </li>
+                <li class="conBox">
+                    <img src="images/f7.jpg" alt="">
+                    <div class="conBoxText">
+                        <a href="###">仙尊大盗</a><i class="level6"></i>
+                        <p>已关注</p>
+                    </div>
+                </li>
+                <li class="conBox">
+                    <img src="images/f7.jpg" alt="">
+                    <div class="conBoxText">
+                        <a href="###">仙尊大盗</a><i class="level6"></i>
+                        <p>已关注</p>
+                    </div>
+                </li>
+                <li class="conBox">
+                    <img src="images/f7.jpg" alt="">
+                    <div class="conBoxText">
+                        <a href="###">仙尊大盗</a><i class="level6"></i>
+                        <p>已关注</p>
+                    </div>
+                </li>
+                <li class="conBox">
+                    <img src="images/f7.jpg" alt="">
+                    <div class="conBoxText">
+                        <a href="###">仙尊大盗</a><i class="level6"></i>
+                        <p>已关注</p>
+                    </div>
+                </li>
+                <li class="conBox">
+                    <img src="images/f7.jpg" alt="">
+                    <div class="conBoxText published">
+                        <a href="###">1仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗</a>
+                        <p>
+                            <a href="publish_details.html">编辑</a>
+                            <a href="###" class="delete_pub">删除</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="conBox">
+                    <img src="images/f7.jpg" alt="">
+                    <div class="conBoxText published">
+                        <a href="###">2仙尊大盗</a>
+                        <p>
+                            <a href="publish_details.html">编辑</a>
+                            <a href="###" class="delete_pub">删除</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="conBox">
+                    <img src="images/f7.jpg" alt="">
+                    <div class="conBoxText published">
+                        <a href="###">3仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗仙尊大盗</a>
+                        <p>
+                            <a href="publish_details.html">编辑</a>
+                            <a href="###" class="delete_pub">删除</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="conBox">
+                    <img src="images/f7.jpg" alt="">
+                    <div class="conBoxText published">
+                        <a href="###">4仙尊大盗</a>
+                        <p>
+                            <a href="publish_details.html">编辑</a>
+                            <a href="###" class="delete_pub">删除</a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer_info">
+            <ul class="left">
+                <li>
+                    <p class="footername">关于我们</p>
+                    <p><a href="###">关于我们</a></p>
+                    <p><a href="###">联系我们</a></p>
+                    <p><a href="###">加入我们</a></p>
+                </li>
+                <li>
+                    <p class="footername">业务服务</p>
+                    <p><a href="###">业务体系</a></p>
+                    <p><a href="###">相关服务</a></p>
+                    <p><a href="###">相关产品</a></p>
+                </li>
+                <li>
+                    <p class="footername">关注我们</p>
+                    <p><a href="###">住宿微信</a></p>
+                    <p><a href="###">下载APP</a></p>
+                </li>
+            </ul>
+            <div class="right">
+                <div class="code">
+                    <img src="images/code.png" alt="">
+                    <span>下载APP</span>
+                </div>
+                <div class="code">
+                    <img src="images/code.png" alt="">
+                    <span>关注微信</span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="copyright">
+            <span>E-mail：<a href="###">info@ynweb.com</a></span>
+            <span>Copyright © 2004-2018 Ynweb All Rights Reserved.</span>
+            <span><a href="###"> 滇ICP备15008235号</a></span><br/>
+            <a href="###" class="securitynum">滇公网安备 53011202000074号</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/cropper.min.js"></script>
+<script>
+
+    //弹出框水平垂直居中
+    (window.onresize = function () {
+        var win_height = $(window).height();
+        var win_width = $(window).width();
+        if (win_width <= 768){
+            $(".tailoring-content").css({
+                "top": (win_height - $(".tailoring-content").outerHeight())/2,
+                "left": 0
+            });
+        }else{
+            $(".tailoring-content").css({
+                "top": (win_height - $(".tailoring-content").outerHeight())/2,
+                "left": (win_width - $(".tailoring-content").outerWidth())/2
+            });
+        }
+    })();
+
+    $(".delete_pub").click(function(){
+       $(this).parents(".conBox").remove()
+    });
+
+    //弹出图片裁剪框
+    $("#replaceImg").on("click",function () {
+        $(".tailoring-container").toggle();
+    });
+    //图像上传
+    function selectImg(file) {
+        if (!file.files || !file.files[0]){
+            return;
+        }
+        var reader = new FileReader();
+        reader.onload = function (evt) {
+            var replaceSrc = evt.target.result;
+            //更换cropper的图片
+            $('#tailoringImg').cropper('replace', replaceSrc,false);//默认false，适应高度，不失真
+        }
+        reader.readAsDataURL(file.files[0]);
+    }
+    //cropper图片裁剪
+    $('#tailoringImg').cropper({
+        aspectRatio: 1/1,//默认比例
+        preview: '.previewImg',//预览视图
+        guides: false,  //裁剪框的虚线(九宫格)
+        autoCropArea: 0.5,  //0-1之间的数值，定义自动剪裁区域的大小，默认0.8
+        movable: false, //是否允许移动图片
+        dragCrop: true,  //是否允许移除当前的剪裁框，并通过拖动来新建一个剪裁框区域
+        movable: true,  //是否允许移动剪裁框
+        resizable: true,  //是否允许改变裁剪框的大小
+        zoomable: false,  //是否允许缩放图片大小
+        mouseWheelZoom: false,  //是否允许通过鼠标滚轮来缩放图片
+        touchDragZoom: true,  //是否允许通过触摸移动来缩放图片
+        rotatable: true,  //是否允许旋转图片
+        crop: function(e) {
+            // 输出结果数据裁剪图像。
+        }
+    });
+    //旋转
+    $(".cropper-rotate-btn").on("click",function () {
+        $('#tailoringImg').cropper("rotate", 45);
+    });
+    //复位
+    $(".cropper-reset-btn").on("click",function () {
+        $('#tailoringImg').cropper("reset");
+    });
+    //换向
+    var flagX = true;
+    $(".cropper-scaleX-btn").on("click",function () {
+        if(flagX){
+            $('#tailoringImg').cropper("scaleX", -1);
+            flagX = false;
+        }else{
+            $('#tailoringImg').cropper("scaleX", 1);
+            flagX = true;
+        }
+        flagX != flagX;
+    });
+
+    //裁剪后的处理
+    $("#sureCut").on("click",function () {
+        if ($("#tailoringImg").attr("src") == null ){
+            return false;
+        }else{
+            var cas = $('#tailoringImg').cropper('getCroppedCanvas');//获取被裁剪后的canvas
+            var base64url = cas.toDataURL('image/png'); //转换为base64地址形式
+            $("#finalImg").prop("src",base64url);//显示为图片的形式
+
+            //关闭裁剪框
+            closeTailor();
+        }
+    });
+    //关闭裁剪框
+    function closeTailor() {
+        $(".tailoring-container").toggle();
+    }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+  "index.html": {
+    "resources": [
+      "iconfont/iconfont.svg",
+      "iconfont/iconfont.ttf"
+    ],
+    "refer": [
+      "detail.html",
+      "myorder.html"
+    ]
+  },
+  "detail.html": {
+    "resources": [
+      "iconfont/iconfont.svg",
+      "iconfont/iconfont.ttf"
+    ],
+    "refer": [
+      "order.html"
+    ]
+  },
+  "order.html": {
+    "refer": [
+      "detail.html",
+      "book.html"
+    ],
+    "resources": []
+  },
+  "comment.html": {
+    "resources": [
+      "iconfont/iconfont.svg",
+      "iconfont/iconfont.ttf"
+    ],
+    "refer": [
+      "myorder.html"
+    ]
+  },
+  "myorder.html": {
+    "refer": [
+      "hotel_comment.html",
+      "comment.html",
+      "index.html"
+    ],
+    "resources": []
+  },
+  "book.html": {
+    "refer": [
+      "book_order.html",
+      "order_detail.html",
+      "myorder.html"
+    ],
+    "resources": []
+  },
+  "book_order.html": {
+    "refer": [
+      "hotel_comment.html",
+      "comment.html"
+    ],
+    "resources": []
+  },
+  "hotel_comment.html": {
+    "refer": [
+      "index.html"
+    ],
+    "resources": []
+  },
+  "order_detail.html": {
+    "refer": [
+      "myorder.html"
+    ],
+    "resources": []
+  }
+}

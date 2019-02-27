@@ -1,0 +1,37 @@
+.content{ background-color: #f6f7f9;}
+.on a{color: #d4a674 !important;}
+.box{text-align: center;margin-top: 60px;}
+.shows ul{overflow:hidden;padding-left: 0;width: 100%;margin-top: 70px;}
+.shows ul li{list-style: none;float: left;width: 266px;height: auto;margin-right:35px;margin-bottom: 30px;overflow: hidden;text-align: center;
+background-color: white}
+.shows ul li p{margin-top: 15px; font-size: 16px;color: #333;}
+.shows ul li.last{margin-right: 0;}
+.show_details{width: 266px;height: 242px;
+transition: all 0.5s;
+-moz-transition: all 0.5s; /* Firefox 4 */
+-webkit-transition: all 0.5s;  /*Safari 和 Chrome */
+-o-transition: all 0.5s;}
+.show_details:hover{transform: scale(1.1);
+-moz-transform:scale(1.1);  
+-webkit-transform:scale(1.1);  
+-o-transform:scale(1.1); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border: none;
+}
+.mui-slider-indicator{
+	background-color: white;
+}
+.bar{
+	width: 95%;
+	margin: 10px auto;
+	background-color: white;
+	border-radius: 10px 10px 5px 5px;
+	box-shadow: 0 0 10px #cac8c8;
+}
+.bar .top{
+	border-radius: 10px 10px 0 0;
+	padding: 10px;
+	color: white;
+	font-size: 15px;
+	overflow: hidden;
+}
+.bar .top i{
+	display: inline-block;
+	width: 2px;
+	height: 14px;
+	background-color: white;
+	margin: 4px;
+	float: left;
+}
+.bar .top span{
+	font-size: 15px;
+	float: left;
+}
+.clean{
+	background: #2e6aff;
+}
+.refund{
+	background-color: #fab81c;
+}
+.undone{
+	background-color: #ff4c4c;
+}
+.refunding{
+	background-color: #ff0033;
+}
+.x4{
+	text-align: center;
+	padding: 15px 0;
+}
+.x4 span{
+	font-size: 15px;
+	color: #333;
+}
+.x4 p{
+	font-size: 15px;
+	color: #FF6600;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+.bot{
+	padding: 10px;
+	overflow: hidden;
+	border-top: 1px solid #eee;
+}
+.bot span{
+	float: left;
+	font-size: 14px;
+}
+.bot em{
+	font-style: normal;
+	float: right;
+	font-size: 14px;
+}
+.bot i{
+	font-style: normal;
+	float: right;
+	color: #ff0000;
+	font-size: 14px;
+}

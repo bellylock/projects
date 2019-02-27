@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+    <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+    <title>发布位置地图</title>
+    <!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=lTePQNAzNHRt1xbbvrRsCSQ9X1lgs6bg"></script>
+    <!--加载鼠标绘制工具-->
+    <script type="text/javascript" src="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css" />
+    <!--加载检索信息窗口-->
+    <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.css" />
+</head>
+
+<body>
+<style>
+    body{
+        margin: 0;
+        padding: 0px;
+        overflow: hidden;
+    }
+    .BMapLabel{
+        display:none;
+        position: relative;
+        left: 40px !important;
+        font-size: 15px !important;
+        border: 1px solid #ccc !important;
+        padding: 5px !important;
+        box-shadow: 5px 12px 30px -9px #333;
+    }
+    .BMapLabel:before{
+        position: absolute;
+        top: 4px;
+        left: -16px;
+        border: solid transparent;
+        border-width: 8px;
+        content:"";
+        border-right-color: black;
+    }
+    .BMapLabel:after{
+        position: absolute;
+        top: 4px;
+        left: -16px;
+        border: solid transparent;
+        border-width: 8px;
+        content:"";
+        border-right-color: white;
+    }
+    #map Style Attribute{
+        overflow: visible !important;
+    }
+</style>
+<!--百度地图容器-->
+<div style="width:99%;height:398px;border:#999 solid 1px;font-size:12px;" id="map"></div>
+<div id="allmap"></div>
+
+</body>
+<script type="text/javascript">
+
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        //setMapEvent();//设置地图事件
+        // addMapControl();//向地图添加控件
+        //addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){
+        map = new BMap.Map("map");
+        map.centerAndZoom(new BMap.Point(0.07,51.49),17);
+    }
+
+    function addClickHandler(target,window){
+        target.addEventListener("click",function(){
+            target.openInfoWindow(window);
+        });
+    }
+    //向地图添加控件
+    function addMapControl(){
+        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+        map.addControl(scaleControl);
+        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(navControl);
+        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:false});
+        map.addControl(overviewControl);
+    }
+
+
+    var map;
+    initMap();
+    //获取坐标和城市
+    var geoc = new BMap.Geocoder();
+    map.addEventListener("click",function(e){
+        // console.log("经度"+e.point.lng + "维度" + e.point.lat);
+        var pt = e.point;
+        geoc.getLocation(pt, function(rs){
+            var addComp = rs.addressComponents;
+            alert(addComp.province + ',' + addComp.city + "," + addComp.district + "," + addComp.street + "," + addComp.streetNumber + "经度"+e.point.lng
+                + "维度" + e.point.lat
+            );
+        });
+    });
+
+    // 获取坐标
+    // map.addEventListener("click",function(e){
+    //     alert("经度"+e.point.lng + "维度" + e.point.lat);
+    // });
+
+    //获取城市名字
+    // var geoc = new BMap.Geocoder();
+    // map.addEventListener("click", function(e){
+    //     var pt = e.point;
+    //     geoc.getLocation(pt, function(rs){
+    //         var addComp = rs.addressComponents;
+    //         alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+    //     });
+    // });
+
+    //获取坐标位置
+    var poi = new BMap.Point(0.07,51.49);  //默认打开地图时显示的坐标
+    map.centerAndZoom(poi, 14);
+    map.enableScrollWheelZoom();
+    var overlays = [];
+    var overlaycomplete = function(e){
+        overlays.push(e.overlay);
+        for(var i = 0; i < overlays.length-1; i++){
+            map.removeOverlay(overlays[i]);
+        }
+    };
+    var styleOptions = {
+        strokeColor:"red",    //边线颜色。
+        fillColor:"red",      //填充颜色。当参数为空时，圆形将没有填充效果。
+        strokeWeight: 3,       //边线的宽度，以像素为单位。
+        strokeOpacity: 0.8,	   //边线透明度，取值范围0 - 1。
+        fillOpacity: 0.6,      //填充的透明度，取值范围0 - 1。
+        strokeStyle: 'solid' //边线的样式，solid或dashed。
+    };
+    //实例化鼠标绘制工具
+    var drawingManager = new BMapLib.DrawingManager(map, {
+        isOpen: false, //是否开启绘制模式
+        enableDrawingTool: true, //是否显示工具栏
+        drawingToolOptions: {
+            anchor: BMAP_ANCHOR_TOP_RIGHT, //位置
+            offset: new BMap.Size(755, 5), //偏离值 755为左移，5为右移
+            drawingModes : [BMAP_DRAWING_MARKER], //设置只显示画矩形、圆的模式
+        },
+        circleOptions: styleOptions, //圆的样式
+        polylineOptions: styleOptions, //线的样式
+        polygonOptions: styleOptions, //多边形的样式
+        rectangleOptions: styleOptions //矩形的样式
+    });
+    //添加鼠标绘制工具监听事件，用于获取绘制结果
+    drawingManager.addEventListener('overlaycomplete', overlaycomplete);
+
+</script>
+</html>

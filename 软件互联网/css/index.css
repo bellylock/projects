@@ -1,0 +1,208 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets{
+    bottom: 60px !important;
+}
+.swiper-button-prev{
+    left: 5% !important;
+}
+.swiper-button-next{
+    right: 5% !important;
+}
+.title_menu{
+    width: 100%;
+    background: red;
+}
+.modal{
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 80px;
+}
+.modal .bar{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 0 15px;
+}
+.box{
+    text-align: center;
+    margin: 90px 0;
+}
+.box h1{
+    font-weight: normal;
+}
+.box .line{
+    width: 60px;
+    height: 3px;
+    background-color: #ff5100;
+    display: inline-block;
+}
+.box p{
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.advantage{
+    background: url("../images/bg1.jpg") no-repeat center;
+    background-size: 100%;
+    text-align: center;
+    padding-bottom: 80px;
+}
+.advantage .adv_box{
+    width: 25%;
+    display: inline-block;
+}
+.advantage .adv_box .move{
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: #f18e79;
+}
+
+.advantage .adv_box:hover .move{
+    transform: translateY(-10px);
+    background-color: #ee4725;
+    transition: all .5s;
+}
+.advantage .adv_box .move span{
+    width: 60px;
+    height: 3px;
+    display: block;
+    margin: 40px auto;
+    background-color: #fff;
+}
+.advantage .adv_box .move p{
+    color: white;
+    font-size: 18px;
+}
+.eva_title{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 40px;
+    text-align: center;
+    font-weight: normal;
+}
+.evaluation{
+    padding-bottom: 80px;
+    padding-top: 50px;
+    background: #fafafa;
+}
+.evaText{
+    overflow: hidden;
+    padding: 60px 0;
+    background: #fafafa !important;
+}
+.evaText .img{
+    float: left;
+    margin-right: 5%;
+    width: 30%;
+    text-align: center;
+}
+.evaText .img img{
+    width: 60%;
+    border-radius: 50%;
+}
+.evaText .text{
+    float: right;
+    width: 65%;
+}
+.evaText .text .maintext{
+    text-indent: 2em;
+    font-size: 15px;
+    color: #999;
+    text-align: justify;
+    line-height: 26px;
+}
+.evaText .text .intro{
+    overflow: hidden;
+    width: 100%;
+}
+.evaText .text .intro p{
+    width: 60%;
+    float: left;
+    text-align: left;
+    margin: 0;
+}
+.evaText .text .intro span{
+    display: block;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+em{
+    color: #ef4f19;
+    font-size: 14px;
+    font-style: normal;
+}
+.evaText .text .intro b{
+    float: left;
+    width: 40%;
+    text-align: right;
+    font-size: 30px;
+    line-height: 50px;
+}
+.friend ul{
+    width: 100%;
+}
+.friend ul li{
+    width: 20%;
+    height: 80px;
+    margin-bottom: 44px;
+}
+.friend ul li img{
+    width: 70%;
+    height: 100%;
+}
+.try{
+    width: 100%;
+    background-color: #fafafa;
+    padding: 1px 0 80px 0;
+}
+.trynow{
+    font-size: 16px;
+    background-color: #f1501a;
+    color: #ffffff !important;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin: -30px auto 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid transparent;
+}
+.trynow:hover{
+    color: #f1501a !important;
+    background-color: transparent;
+    border: 1px solid #f1501a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

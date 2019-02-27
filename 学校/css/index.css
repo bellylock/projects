@@ -1,0 +1,239 @@
+.advice{
+    margin: 30px 0;
+    font-size: 0;
+}
+.advicebox{
+    width: 352px;
+    display: inline-table;
+}
+.advicemid{
+    width: 420px !important;
+    margin: 0 18px;
+}
+.combox{
+    overflow: hidden;
+    padding: 8px;
+    background-color: #1f5bb1;
+}
+.combox span{
+    font-size: 15px;
+    display: inline-block;
+    border-left: 2px solid #fff;
+    padding-left: 8px;
+    line-height: 14px;
+    color: white;
+}
+.combox a{
+    font-size: 13px;
+    color: #fff;
+    float: right;
+    line-height: 21px;
+}
+.combox a:hover{
+    color: #00adf8;
+}
+.advicemain{
+    width: 352px;
+    padding: 10px 0 0 6px;
+}
+.commain a{
+    height: 28px;
+    display: block;
+    background: url(../images/square.png) no-repeat 0 46%;
+    background-size: 10px;
+    text-indent: 1em;
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.commain a:hover{
+    color: #dc0201;
+}
+.advicemain a{
+    width:100%;
+}
+.newsmain{
+    padding: 10px 0 0 6px;
+}
+.newsmain>div{
+    overflow: hidden;
+}
+.newsmain a{
+    display: inline-block !important;
+    width: 310px;
+    float: left;
+}
+.newsmain span{
+    font-size: 14px;
+    color: #333;
+    float: right;
+    line-height: 28px;
+}
+.schoolimg{
+    width: 334px;
+    height: 212px;
+    margin-left: 8px;
+    margin-top: 12px;
+}
+.recruitbox:first-child{
+    margin-right: 18px;
+}
+.recruitbox{
+    width: 572px;
+    display: inline-block;
+}
+.recruitmain{
+    padding:10px;
+}
+.recruitmain img{
+    float: left;
+    width: 120px;
+    height: 90px;
+    display: inline-block;
+}
+.recruitmain .context{
+    float: right;
+    display: inline-block;
+    width: 400px;
+}
+.recruitmain .context a{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    margin: 6px 0;
+}
+.recruitmain .context a:hover{
+    color: #1f5bb1;
+}
+.recruitmain .context .passage{
+    text-align: justify;
+    font-size: 13px;
+    color: #666;
+    line-height: 20px;
+
+}
+.recruitmain .context .date{
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+}
+.campus{
+    margin: 10px 0 20px 0;
+}
+.friends h3{
+    font-size: 18px;
+    color: #000;
+    border-left: 2px solid #2b64b5;
+    line-height: 18px;
+    display: inline-block;
+    height: 20px;
+    padding-left: 15px;
+}
+.friends p{
+    border-top: 1px solid #9b9b9b;
+    margin: 20px 0;
+    padding-top: 12px;
+}
+.friends a{
+    font-size: 15px;
+    color: #333;
+    display: inline-block;
+    margin: 0 10px;
+}
+.friends a:hover{
+    color: #dc0201;
+}
+
+.circulation{
+    overflow: hidden;
+    position: relative;
+}
+.circulation ul {
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    padding-left: 0;
+}
+.circulation .boxs{
+    float: left;
+    display:inline;
+    position: relative;
+    overflow: hidden;
+    width: 1170px !important;
+    margin: 20px 0 20px -14px;
+}
+.circulation ul li{
+    list-style: none;
+    float: left;
+    display:inline;
+    /*width: 297px;*/
+    /*height: 280px;*/
+    width: 237px;
+    height: 200px;
+    padding-left: 0;
+}
+.carouselbox{
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+.circulation ul li img{
+    width: 220px;
+    height: 160px;
+    /*width: 276px;*/
+    /*height: 280px;*/
+}
+.circulation ul li a{
+    display: block;
+    width: 220px;
+    text-align: center;
+}
+.circulation ul li a span{
+    display: block;
+    width: 220px;
+    background: #0068b7;
+    text-align: center;
+    color: white;
+    line-height: 35px;
+}
+.circulation ul li a:hover span{
+    background: #1899cd;
+}
+.circulation .rect{
+    position: relative !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

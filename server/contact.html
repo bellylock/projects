@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="fontes/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="header">
+        <i class="iconfont icon-huojian" id="rocket"></i>
+        <a href="###" id="service"></a>
+        <div class="top">
+            <div class="litmenu">
+                <div class="container">
+                    <div class="litleft">15年专业服务器托管租用服务商</div>
+                    <div class="litright">
+                        <span>资讯热线：400-123-7898</span>
+                        <a href="login.html">登录</a><em>&nbsp;&nbsp;/&nbsp;&nbsp;</em>
+                        <a href="register.html">注册</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="nav">
+                    <a class="logoimg" href="index.html"><img src="images/logo.png" alt=""></a>
+                    <ul>
+                        <li><a href="index.html">首页<i></i></a></li>
+                        <li><a href="about.html">关于我们<i></i></a></li>
+                        <li><a href="trusteeship.html">服务器托管<i></i></a></li>
+                        <li><a href="rent.html">服务器租用<i></i></a></li>
+                        <li><a href="contact.html" class="active">联系我们<i></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="draw draw_contact"></div>
+    </div>
+    <div class="content">
+        <ul class="contact_way">
+            <li>
+                <div class="contact_img"></div>
+                <p>联系电话</p>
+                <span>8071-63935390</span>
+            </li>
+            <li>
+                <div class="contact_img"></div>
+                <p>QQ在线联系</p>
+                <span>1236525896</span>
+            </li>
+            <li>
+                <div class="contact_img"></div>
+                <p>电子邮箱</p>
+                <span>info@ynweb.com</span>
+            </li>
+        </ul>
+        <div class="contact_wechat">
+            <h3>关注微信</h3>
+            <p>扫一扫二维码，关注我们的微信公众号</p>
+            <img src="images/code.jpg" alt="">
+        </div>
+        <!--<div class="map">-->
+            <!--<iframe class="iframeMap" src="map.html" frameborder="0"></iframe>-->
+        <!--</div>-->
+    </div>
+    <div class="footer">
+        <div class="contactus">
+            <div class="container">
+                <ul class="left">
+                    <li>
+                        <p><a href="###">关于我们</a></p>
+                        <p><a href="###">联系我们</a></p>
+                        <p><a href="###">参观公司</a></p>
+                        <p><a href="###">荣誉资质</a></p>
+                        <p><a href="###">典型客户</a></p>
+                    </li>
+                    <li>
+                        <p><a href="###">服务器托管</a></p>
+                        <p><a href="###">服务器租用</a></p>
+                        <p><a href="###">主机托管</a></p>
+                        <p><a href="###">云服务器</a></p>
+                        <p><a href="###">域名注册</a></p>
+                    </li>
+                    <li>
+                        <p><a href="###">支付方式</a></p>
+                        <p><a href="###">增值服务</a></p>
+                        <p><a href="###">网站备案</a></p>
+                        <p><a href="###">产品管理</a></p>
+                        <p><a href="###">帮助中心</a></p>
+                    </li>
+                    <li>
+                        <p><span>服务于支持</span>
+                        <p><span>咨询电话：8071-63935390</span>
+                        <p><span>传真：0871-68217962</span>
+                        <p><span>服务热线：400-860-1855</span>
+                        <p><span>E-mail：info@ynweb.com</span>
+                    </li>
+                </ul>
+                <div class="right">
+                    <span>7X24全国热线：</span>
+                    <p>8071-63935390</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>Copyright © 2004-2018 Ynweb All Rights Reserved.</span>
+            <a href="###"> 滇ICP备15008235号</a>
+            <a class="putRecords" href="###">滇公网安备 53011202000074号</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script>
+        $(".contact_way li").hover(function(){
+            $(this).find(".contact_img").css({"transition":"all .3s","background-position":"50% 103%","background-color":"#dc0201"});
+            $(this).find("span").css("color","#dc0201")
+        },function(){
+            $(this).find(".contact_img").css({"transition":"all .3s","background-position":"50% 0%","background-color":"#ededed"});
+            $(this).find("span").css("color","#000")
+        })
+    </script>
+</body>
+</html>

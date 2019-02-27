@@ -1,0 +1,78 @@
+.pic{
+	width: 20px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 1px;
+}
+.pic_span{
+	font-size: 16px;
+}
+.mui-input-row label{
+	width: 28%;
+	line-height: 18px;
+}
+.mui-input-row label~input{
+	width: 72%;
+}
+.chargebar{
+	margin: 10px 0;
+}
+.chargebar:after,.chargebar:before{
+	height: 0;
+}
+.chargebar .mui-input-row:after{
+	height: 0;
+}
+.ways:before{
+	height: 0;
+}
+.way:before{
+	height: 0;
+}
+.way:after{
+	height: 0;
+}
+.mui-table-view:after{
+	left: 15px;
+	right: 15px;
+}
+.mui-table-view-cell:after{
+	right: 15px;
+}
+.payimg{
+	width: 38px;
+    float: left;
+    margin: 5px 0;
+}
+.way span{
+	font-size: 16px;
+    line-height: 44px;
+    margin-left: 15px;
+}
+.ways:after{
+	background-color: #ddd !important;
+}
+.record{
+	display: none;
+	background-color: white;
+	width: 94%;
+	margin: 0 auto;
+	border-radius: 5px;
+	padding-bottom: 10px;
+}
+.record p{
+	margin-bottom: 0;
+	padding-left: 10px;
+}
+.record .title{
+	font-size: 15px;
+	color: #ff4c4c;
+	line-height: 38px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 5px !important;
+}
+.record .text{
+	font-size: 14px;
+	color: #515151;
+	line-height: 32px;
+}

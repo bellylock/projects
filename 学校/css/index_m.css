@@ -1,0 +1,477 @@
+/*index_m*/
+.main{
+    /*background: linear-gradient(to right, #0c907d, #0d627a);*/
+    background: url(../images/bgimg.jpg) no-repeat left top;
+    background-size: 100% 100%;
+}
+.bannerimg{
+    width: 100%;
+    height: 200px;
+}
+.main{
+    padding: 30px;
+    margin-top: -4px;
+}
+.main .box{
+    display: block;
+    width:100%;
+    margin-bottom: 20px;
+}
+.main .box img{
+    width: 100%;
+    height: auto;
+}
+.main .box .boxtext{
+    background-color: white;
+    padding: 15px;
+    margin-top: -4px;
+}
+.main .box .boxtext p{
+    background: url(../images/timelapse.png) no-repeat left top;
+    background-size: 20px;
+    padding-left: 24px;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.main .box .boxtext span{
+    font-size: 16px;
+    color: #000;
+}
+.news{
+    background: url(../images/tbg.jpg) no-repeat left top;
+    background-size: 100% 100%;
+    padding: 40px 0 26px 0;
+}
+.news h3{
+    font-size: 24px;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+.news h3:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -22%;
+    width: 12%;
+    height: 1px;
+    background-color: white;
+}
+.news h3:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 10%;
+    width: 10%;
+    height: 1px;
+    background-color: white;
+}
+.newsbin{
+    border-left: 1px solid #fff;
+    width: 90%;
+    margin: 0 auto;
+}
+.newsbin .cabin{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.newsbin .cabin .date{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.newsbin .cabin .date span{
+    font-size: 20px;
+    display: block;
+    color: #fff;
+}
+.newsbin .cabin .date em{
+    font-style: normal;
+    font-size: 13px;
+    color: #eee;
+}
+.newsbin .cabin .newstext{
+    width: 75%;
+    float: right;
+}
+.newstext a{
+    font-size: 16px;
+    color: #fff;
+}
+.newstext p{
+    font-size: 14px;
+    color: #b2b1b1;
+    margin-top: 10px;
+    text-align: justify;
+}
+.morenews{
+    font-size: 14px;
+    color: #eee;
+    display: block;
+    width: 40%;
+    margin: 40px auto 10px auto;
+    border: 1px solid #eee;
+    line-height: 40px;
+    text-align: center;
+}
+.hotmajor{
+    background: url("../images/btbg.png") no-repeat left top;
+    background-size: 100% 100%;
+    padding: 0 15px 15px;
+}
+.hotmajor h3{
+    font-size: 18px;
+    color: #6416a6;
+    margin: 15px 0;
+    font-weight: normal;
+}
+.hotmajor a{
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #666;
+}
+
+/*about_m*/
+.about_major{
+    margin-top: -4px;
+}
+.about_nav{
+    background-color: #bd2980;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.about_nav span{
+    font-size: 16px;
+    color: #fff;
+}
+.about_nav i{
+    font-size: 18px;
+    color: #fff;
+    margin-top: 2px;
+}
+.about_list{
+    display: none;
+}
+.about_list li{
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #d8d8d8;
+}
+.about_list li  a{
+    display: block;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left: 15px;
+    color: #333;
+}
+.about_main{
+    padding: 0 15px;
+}
+.about_main h3{
+    font-size: 18px;
+    color: #bd2980;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    font-weight: normal;
+    text-align: center;
+}
+.about_main .about_text{
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    text-indent: 2em;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+/*major_details_m*/
+.major_news li{
+    background: url(../images/arrow.png) no-repeat 0 50%;
+    background-size: 15px;
+    padding-left: 20px;
+    border-bottom: 1px dashed #ddd;
+}
+.major_news li a{
+    display: block;
+    line-height: 42px;
+    font-size: 15px;
+    color: #333;
+}
+.loadmore{
+    font-size: 15px;
+    color: #bd2980;
+    border: 1px solid #bd2980;
+    width: 30%;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    margin: 30px auto;
+}
+
+/*major_news_m*/
+.about_main h4{
+    font-size: 16px;
+    color: #000;
+    border-left: 2px solid #bd2980;
+    line-height: 18px;
+    padding-left: 10px;
+    margin: 15px 0;
+}
+.major_news_title{
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+}
+.major_news_text{
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.headofmajor{
+    text-indent: 2em;
+}
+
+/*recruit_m*/
+.recruit_nav{
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+    justify-content: space-between;
+}
+.recruit_nav span{
+    width: 45%;
+    display: inline-block;
+    font-size: 15px;
+    color: #bd2980;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #bd2980;
+}
+.nav_on{
+    color: #fff !important;
+    background-color: #bd2980;
+}
+.postgraduate{
+    display: none;
+}
+.recruit_sty{
+    position: relative;
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+    padding-left: 15px;
+}
+.recruit_sty:before{
+    position: absolute;
+    top: 38%;
+    left: 4px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*courses_m*/
+.about_main table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.about_main thead{
+    width: 100%;
+}
+.about_main thead th:nth-child(1){
+    width: 30%;
+}
+.about_main thead th:nth-child(2){
+    width: 40%;
+}
+.about_main thead th:nth-child(3){
+    width: 15%;
+}
+.about_main thead th:nth-child(4){
+    width: 15%;
+}
+.about_main table tr td{
+    text-align: center;
+}
+.about_main table tr td:nth-child(2){
+    text-align: left !important;
+    padding-left: 6px;
+}
+.about_main table th,.about_main table td{
+    border: 1px solid #ccc;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+/*organization_m*/
+.department{
+    margin-bottom: 15px;
+}
+.department a{
+    display: block;
+    line-height: 35px;
+    font-size: 13px;
+    color: #333;
+    padding-left: 24px;
+    border-bottom: 1px dashed #ccc;
+    background: url(../images/icon_02.gif) no-repeat 0 50%;
+    background-size: 12px;
+
+}
+
+/*schoolyard_m*/
+.schoolpics{
+    margin: 20px 0;
+}
+.schoolpics .bin{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.schoolpics .cabins{
+    width: 48%;
+    display: block;
+}
+.schoolpics .cabins img{
+    width: 100%;
+    height: 110px;
+}
+.schoolpics .cabins p{
+    background-color: #ccc;
+    line-height: 24px;
+    font-size: 14px;
+    color: #000;
+    padding: 6px 10px;
+    text-align: center;
+    margin-top: -4px;
+}
+
+/*employment_*/
+.undergraduate span{
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    line-height: 30px;
+}
+.hotLine{
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+}
+
+/*news_m*/
+.newsBox li{
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+.newsBox li p{
+    font-size: 13px;
+    color: #666;
+    background: url("../images/timelapse.png") no-repeat 0 50%;
+    background-size: 15px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+.newsBox li a{
+    font-size: 15px;
+    color: #000;
+    line-height: 22px;
+    border: none;
+    -webkit-font-smoothing:subpixel-antialiased;
+    /*-webkit-tap-highlight-color: rgba(255, 255, 255, 0);*/  /*去a背景*/
+    /*-webkit-user-select: none;*/
+    /*-moz-user-focus: none;*/
+    /*-moz-user-select: none;*/
+}
+.loadMore{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 34px;
+    background-color: #bd2980;
+    margin: 20px 0;
+    text-align: center;
+}
+.loadMore:active{
+    background-color: #a02a70;
+}
+
+/*news_details_m*/
+.newsBox .newsTitle{
+    font-size: 18px;
+    color: #000;
+    margin: 20px 0;
+}
+.newsBox .newsdetails{
+    font-size: 15px;
+    text-indent: 2em;
+    text-align: justify;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+.newsBox .newsdetails span{
+    font-weight: bold;
+    color: #000;
+}
+.newsBox img{
+    width: 100%;
+    height: auto;
+}
+.newsBox em{
+    font-style: normal;
+    font-size: 14px;
+    color: #333;
+    margin: 6px 0 15px 0;
+    display: block;
+    text-align: center;
+    font-family: "simkai";
+}
+.redactor{
+    font-size: 14px;
+    color: #000;
+    text-align: right;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+/*contact_m*/
+.contact_box{
+    padding: 20px 0;
+}
+.contact_ways{
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+}
+
+/*school_details_m*/
+.pandn{
+    margin: 20px 0;
+}
+.pandn a{
+    font-size: 14px;
+    color: #bd2980;
+    display: block;
+    line-height: 30px;
+}
+
+

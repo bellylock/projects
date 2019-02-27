@@ -1,0 +1,94 @@
+*{
+	font-family: "微软雅黑";
+}
+.mui-bar{
+	background-color: #3975e2;
+}
+.mui-bar h1{
+	color: white;
+}
+.mui-bar-tab .mui-tab-item{
+	color: white;
+}
+.mui-bar-tab .mui-tab-item.mui-active{
+	color: #e8ff00;
+}
+.fontbox{
+	/*width: 7.5rem;*/
+	background-color: white;
+}
+.fontes{
+	/*width: 7.5rem;*/
+}
+.compic{
+	width: 16px;
+}
+.back{
+	color: white;
+}
+.mui-table-view-cell:after{
+	background-color: #ddd !important;
+}
+nav{
+	width: 100%;
+	overflow: hidden;
+}
+nav a{
+	width: 25% !important;
+    height: 50px;
+    color: white !important;
+    text-align: center;
+    display: block;
+    float: left;
+}
+.actived{
+	color: yellow !important;
+}
+.return{
+	color: white !important;
+}
+.navimg{
+	width: 20px;
+	height: 20px;
+    margin-top: 5px;
+}
+nav .mui-tab-label{
+	display: block;
+    font-size: 14px;
+    margin-top: -3px;
+}
+.codes{
+    color: #fff !important;
+    padding: 0 !important;
+    margin-top: 7px;
+    width: 29% !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    line-height: 24px !important;
+    border: 1px solid #1b5ed8 !important;
+    background-color: #1b5ed8 !important;
+    border-radius: 5px !important;
+}
+.keep{
+	width: 95%;
+    display: block;
+    color: #fff !important;
+    background-color: #fab81c;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 38px;
+    border-radius: 5px;
+}
+.mui-active{
+	position: relative;
+}
+.mui-active .tipson{
+	position: absolute;
+    bottom: 0;
+    left: 32%;
+    width: 36%;
+    height: 2px;
+    background-color: #007aff;
+    display: inline-block;
+}

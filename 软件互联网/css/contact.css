@@ -1,0 +1,94 @@
+.contact{
+    padding: 60px 0;
+}
+.map{
+    overflow: hidden;
+    margin: 60px 0;
+}
+.map .left{
+    float: left;
+    width: 530px;
+}
+.map .right{
+    float: right;
+    width: 490px;
+    margin-top: 10px;
+}
+form{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+label{
+    font-size: 20px;
+    margin-right: 15px;
+    width: 60px;
+    line-height:40px;
+    display: inline-block;
+    float: left;
+}
+form input,textarea{
+    float: left;
+    width: 300px;
+    padding-left: 15px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #333;
+    border-width: 1px;
+    border: none;
+    background-color: #e7e7e7;
+}
+form input{
+    height: 40px;
+}
+form textarea{
+    height: 150px;
+    resize: none;
+}
+form input:focus{
+    outline:none;
+}
+form textarea:focus{
+    outline:none
+}
+.sunmit{
+    margin-left: 75px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #ff5100;
+    width: 250px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+}
+.sunmit:hover{
+    background-color: #dd4f0d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

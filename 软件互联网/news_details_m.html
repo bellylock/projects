@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻详情</title>
+    <link type="text/css" rel="stylesheet" href="css/demo_m.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.positioning.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="dist/aos.css">
+    <link rel="stylesheet" href="css/index_m.css">
+</head>
+<body>
+<div id="page">
+    <header id="header">
+        <a id="menubtn" href="#menu"></a>
+        <a id="home" href="index_m.html">同讯互联网</a>
+    </header>
+    <div id="content">
+        <img src="images/banner10.jpg" class="bannerdraw" aos="zoom-in" alt="">
+        <div class="Box">
+            <h3 class="details_title" aos="fade-right">谷歌：安全问题机制并不如你想象中安全</h3>
+            <span class="details_date" aos="fade-left">发布时间：2018-10-11</span>
+            <p class="details_info" aos="fade-up">5月25日，如今的你或许已经对许多网站所使用的“安全问题机制”习以为常了，但你真的认为包括“你个宠物的名字是什么？”这些问题能够保障你的帐户安全吗？</p>
+            <img src="images/banner3.jpg" class="bannerdraw" alt="" aos="flip-left">
+            <p class="details_info" aos="fade-up">根据谷歌(微博)安全团队近日公布的安全报告（PDF）内容指出，“安全问题机制”的安全措施甚至还比不上传统密码来的安全。因为通常来说，“安全问题机制”会向登陆者提出一系列非常直白的问题，因此黑客完全可以在十次以内的尝试中破解掉这一安全机制。</p>
+            <p class="details_info" aos="fade-up">目前，“安全问题机制”中常见的问题包括你首个宠物的名字、喜欢的食物或者你母亲的名字等等。而且，由于复杂问题的答案往往难以记忆，所以用户通常都不愿意进行尝试。与此同时，谷歌还表示在美国有大约40%的英语用户声称自己并不能准确回想起设置的安全问题答案。</p>
+            <p class="details_info" aos="fade-up">该公司表示，自己并不认为为帐户设置多重“安全问题”就能够加强帐户的安全性，而且这样的做法极有可能让用户自己遗忘答案，并将帐户锁定。此外，谷歌建议网站可以使用通过手机短信、电子邮件帐户验证这些不容易攻破的验证方式来保障用户帐户安全。</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>地址：昆明市西山区滇池柏悦5栋33楼</p>
+        <p>电话：0871-63935390</p>
+        <p>邮箱：info@ynweb.com</p>
+        <img src="images/code.png" alt="">
+        <span>微信公众号</span>
+        <p>Copyright © 2009 - 2014 Cld , All Rights Reserved</p>
+    </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="index_m.html">首页</a></li>
+            <li><a href="about_m.html">关于我们</a></li>
+            <li><a href="service_m.html">服务简介</a></li>
+            <li><a href="news_m.html" class="active">新闻动态</a></li>
+            <li><a href="contact_m.html">联系我们</a></li>
+        </ul>
+    </nav>
+</div>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="dist/aos.js"></script>
+<script type="text/javascript">
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+
+    $(function() {
+        var $html 	= $('html'),
+            $menu	= $('nav#menu'),
+            $both	= $html.add( $menu );
+
+        $menu.mmenu();
+
+        var swiper = new Swiper('.swiperBanner', {
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false
+            },
+        });
+
+    });
+</script>
+</body>
+</html>
+
+
+

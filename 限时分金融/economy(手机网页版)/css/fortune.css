@@ -1,0 +1,114 @@
+.surplus{
+	width: 100%;
+	background-color: #3975e2;
+	height: 150px;
+	text-align: center;
+	padding-top: 36px;
+}
+.surplus span{
+	font-size: 24px;
+	color: white;
+}
+.surplus p{
+	font-size: 14px;
+	color: white;
+	margin-top: 5px;
+}
+.mui-bar-nav{
+	box-shadow: none;
+}
+.menu{
+	overflow: hidden;
+	background-color: #1b5ed8;
+	padding: 10px 0;
+	width: 100%;
+}
+.menu .box{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.menu .box span{
+	color: white;
+	font-size: 15px;
+}
+.menu .box p{
+	color: white;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+.boxleft{
+	border-right: 1px solid #eee;
+}
+.btns{
+	overflow: hidden;
+	margin: 10px 0;
+}
+.btns a{
+	color: white;
+    width: 45%;
+    border-radius: 5px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+.btns .charge{
+	background-color: orange;
+	margin-left: 3%;
+	float: left;
+}
+.btns .cash{
+	background-color: blue;
+	margin-right: 3%;
+	float: right;
+}
+.income{
+	padding: 10px 0;
+}
+.income .top{
+	font-size: 15px;
+    color: #333;
+    padding: 10px;
+    overflow: hidden;
+}
+.income .top img{
+    float: left;
+    margin-top: 2px;
+}
+.income .top em{
+	font-style: normal;
+    float: left;
+    margin: 0 17% 0 2%;
+}
+.income .top span{
+	font-style: normal;
+	float: left;
+}
+.income_details{
+	margin: 10px 0;
+}
+.x6{
+	border: 1px solid #eee;
+	padding: 10px 0 10px 10%;
+}
+.x6 span{
+	color: #333;
+	font-size: 15px;
+}
+.x6 p{
+	margin-bottom: 0;
+	color: #dc0201;
+	font-size: 15px;
+}
+.charts{
+	background-color: white;
+}
+.chart {
+	height: 200px;
+	margin: 0px;
+	padding: 0px;
+}
+
+

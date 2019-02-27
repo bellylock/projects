@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="fontes/iconfont.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common_m.css">
+    <link rel="stylesheet" href="css/index_m.css">
+</head>
+<body>
+<div class="header">
+    <div class="headBox">
+        <div class="nav">
+            <a href="index_m.html"><img src="images/logos.png" alt=""></a>
+            <span id="menu"></span>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <img class="draw aniview" av-animation="fadeIn" src="images/ban3.jpg" alt="">
+    <h3 class="about_title">学校概况</h3>
+    <p class="about_intro aniview" av-animation="slideInLeft">
+        <img src="images/school.jpg" alt="">
+        五道口金融学院的前身是中国人民银行研究生部。1981年9月，为满足金融体制改革对高素质金融应用型人才的迫切需求，中国人民银行总行金融研究所研究生部应运而生
+        学院成立后新创办的第一个教学项目就是金融EMBA项目。金融EMBA与清华、五道口一脉相承，依托百年清华丰厚的教学资源，保持与“一行三会”的紧密合作，度身定制出一套紧密结合中国金融改革实践的培养体系，建设国内领先、国际一流的金融高等教育平台和金融学术、政策研究平台。
+        五道口金融学院的教学项目主要包括金融学博士、金融专业硕士、金融EMBA以及高级培训项目。学院将改革创新精神贯穿于金融人才教育的各个环节，充分吸收清华大学人才培养的百年积淀并传承“五道口”人才培养特色，致力于培养理论基础扎实、实践能力突出、深入了解国情、具备国际视野的高端应用型金融人才。
+    </p>
+    <div class="honor aniview" av-animation="slideInUp">
+        <div class="honorbox">
+            <p>63524</p>
+            <span>国外学者</span>
+        </div>
+        <div class="honorbox">
+            <p>63524</p>
+            <span>国外学者</span>
+        </div>
+        <div class="honorbox">
+            <p>63524</p>
+            <span>国外学者</span>
+        </div>
+        <div class="honorbox">
+            <p>63524</p>
+            <span>国外学者</span>
+        </div>
+    </div>
+    <h3 class="about_title aniview" av-animation="slideInRight">在职教师</h3>
+    <div class="course aniview" av-animation="slideInRight">
+        <div class="swiper-container teacherCarousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide tslide">
+                    <a href="course_details_m.html" class="slidebox">
+                        <img src="images/t1.jpg" alt="">
+                        <p>欧阳霸道</p>
+                        <span>在职教授</span>
+                    </a>
+                </div>
+                <div class="swiper-slide tslide">
+                    <a href="###" class="slidebox">
+                        <img src="images/t2.jpg" alt="">
+                        <p>司徒剑南</p>
+                        <span>名誉博士</span>
+                    </a>
+                </div>
+                <div class="swiper-slide tslide">
+                    <a href="###" class="slidebox">
+                        <img src="images/t3.jpg" alt="">
+                        <p>刘能</p>
+                        <span>英语教授</span>
+                    </a>
+                </div>
+                <div class="swiper-slide tslide">
+                    <a href="###" class="slidebox">
+                        <img src="images/t4.jpg" alt="">
+                        <p>上官云燕</p>
+                        <span>在职教授</span>
+                    </a>
+                </div>
+                <div class="swiper-slide tslide">
+                    <a href="###" class="slidebox">
+                        <img src="images/t1.jpg" alt="">
+                        <p>赵四</p>
+                        <span>在职博士</span>
+                    </a>
+                </div>
+                <div class="swiper-slide tslide">
+                    <a href="###" class="slidebox">
+                        <img src="images/t2.jpg" alt="">
+                        <p>张无能</p>
+                        <span>在职教师</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul id="menulist">
+        <li><a href="index_m.html">首页</a></li>
+        <li><a href="about_m.html">关于我们</a></li>
+        <li><a href="course_m.html">课程</a></li>
+        <li><a href="news_m.html">资讯</a></li>
+        <li><a href="contact_m.html">联系我们</a></li>
+    </ul>
+</div>
+<div class="footer">
+    <p>©2018 版权所有</p>
+    <p> Copyright © 2018.Company name All rights reserved.</p>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.aniview.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script>
+    var i = {animateThreshold: 100};
+    $(".aniview").AniView(i);
+
+    //课程
+    var swiper = new Swiper('.teacherCarousel', {
+        slidesPerView: 'auto',
+        spaceBetween: 5 ,
+        freeMode: true,
+        resistanceRatio : 0 //边缘禁止反弹
+    });
+
+    var innerheight = $(window).innerHeight();
+    var height = innerheight - 50;
+    $("#menulist").css("height",height);
+
+
+    $("#menu").click(function(){
+        $("#menulist").slideToggle(200);
+    })
+
+</script>
+</body>
+</html>

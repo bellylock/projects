@@ -1,0 +1,193 @@
+.side_list{
+	width: 25%;
+	float: left;
+	margin: 50px 5% 50px 0;
+}
+.text{
+	width: 70%;
+	float: left;
+	margin: 50px 0;
+}
+.text_top h3{
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+	margin: 0 0 24px 0;
+}
+.nav-tabs>li{
+	width: 100%;
+}
+.nav-tabs{
+	border-bottom: none;
+	border: 1px solid #ccc;
+}
+.nav>li>a {
+    padding: 10px 15px 10px 50px !important;
+}
+.nav-tabs>li>a{
+	color: #666;
+	border: none !important;
+	margin-right: 0 !important;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-ms-border-radius: 0 !important;
+	-o-border-radius: 0 !important;
+	border-radius: 0 !important;
+	behavior:url(pie/PIE.htc);
+}
+.nav-tabs>li>a:hover{
+	color: #00c1de !important
+}
+.nav-tabs>li.active>a{
+	color: #00c1de !important;
+	border: none !important;
+	background: #eee !important;
+}
+.guide{
+	border: 1px solid #ccc;
+    height: 50px;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+}
+.guide img{
+	width: 26px;
+}
+.guide span{
+	font-size: 17px;
+	color: #07c7ed;
+	margin-left: 5px;
+}
+.install_steps{
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.step p{
+	font-size: 16px;
+	color: #333
+}
+.step h4{
+	color: red
+}
+.m_img{
+	width: 100%;
+	margin: 10px 0
+}
+
+
+
+.text_com{
+    overflow: hidden;
+    margin: 25px auto 20px auto;
+}
+.text .bars{
+	float: left;
+	width: 17%;
+	margin-right: 2%;
+}
+.text .bars img{
+	width: 100%;
+	height: 90px
+}
+.text .bar{
+	width: 100%;
+    min-height: 252px;
+    border: 1px solid #00c1de;
+    padding: 50px 10px 10px 10px;
+    background-size: 100%
+}
+.menu{
+	width: 100%
+}
+.text .spe_bars{
+	width: 22% !important;
+}
+.text .bar p{
+	font-size: 16px;
+	color: #00c1de;
+	font-weight: bold;
+	text-align: center;
+}
+.version .box{
+	position: relative;
+    width: 194px;
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+.version .box img{
+	position: absolute;
+    top: 24px;
+    left: 74px;
+    width: 50px;
+}
+.version .top{
+	width: 100%;
+    height: 50px;
+    background-color: #00c1de;
+}
+.version .down{
+	width: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 46px 0 12px 0;
+}
+.version .down p{
+	margin-bottom: 5px
+}
+.version .down .title{
+	font-size: 15px;
+	color: #333
+}
+.version .down span{
+	font-size: 14px;
+	color: #333
+}
+.version .down em{
+	font-style: normal;
+	font-size: 15px;
+	color: #00c1de;
+}
+.version .down a{
+	text-decoration: none;
+    font-size: 15px;
+    color: white;
+    background-color: #00c1de;
+    line-height: 28px;
+    padding: 0 15px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.version .down a:hover{
+	background-color: #0392a8
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>财富</title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="fontes/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="css/user.css"/>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/mui.min.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">个人中心</h1>
+	</header>
+	<nav class="mui-bar mui-bar-tab">
+	    <a class="" href="index.html">
+	        <img class="navimg" src="images/nav1.png" alt="" />
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class=" " href="project.html">
+	        <img class="navimg" src="images/nav2.png" alt="" />
+	        <span class="mui-tab-label">购售项目</span>
+	    </a>
+	    <a class="" href="bondtransfer.html">
+	        <img class="navimg" src="images/nav3.png" alt="" />
+	        <span class="mui-tab-label">债券转让</span>
+	    </a>
+	    <a class="actived" href="user.html">
+	        <img class="navimg" src="images/nav44.png" alt="" />
+	        <span class="mui-tab-label">我的</span>
+	    </a>
+	</nav>
+	<div class="mui-content content">
+		<div class="tit">
+			<img class="portrait" src="images/1.jpg" alt="" />
+			<span class="titname">仙尊大盗</span>
+		</div>
+		<div class="acc_detail">
+			<div class="account">
+				<div class="top">
+					<p><span>账户总额（元）</span> <i class="iconfont icon-eye hide" data-status="0"></i></p>
+					<h2>632541.00</h2>
+				</div>
+				<div class="mid">
+					<div class="box">
+						<span>累计收益（元）</span>
+						<p class="totalIncome">1212.00</p>
+					</div>
+					<div class="box">
+						<span>累计佣金（元）</span>
+						<p class="commission">122.00</p>
+					</div>
+				</div>
+				<div class="down">
+					<a class="box" href="###">
+						<img src="images/phone2.png" alt="" />
+						<span>充值</span>
+					</a>
+					<a class="box" href="###">
+						<img src="images/cash.png" alt="" />
+						<span>提现</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<a class="bar" href="record.html">
+				<img src="images/menu1.png" alt="" />
+				<span>投资记录</span>
+			</a>
+			<a class="bar" href="cashrecord.html">
+				<img src="images/menu2.png" alt="" />
+				<span>提现记录</span>
+			</a>
+			<a class="bar" href="commission.html">
+				<img src="images/menu3.png" alt="" />
+				<span>佣金明细</span>
+			</a>
+			<a class="bar" href="cardarrange.html">
+				<img src="images/card.png" alt="" />
+				<span>银行卡</span>
+			</a>
+		</div>
+		<ul class="mui-table-view menues">
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right" href="bid.html">
+	                <img class="simg" src="images/s4.png" alt="" />
+	                <span>自动购售</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right" href="team.html">
+	                <img class="simg" src="images/s5.png" alt="" />
+	                <span>我的团队</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right" href="commission.html">
+	                <img class="simg" src="images/s6.png" alt="" />
+	                <span>佣金明细</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                <img class="simg" src="images/s7.png" alt="" />
+	                <span>邀请好友</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell" id="phoneset">
+	            <a class="mui-navigate-right">
+	                <img class="simg" src="images/s1.png" alt="" />
+	                <span>手机号绑定</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell" id="zhiset">
+	            <a class="mui-navigate-right" href="zhiset.html">
+	                <img class="simg" src="images/s3.png" alt="" />
+	                <span>支付宝设置</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right" href="problems.html">
+	                <img class="simg" src="images/s8.png" alt="" />
+	                <span>常见问题</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right" href="tel:1818265352">
+	                <img class="simg" src="images/s9.png" alt="" />
+	                <span>客服帮助</span>
+	            </a>
+	        </li>
+	   </ul>
+	</div>
+	
+    <script src="js/echarts-all.js"></script>
+	<script type="text/javascript">
+		mui.init();
+		document.getElementById("phoneset").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"bind.html"
+			})
+		});
+		document.getElementById("zhiset").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"zhiset.html"
+			})
+		});
+		
+		var value = $(".account .top h2").text();
+		var mon = $(".totalIncome").text();
+		var com = $(".commission").text();
+		$(".hide").click(function(){ 
+			var status = $(this).attr("data-status");
+			if( status == 0){
+				$(".account .top h2").text("******");
+				$(".totalIncome").text("******");
+				$(".commission").text("******");
+				status = 1;
+				$(".hide").attr("data-status",1);
+				$(".hide").css("color","#efeff4");
+				console.log(0)
+			}else{
+				$(".account .top h2").text(value);
+				$(".totalIncome").text(mon);
+				$(".commission").text(com);
+				status = 0;
+				$(".hide").attr("data-status",0);
+				$(".hide").css("color","#0b59b4");
+				console.log(1)
+			}
+		})
+		
+	</script>
+	
+</body>
+</html>

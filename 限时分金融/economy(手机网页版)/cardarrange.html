@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>银行卡管理</title>
+	<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" href="css/user.css" />
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/mui.min.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav arr_head">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left return"></a>
+	    <h1 class="mui-title">银行卡管理</h1>
+	</header>
+	<div class="mui-content">
+		<ul id="OA_task_1" class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<div class="mui-slider-right mui-disabled"> 
+					<a class="mui-btn mui-btn-red">删除</a>
+				</div>
+				<div class="mui-slider-handle">
+					<a class="cards card1" href="###">
+						<p>
+							<span>中国银行</span>
+							<img src="images/cds.png" alt="" />
+						</p>
+						<span class="str">储蓄卡</span>
+						<h3 class="cardnum1 cardnums">3215562365225663632</h3>
+					</a>
+				</div>
+			</li>
+			<li class="mui-table-view-cell">
+				<div class="mui-slider-right mui-disabled"> 
+					<a class="mui-btn mui-btn-red">删除</a>
+				</div>
+				<div class="mui-slider-handle">
+					<a class="cards card2" href="###">
+						<p>
+							<span>招商银行</span>
+							<img src="images/cds.png" alt="" />
+						</p>
+						<span class="str">储蓄卡</span>
+						<h3 class="cardnum2 cardnums">3215562365225661563</h3>
+					</a>
+				</div>
+			</li>
+			<li class="mui-table-view-cell">
+				<div class="mui-slider-right mui-disabled"> 
+					<a class="mui-btn mui-btn-red">删除</a>
+				</div>
+				<div class="mui-slider-handle">
+					<a class="cards card3" href="###">
+						<p>
+							<span>农业银行</span>
+							<img src="images/cds.png" alt="" />
+						</p>
+						<span class="str">储蓄卡</span>
+						<h3 class="cardnum3 cardnums">3215562365225668596</h3>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<a class="addcards" href="addcard.html">
+			<i>+</i>
+			<span>添加银行卡</span>
+		</a>
+	</div>
+	<script>
+	    var str1 = $(".cardnum1").text();
+	    var subStr1 = getSubStr1(str1);
+	    var str2 = $(".cardnum2").text();
+	    var subStr2 = getSubStr2(str2);
+	    var str3 = $(".cardnum3").text();
+	    var subStr3 = getSubStr3(str3);
+	    function getSubStr1 (str1){
+	        var subStrs = str1.substr(str1.length-4,4);
+	        var subStr = "**** **** ****" + subStrs;
+	        $(".cardnum1").text(subStr)
+	    }
+	    function getSubStr2 (str2){
+	        var subStrs = str2.substr(str2.length-4,4);
+	        var subStr = "**** **** ****" + subStrs;
+	        $(".cardnum2").text(subStr)
+	    }
+	    function getSubStr3 (str3){
+	        var subStrs = str3.substr(str3.length-4,4);
+	        var subStr = "**** **** ****" + subStrs;
+	        $(".cardnum3").text(subStr)
+	    };
+	    
+	    (function($) {
+				$('#OA_task_1').on('tap', '.mui-btn', function(event) {
+					var elem = this;
+					var li = elem.parentNode.parentNode;
+					mui.confirm('<div class="text"><p class="icon-information"></p><h4>确定删除此银行卡？</h4></div>', '提示', btnArray, function(e) {
+						if (e.index == 0) {
+							li.parentNode.removeChild(li);
+						} else {
+							setTimeout(function() {
+								$.swipeoutClose(li);
+							}, 0);
+						}
+					});
+				});
+				var btnArray = ['确认', '取消'];
+			})(mui);
+	</script>
+	
+</body>
+</html>

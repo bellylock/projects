@@ -1,0 +1,31 @@
+*{
+	font-family: "微软雅黑";
+}
+.mui-bar{
+	background-color: #3975e2;
+}
+.mui-bar h1{
+	color: white;
+}
+.mui-bar-tab .mui-tab-item{
+	color: white;
+}
+.mui-bar-tab .mui-tab-item.mui-active{
+	color: #e8ff00;
+}
+.fontbox{
+	width: 7.5rem;
+	background-color: white;
+}
+.fontes{
+	width: 7.5rem;
+}
+.compic{
+	width: 0.33rem;
+}
+.back{
+	color: white;
+}
+.mui-table-view-cell:after{
+	background-color: #f2f0fe !important;
+}

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发布信息</title>
+    <link rel="stylesheet" href="fontes/iconfont.css">
+    <link rel="stylesheet" href="css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <a href="index.html" class="logo headleft">Hotel&Inn</a>
+        <div class="area headleft">
+            <p>UK</p>
+            <ul>
+                <li><a href="###">London</a></li>
+                <li><a href="###">Scotland</a></li>
+                <li><a href="###">Edinburgh</a></li>
+                <li><a href="###">Cardiff</a></li>
+                <li><a href="###">Cambridge</a></li>
+                <li><a href="###">Manchester</a></li>
+            </ul>
+        </div>
+        <div class="headleft headsearch">
+            <input type="text" placeholder="搜索您感兴趣的内容">
+            <a href="search.html" class="comser iconfont icon-search"></a>
+        </div>
+        <ul class="nav headleft">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="houses.html">房源</a></li>
+            <li><a href="furniture.html">转手卖</a></li>
+            <li><a href="essay.html">社区</a></li>
+            <li><a href="concern.html">关注</a></li>
+            <li><a href="publish.html">发布信息</a></li>
+        </ul>
+        <div class="nav_vice">
+            <a href="log.html" class="log">登录</a>
+            <a href="register.html">注册</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <a href="###" id="backUp"></a>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="pub_box">
+            <h2>发布信息</h2>
+        </div>
+        <div class="pub_cabin">
+            <div class="pub_bin pub_pick_house">
+                <p>房源</p>
+                <ul>
+                    <li><a href="publish_details.html">Flat</a></li>
+                    <li><a href="publish_details.html">House</a></li>
+                    <li><a href="publish_details.html">Inn</a></li>
+                </ul>
+            </div>
+            <div class="pub_bin pub_pick_sale">
+                <p>转手卖</p>
+                <ul class="pub_list">
+                    <li><a class="stys" href="###" data-type="test5">床</a></li>
+                    <li><a class="stys" href="###" data-type="test5">书籍</a></li>
+                    <li><a class="stys" href="###" data-type="test5">灯具</a></li>
+                    <li><a class="stys" href="###" data-type="test5">书桌</a></li>
+                    <li><a class="stys" href="###" data-type="test5">椅子</a></li>
+                    <li><a class="stys" href="###" data-type="test5">沙发</a></li>
+                    <li><a class="stys" href="###" data-type="test5">洗衣机</a></li>
+                    <li><a class="stys" href="###" data-type="test5">微波炉</a></li>
+                    <li><a class="stys" href="###" data-type="test5">空调</a></li>
+                    <li><a class="stys" href="###" data-type="test5">厨具</a></li>
+                    <li><a class="stys" href="###" data-type="test5">吹风机</a></li>
+                    <li><a class="stys" href="###" data-type="test5">电视机</a></li>
+                    <li><a class="stys" href="###" data-type="test5">插线板</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer_info">
+            <ul class="left">
+                <li>
+                    <p class="footername">关于我们</p>
+                    <p><a href="###">关于我们</a></p>
+                    <p><a href="###">联系我们</a></p>
+                    <p><a href="###">加入我们</a></p>
+                </li>
+                <li>
+                    <p class="footername">业务服务</p>
+                    <p><a href="###">业务体系</a></p>
+                    <p><a href="###">相关服务</a></p>
+                    <p><a href="###">相关产品</a></p>
+                </li>
+                <li>
+                    <p class="footername">关注我们</p>
+                    <p><a href="###">住宿微信</a></p>
+                    <p><a href="###">下载APP</a></p>
+                </li>
+            </ul>
+            <div class="right">
+                <div class="code">
+                    <img src="images/code.png" alt="">
+                    <span>下载APP</span>
+                </div>
+                <div class="code">
+                    <img src="images/code.png" alt="">
+                    <span>关注微信</span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="copyright">
+            <span>E-mail：<a href="###">info@ynweb.com</a></span>
+            <span>Copyright © 2004-2018 Ynweb All Rights Reserved.</span>
+            <span><a href="###"> 滇ICP备15008235号</a></span><br/>
+            <a href="###" class="securitynum">滇公网安备 53011202000074号</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="layui.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script>
+    $(".pub_bin").hover(function(){
+        $(this).children("ul").stop().slideToggle(300);
+    });
+
+    $(".pub_bin").hover(function(){
+        $(this).children("p").css({"borderColor":"orange","color":"orange"})
+    },function(){
+        $(this).children("p").css({"borderColor":"#9c9c9c","color":"#000"})
+    });
+
+    layui.use('layer', function () {
+        var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+
+        //触发事件
+        var active = {
+            test5: function () {
+                layer.open({
+                    title: '选择发布方式',
+                    type: 1,
+                    skin: 'layui-layer-rim',
+                    area: ['410px', '280px'],
+                    content: $('#tips')
+                });
+            }
+        };
+        $('.stys').on('click', function () {
+            var type = $(this).data('type');
+            active[type] ? active[type].call(this) : '';
+        });
+
+    });
+
+
+</script>
+</body>
+<div id="tips">
+    <p class="tip_need">需求发布</p>
+    <p class="tip_info">卖东西点击左边，买东西点击右边</p>
+    <p class="tip_pick">
+        <a href="sail_needs.html">卖二手用品</a>
+        <a href="buy_needs.html">买二手用品</a>
+    </p>
+</div>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

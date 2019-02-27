@@ -1,0 +1,39 @@
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border: none;
+}
+.mui-slider-indicator{
+	background-color: white;
+}
+.chargerecord .top{
+	overflow: hidden;
+}
+.chargerecord .top span{
+	float: left;
+	font-size: 15px;
+}
+.chargerecord .top em{
+	float: right;
+	font-style: normal;
+	font-size: 14px;
+}
+.chargerecord p{
+	font-size: 15px;
+    color: #ff6600;
+    margin-top: 8px;
+    margin-left: -3px;
+}
+.group{
+	margin-top: 10px;
+}
+.pw{
+	color: #3975e2;
+}
+.cr_done{
+	font-style: normal;
+	float: right;
+}
+.cr_check{
+	font-style: normal;
+	float: right;
+	color: #3975e2 !important;
+}

@@ -1,0 +1,362 @@
+/*news*/
+.main{
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-between;
+}
+.main .box{
+    margin-bottom: 50px;
+    width: 100%;
+}
+.main .box img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.main .left{
+    width: 60%;
+}
+.main .right{
+    width: 35%;
+}
+.main .title{
+    display: flex;
+    justify-content: flex-start;
+}
+.main .title .date{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    background-color: orange;
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+.main .title .date h3{
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.main .title .date span{
+    font-size: 16px;
+    color: #fff;
+}
+.name a{
+    display: block;
+    font-size: 32px;
+    color: #000;
+    margin-top: 4px;
+    margin-bottom: 18px;
+}
+.name a:hover{
+    color: orange;
+}
+.name span{
+    font-size: 14px;
+    color: #666;
+}
+.name .author{
+    margin-right: 15px;
+    border-right: 1px solid #333;
+    line-height: 14px;
+    display: inline-block;
+    padding-right: 15px;
+}
+.context{
+    font-size: 14px;
+    color: #666;
+    line-height: 25px;
+    margin: 20px 0;
+    text-align: justify;
+}
+.readmore{
+    display: inline-block;
+    padding: 0 40px;
+    line-height: 44px;
+    font-size: 15px;
+    color: #fff !important;
+    background-color: orange;
+}
+.readmore:hover{
+    transition: all 200ms ease;
+    -webkit-box-shadow: 4px 10px 24px #9b9b9b;
+    -moz-box-shadow: 4px 10px 24px #9b9b9b;
+    box-shadow:  4px 10px 24px #9b9b9b;
+}
+.pages{
+    overflow: hidden;
+}
+.pages a{
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    text-align: center;
+    background-color: #ccc;
+    font-size: 18px;
+    line-height: 44px;
+    color: #fff;
+    float: left;
+    margin-right: 15px;
+}
+.pages a:hover{
+    background-color: orange;
+}
+.pages .pageon{
+    background-color: orange !important;
+}
+.archives{
+    overflow: hidden;
+    padding: 0;
+}
+.archives li{
+    width: 100%;
+    float: left;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding: 12px 0;
+}
+.archives li:first-child{
+    padding: 0 0 10px 0 !important;
+    border-bottom: none !important;
+    padding-bottom: 30px !important;
+}
+.archives li p{
+    font-size: 22px;
+    color: #000;
+}
+.archives li a{
+    font-size: 15px;
+    color: #666;
+}
+.archives li a:hover{
+    color: orange;
+}
+.post{
+    margin: 40px 0;
+}
+.comtitles{
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 40px;
+}
+.post .bar{
+    margin-bottom: 20px;
+}
+.post .bar img{
+    width: 100%;
+}
+.post .bar .name a{
+    font-size: 22px !important;
+    margin: 10px 0 !important;
+}
+.tagbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.tagbox a{
+    display: inline-flex;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    line-height: 44px;
+    font-size: 16px;
+    color: #fff;
+    background-color: orange;
+}
+.tagbox a:hover{
+    background-color: #e4980d;
+}
+
+/*details*/
+.midcontext{
+    padding: 40px;
+    border-left: 3px solid orange;
+    font-size: 15px;
+    color: #999;
+    line-height: 30px;
+    background-color: #f8f4f4;
+    margin: 30px 0;
+}
+.midcontext span{
+    font-size: 36px;
+    color: #ffb606;
+    margin-right: 2px;
+}
+.review{
+    font-size: 24px;
+    color: #000;
+    margin: 40px 0;
+}
+.comments li{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+.comments li img{
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    margin-top: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.comments li span{
+    font-size: 16px;
+    color: #000;
+}
+.comments li span:first-child{
+    border-right: 1px solid #000;
+    padding-right: 15px;
+    margin-right: 15px;
+    line-height: 16px;
+    display: inline-block;
+}
+.comments li p{
+    font-size: 14px;
+    color: #999;
+    line-height: 26px;
+    margin-top: 6px;
+    height: 56px;
+    overflow: hidden;
+    text-align: justify;
+}
+.form{
+    margin-top: 40px;
+}
+.form input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 44px;
+    line-height: 44px;
+    font-size: 15px;
+    color: #000;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+    background-color: #ebe6dc;
+}
+.form input:focus{
+    outline: none;
+    border-color: orange;
+}
+.form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px;
+    resize: none;
+    border: 2px solid transparent;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #000;
+    background-color: #ebe6dc;
+    line-height: 44px;
+}
+.form textarea:focus{
+    outline: none;
+    border-color: orange;
+}
+.form a{
+    font-size: 15px;
+    color: #fff !important;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    background-color: orange;
+    margin-top: 20px;
+}
+.form a:hover{
+    background-color: #e59b13;
+}
+
+
+/*course_details*/
+.introduce{
+    margin-bottom: 30px;
+}
+.introduce h2{
+    font-size: 26px;
+    line-height: 26px;
+    color: #333;
+    margin: 10px 0 20px 0;
+}
+.introduce p{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    text-align: justify;
+}
+.information{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+.information .left{
+    margin-right: 40px;
+    width: 60%;
+}
+.information .left .boxes{
+    margin-bottom: 30px;
+}
+.information .left .boxes h3{
+    font-size: 20px;
+    line-height: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.information .left .boxes p{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    text-align: justify;
+}
+.information .rightbox{
+    border: 1px solid #ccc;
+    width: 40%;
+    max-height: 320px;
+    padding: 40px 20px;
+}
+.information .rightbox ul{
+    margin: 30px 0;
+}
+.information .rightbox li{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+    justify-content: space-between;
+}
+.information .rightbox li span{
+    font-size: 16px;
+    line-height: 32px;
+    color: #666;
+}
+.feature{
+    font-size: 22px;
+    line-height: 22px;
+    color: #000;
+}
+.fee{
+    color: orange !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

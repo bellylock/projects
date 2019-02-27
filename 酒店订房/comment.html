@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" class="feedback">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/feedback.css"/>
+    <link rel="stylesheet" href="css/comment.css" /> 
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon iconfont icon-return-o mui-pull-left"></a>
+        <h1 class="mui-title">标题</h1>
+    </header>
+    <nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active" id='index'>
+	        <span class="mui-icon iconfont icon-caidaniconshouyehui"></span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon iconfont icon_mid icon-PCbofangye_tuijian"></span>
+	        <span class="mui-tab-label">推荐</span>
+	    </a>
+	    <a class="mui-tab-item" id='user'>
+	        <span class="iconfont icon-user mui-icon"></span>
+	        <span class="mui-tab-label">我的</span>
+	    </a>
+	</nav>
+    <div class="mui-content">
+    	<div class="top">
+    		<img src="images/comment.jpg" alt="" />
+    		<h4>如家快捷酒店金沙江路店</h4>
+    	</div>
+    	<div class="space"></div>
+    	<div class="down">
+    		<div class="mui-content-padded">
+				<div class="mui-inline">房间卫生</div>
+				<div class="icons mui-inline" style="margin-left: 6px;">
+					<i data-index="1" class="iconfont icon-star1"></i>
+					<i data-index="2" class="iconfont icon-star1"></i>
+					<i data-index="3" class="iconfont icon-star1"></i>
+					<i data-index="4" class="iconfont icon-star1"></i>
+					<i data-index="5" class="iconfont icon-star1"></i>
+				</div>
+			</div>
+			<div class="mui-content-padded">
+				<div class="mui-inline">周围环境</div>
+				<div class="icons mui-inline" style="margin-left: 6px;">
+					<i data-index="1" class="iconfont icon-star1"></i>
+					<i data-index="2" class="iconfont icon-star1"></i>
+					<i data-index="3" class="iconfont icon-star1"></i>
+					<i data-index="4" class="iconfont icon-star1"></i>
+					<i data-index="5" class="iconfont icon-star1"></i>
+				</div>
+			</div>
+			<div class="mui-content-padded">
+				<div class="mui-inline">酒店服务</div>
+				<div class="icons mui-inline" style="margin-left: 6px;">
+					<i data-index="1" class="iconfont icon-star1"></i>
+					<i data-index="2" class="iconfont icon-star1"></i>
+					<i data-index="3" class="iconfont icon-star1"></i>
+					<i data-index="4" class="iconfont icon-star1"></i>
+					<i data-index="5" class="iconfont icon-star1"></i>
+				</div>
+			</div>
+			<div class="mui-content-padded">
+				<div class="mui-inline">设施服务</div>
+				<div class="icons mui-inline" style="margin-left: 6px;">
+					<i data-index="1" class="iconfont icon-star1"></i>
+					<i data-index="2" class="iconfont icon-star1"></i>
+					<i data-index="3" class="iconfont icon-star1"></i>
+					<i data-index="4" class="iconfont icon-star1"></i>
+					<i data-index="5" class="iconfont icon-star1"></i>
+				</div>
+			</div>
+			<textarea class="msg" rows="" cols="" placeholder="写下您的入住体验，帮助千万用户挑选心仪的酒店"></textarea>
+			<button type="button" class="mui-btn submit mui-btn-blue">提交</button>
+    	</div>
+    </div>
+    <script src="js/jquery-3.3.1min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/feedback.js"></script>
+    <script type="text/javascript">
+    	mui.init();
+    	
+    	document.getElementById("index").addEventListener('tap',function(){
+    		mui.openWindow({
+    			url:"index.html",
+    			id:'index'
+    		})
+    	});
+    	
+    	document.getElementById("user").addEventListener('tap',function(){
+    		mui.openWindow({
+    			url:"myorder.html",
+    			id:'myorder'
+    		})
+    	})
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实名认证</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+	<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/arrange.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+	<div class="content common_box">
+		<div class="title_of_arr">
+		<div class="head_down">
+			<div class="container">
+				<div class="head_text">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="about.html">关于我们</a></li>
+						<li><a href="pptp.html">PPTP</a></li>
+						<li><a href="list.html">地区列表</a></li>
+						<li><a href="introduce.html">使用说明</a></li>
+						<li><a href="agency.html">代理合作</a></li>
+						<li><a href="contact.html">联系我们</a></li>
+						<li><a class="arrange" href="arrange.html">管理中心</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+		<img class="bgs" src="images/blue.jpg">
+		<div class="box">
+			<h5>实名认证</h5>
+			<input class="int name" type="text" placeholder="姓名" />
+			<input class="int id_num" type="特写图" placeholder="身份证号" />
+			
+			<a class="log" href="###">认 证</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(".tip span").click(function(){
+			$(".tip").css("display","none")
+		});
+
+		var h = $(window).height();
+		$(".bgs").css("height",h);
+
+		$(".remember").click(function(){
+			if( $(this).find("em").hasClass("picked") ){
+				$(this).find("em").removeClass("picked")
+			}else{
+				$(this).find("em").addClass("picked")
+			}
+		});
+
+		$(".phone").on('input',function(){
+			this.value = this.value.replace(/\D/g,"")
+		});
+
+		if( !('placeholder' in document.createElement('input')) ){     
+	        $('input[placeholder],textarea[placeholder]').each(function(){      
+	            var that = $(this),      
+	            text= that.attr('placeholder');      
+	            if(that.val()===""){      
+	            that.val(text).addClass('placeholder');      
+	        }      
+	        that.focus(function(){   
+	            if(that.val()===text){  
+	                that.val("").removeClass('placeholder');      
+	            }      
+	        })      
+	        .blur(function(){      
+	            if(that.val()===""){      
+	                that.val(text).addClass('placeholder');      
+	            }      
+	        })      
+	        .closest('form').submit(function(){      
+	            if(that.val() === text){      
+	                that.val('');      
+	            }      
+	        });      
+	        });    
+	    };
+
+	    
+	</script>
+</body>
+</html>
+
+

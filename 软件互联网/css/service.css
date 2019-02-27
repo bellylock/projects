@@ -1,0 +1,120 @@
+.service{
+    padding: 80px 0 0 0;
+    background: url("../images/bg3.jpg") no-repeat left top;
+    background-size: 100%;
+}
+.serboxs{
+    overflow: hidden;
+    width: 100%;
+}
+.bars{
+    text-align: center;
+    width: 33.33%;
+    float: left;
+    padding: 0 5%;
+    margin: 40px 0;
+}
+.bars p{
+    font-size: 15px;
+    color: #333;
+}
+.bars span{
+    display: block;
+    font-size: 15px;
+    color: #333;
+}
+.success{
+    margin-bottom: 80px;
+}
+.success p{
+    font-size: 24px;
+    color: #000;
+    margin: 6px 0;
+    font-weight: 300;
+}
+.success span{
+    font-size: 15px;
+    color: #333;
+}
+.success i{
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    background-color: #ff5100;
+    display: inline-block;
+}
+.case{
+    padding: 120px 0;
+    background: url("../images/portal_ft.jpg") no-repeat bottom center,
+    url("../images/bg4.jpg") no-repeat top left;
+    background-size: 60%;
+}
+.case ul{
+    width: 100%;
+    margin: 40px 0;
+}
+.case ul li{
+    width: 25%;
+}
+.case ul li a{
+    position: relative;
+    overflow: hidden;
+    width: 264px;
+    height: 274px;
+    display: inline-flex;
+}
+.case ul li a i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    background-color: rgba(255,81,0,.8);
+    opacity: 0;
+    background-image: url("../images/eye.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.case ul li img{
+    width: 100%;
+}
+.case ul li .decoration{
+    width:90%;
+}
+.case ul li p{
+    font-size: 15px;
+    color: #333;
+    margin:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

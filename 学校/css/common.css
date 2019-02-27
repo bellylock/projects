@@ -1,0 +1,196 @@
+*{
+    font-family: "微软雅黑";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "simkai";
+    src: url("../font/simkai.ttf");
+}
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+ul{
+    overflow: hidden;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: white;
+}
+#ToTop{
+    display: none;
+    position: fixed;
+    right: 50px;
+    bottom: 150px;
+    width: 50px;
+    height: 60px;
+    z-index: 999;
+    /*background-color: white;*/
+    /* font-size: 80px; */
+    /* color: seagreen; */
+    background-image: url(../images/up.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 54px;
+    -webkit-box-shadow:  0 0 20px #ccc;
+    -moz-box-shadow:  0 0 20px #ccc;
+    -ms-box-shadow:0 0 20px #ccc;
+    box-shadow:  0 0 20px #ccc;
+}
+
+.header .top{
+    overflow: hidden;
+    padding: 40px 0 20px 0;
+}
+.header .top a{
+    float: left;
+    width: 240px;
+}
+.header .top a img{
+    width: 100%;
+}
+.header .top .searchbox{
+    position: relative;
+    width: 290px;
+    float: right;
+    display: inline-block;
+}
+.header .top .searchbox .search{
+    width: 100%;
+}
+.header .top .searchbox .search input{
+    width: 100%;
+    border: 1px solid #0099ff;
+    height: 32px;
+    line-height: 30px;
+    font-size: 15px;
+    color: #000;
+    padding: 0 52px 0 15px;
+}
+.header .top .searchbox .search input:focus{
+    outline: none;
+}
+.header .top .searchbox a{
+    width: 50px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image:url("../images/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-color: #1f5bb1;
+}
+.header .top .searchbox p{
+    margin: 10px 0;
+}
+.header .top .searchbox p span{
+    font-size: 14px;
+    color: #1f5bb1;
+}
+.header .nav{
+    background-color: #1f5bb1;
+}
+.header .nav ul li{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+.header .nav ul li:hover{
+    background-color: #0099ff;
+}
+.header .nav ul li a{
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    padding: 0 15px;
+}
+.header .nav ul .active{
+    background-color: #0099ff;
+}
+.bannerimg{
+    width: 100%;
+    height: 480px;
+}
+.bannerpic{
+    width: 100%;
+    height: 480px;
+    position: relative;
+}
+.bannerpic .menu{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -585px;
+    width:280px;
+    height: 480px;
+    padding: 0 15px;
+    background-color:  rgba(250,250,250,.6);
+}
+.menu .hot .majortitle{
+    font-size: 16px;
+    color: #1f5bb1;
+    margin-top: 18px;
+    margin-bottom: 15px;
+    text-indent: 1.7em;
+    border-bottom: 1px solid #1f5bb1;
+    padding-bottom: 6px;
+}
+.majorhot{
+    background: url("../images/hot.png") no-repeat top left;
+    background-size: 20px;
+}
+.majorset{
+    background: url("../images/major.png") no-repeat top left;
+    background-size: 20px;
+}
+.menu .hot ul li{
+    width: 50%;
+    line-height: 24px;
+    text-align: center;
+}
+.menu .hot ul li a{
+    font-size: 13px;
+    color: #333;
+}
+.menu .hot ul li a:hover{
+    color: #dc0201;
+}
+.imginfo{
+    font-style: normal;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    font-family: "simkai";
+}
+.footer{
+    background-color: #1f5bb1;
+    padding: 50px 0;
+    text-align: center;
+}
+.footer p{
+    font-size: 15px;
+    color: #fff;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+

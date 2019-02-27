@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<title>代理合作</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/common_m.css">
+	<link rel="stylesheet" type="text/css" href="css/list_m.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		.c1 span{
+			display: block;
+			width: 72px;
+			height: 3px;
+			background-color: #00c1de;
+			margin-bottom: 10px
+		}
+		.c1 img{
+			width: 90%;
+			display: block;
+			margin: 20px auto
+		}
+		.c12{
+			margin-top: 30px
+		}
+		.c12 h5{
+			width: 132px;
+			text-align: center;
+			font-size: 18px;
+			display: block;
+			border-left: 2px solid #00c1de;
+			border-right: 2px solid #00c1de;
+			margin: 0 auto 20px auto
+		}
+		.main{
+			padding-left: 17px;
+		}
+		.main i{
+			width: 8px;
+			height: 8px;
+			display: inline-block;
+			background-color: #333;
+			border-radius: 5px;
+			margin-right: 5px;
+		}
+		.main span{
+			font-size: 15px;
+			color: #ff9400
+		}
+		.main p{
+			font-size: 14px;
+			color: #333
+		}
+	</style>
+	<div class="header">
+		<div class="menu">
+			<img class="img" data-status="0" src="images/menu.png">
+			<a href="index_m.html" class="tit_log"><img src="images/title.png" ></a>
+		</div>
+		<ul class="menues">
+			<li><a href="index_m.html">首页</a></li>
+			<li><a href="about_m.html">关于我们</a></li>
+			<li><a href="pptp_m.html">PPTP</a></li>
+			<li><a href="list_m.html">地区列表</a></li>
+			<li><a href="introduce_m.html">使用说明</a></li>
+			<li><a href="agency_m.html">代理合作</a></li>
+			<li><a href="contact_m.html">联系我们</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<img src="images/005.jpg" class="banner">
+		<div class="row">
+			<div class="col-xs-12 c12">
+				<div class="col-xs-6 c1">
+					<img src="images/t1.png">
+				</div>
+				<div class="col-xs-6 c1">
+					<h4>加盟条件：</h4>
+					<span></span>
+					<p>一次性充值相应金额，终生成为合作伙伴</p>
+				</div>
+			</div>
+			<div class="col-xs-12 c12">
+				<div class="col-xs-6 c1">
+					<h4>加盟福利：</h4>
+					<span></span>
+					<p>享受自助平台开通，续费，管理等便捷操作</p>
+				</div>
+				<div class="col-xs-6 c1">
+					<img src="images/t2.png">
+				</div>
+			</div>
+			<div class="col-xs-12 c12">
+				<h5>代理合作详情</h5>
+				<div class="main">
+					<span><i></i>初级会员</span>
+					<p>充1000元赠送10%，实际到账1100</p>
+					<span><i></i>中级会员</span>
+					<p>充3000元赠送20%，实际到账3600</p>
+					<span><i></i>高级会员</span>
+					<p>充9000元赠送30%，实际到账11700</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="butt">
+				<span>Copyright © 2004-2017</span>
+				<span>昆明晏宇科技有限公司</span>
+				<span>All Rights Reserved.</span>
+				<span>滇ICP备16000201号-1</span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	    var status = $(".menu img").attr("data-status");
+	    $(".menu .img").click(function(){
+	    	// $(".menues").toggle()
+	    	if( status == 0){
+	    		$(".menues").slideDown(300);
+	    		status = 1 ;
+	    		$(".menu img").attr("data-status",1);
+	    		console.log($(".menu img").attr("data-status"))
+	    	}else if( status == 1){
+	    		$(".menues").slideUp(300);
+	    		status = 0;
+	    		$(".menu img").attr("data-status",0);
+	    		console.log($(".menu img").attr("data-status"))
+	    	}
+	    })
+	</script>
+</body>
+</html>

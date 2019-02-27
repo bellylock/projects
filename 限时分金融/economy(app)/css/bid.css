@@ -1,0 +1,46 @@
+.com_name{
+	font-size: 0.3rem;
+	color: #000;
+}
+.cell{
+	padding: 0;
+}
+.cell:after{
+	height: 0 !important;
+}
+.cell input{
+	float: left !important;
+	font-size: 0.3rem;
+	color: #a3a3a3;
+}
+.mui-input-group .mui-input-row:after{
+	height: 0 !important;
+}
+.mui-table-view-cell:after{ 
+	left: 0 !important;
+}
+.mui-table-view:after{
+	height: 0 !important;
+}
+form:before{
+	height: 0 !important;
+}
+form:after{
+	height: 0 !important;
+}
+label{
+	width: 20% !important;
+	margin-top: 2px;
+	font-size: 0.3rem;
+}
+.keep{
+	width: 95%;
+    display: block;
+    color: #fff;
+    background-color: #1b5ed8;
+    font-size: 0.3rem;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 0.7rem;
+    border-radius: 5px;
+}

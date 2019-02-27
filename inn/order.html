@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>填写订单</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+    <link rel="stylesheet" href="css/calendar.css" />
+    <link rel="stylesheet" href="css/order.css" />
+</head>
+<body>
+	<style type="text/css">
+		#up{
+			width: 20px;
+    margin-left: 8px;
+    margin-top: 12px !important;
+    display: inline-block !important;
+    float: right;
+		}
+	</style>
+    <header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon iconfont icon-return-o mui-pull-left"></a>
+	    <h1 class="mui-title">填写订单</h1>
+	</header>
+	<div class="mui-content">
+		<div class="title">
+			<h4>常州东方名源酒店优划算加盟店</h4>
+			<p>商务大床房</p>
+		</div>
+		<div class="pick_time">
+			<div id="checkinout">
+				<div style="width:100%;">
+					<div class="Date_lr">
+						<P>入住</p>
+						<input id="startDate" type="text" value=""style="" readonly>
+					</div>
+					<div class="Date_lr">
+						<p>离店</p>
+						<input id="endDate" type="text" value="" style="" readonly>
+					</div>
+					<span class="span21"><span class="NumDate">1</span>晚</span>
+					<span id="firstSelect" class="modify_time">修改时间</span>
+				</div>
+			</div>
+			<div class="mask_calendar">
+				<div class="calendar"></div>
+			</div>
+		</div>
+		<div class="room">
+			<div class="room_num nums">
+				<label>房间数</label>
+				<span class="mid"><em class="room2">1</em>间</span>
+				<div class="room_rig">
+					<span class="iconfont icon-icon_roundreduce reduce"></span>
+					<em class="room1">1</em>
+					<span class="iconfont icon-add add"></span>
+				</div>
+			</div>
+			<div class="room_num room_name nums">
+				<label>入住人数</label>
+				<input class="name" type="text" placeholder="入住人姓名" />
+				<div class="room_rig">
+					<span class="iconfont icon-add adds"></span>
+				</div>
+			</div>
+			<div class="room_num nums">
+				<label>手机号</label>
+				<input class="name" type="number" placeholder="请输入手机号" />
+				<!--<a class="code" href="###" onclick="sendemail()">发送验证码</a>--> 
+				<input class="code" type="button" id="identify_code" value="发送验证码" onclick="sendemail()" /> 
+			</div>
+			<div class="room_num">
+				<label>验证码</label>
+				<input class="name" type="number" placeholder="6位数字" />
+			</div>
+		</div>
+		<ul class="mui-table-view hui">
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                <label for="">优惠券</label>
+	                <i>已优惠100元</i>
+	            </a>
+	        </li>
+	    </ul>
+	    <ul class="mui-table-view time">
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                <label>到店时间</label>
+	                <select class="select">
+				   	    <option value="">19点前</option>
+				   	    <option value="">18点前</option>
+				   	    <option value="">12点前</option> 
+				    </select>
+	            </a>
+	        </li>
+	    </ul>
+	    <ul class="mui-table-view bill">
+           <li class="mui-table-view-cell">
+               <a class="mui-navigate-right">
+                   <label>发票</label>
+                   <span>上海龙鼎商务服务有限公司</span>
+               </a>
+           </li>
+           <li class="mui-table-view-cell">
+               <a class="mui-navigate-right special_nav">
+                   <label>备注</label>
+                   <input type="text" placeholder="需要告知酒店的需求" />
+               </a>
+           </li>
+        </ul>
+        <div class="ps">
+       		<div class="pic">
+       			<img src="images/warn.jpg" alt="" />
+       		</div>
+       		<p class="text">请于入住日中午12:00后办理入住，如提前到店，视酒店空房情况安排。</p>
+        </div>
+	    <div class="tail">
+	    	<div class="details" id='details'>
+	    		<div class="left">
+	    			<i>￥</i>
+	    			<span>588</span>
+	    			<i>元</i>
+	    		</div>
+	    		<div class="right" >
+	    			<!--<span>明细 </span>-->
+	    			<!--<a  class="check_details" href="#sheet">明细<span data-status='0' id='up' class="iconfont icon-up3"></span></a>-->
+	    			<a id='right_det' class="check_details" href="#sheet">
+	    				<img id='up' data-status='0' src="images/ups.png" alt="" />
+	    				<span>明细</span>
+	    			</a>
+	    		</div>
+	    	</div>
+	    	<p class="pay" id='pay'>去支付</p>
+	    </div>
+	    <div id="sheet" class="mui-popover mui-popover-bottom mui-popover-action">
+		    <div class="pay_detail">
+		    	<div class="tit">
+		    		<span>明细</span>
+		    	</div>
+		    	<div class="roomes">
+		    		<p class="room_fee">
+		    			<span>房费</span>
+		    			<em>￥588</em>
+		    		</p>
+		    		<p>
+		    			<span class="room_time">2018-07-17不含早</span>
+		    			<em class="room_time">1x￥588</em>
+		    		</p>
+		    	</div>
+		    	<div class="total">
+		    		<p>
+		    			<span>总价</span>
+		    			<em>￥588</em>
+		    		</p>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+    <script src="js/jquery-3.3.1min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/date_modify.js"></script>
+    <script type="text/javascript">
+    	mui.init();
+    	   
+    	
+
+    	document.getElementById("pay").addEventListener('tap',function(){
+    		mui.openWindow({
+    			url:'book.html',
+    			id:'book'
+    		})
+    	});
+    	
+    	//123
+//  		$(document).ready(function(){
+//  			var up = document.getElementById("up");
+//	    		var status = up.getAttribute("data-status");
+//	    		var tr = up.style.transform.rotate; 
+//	    		if( status == 0){
+//	    			up.style.cssText = "transform:rotate(180deg);transition: .3s";
+//	    			up.setAttribute("data-status",'1');
+//	    		}else{
+//	    			up.style.cssText = "transform:rotate( 0deg);transition: .3s"; 
+//	    			up.setAttribute("data-status",'0');
+//	    		}
+//  		})
+
+    	//123
+    	
+    	//明细三角旋转 
+    	document.getElementById("right_det").addEventListener('tap',function(){
+    		var up = document.getElementById("up");
+    		var status = up.getAttribute("data-status");
+    		var tr = up.style.transform.rotate;
+
+			function getStyle(obj,attr){  
+			        if(obj.currentStyle){      //IE 
+			            return obj.currentStyle[attr];   
+			        }else{  
+			            return getComputedStyle(obj,"伪类")[attr];     //Firefox  
+			        }  
+			    }  
+			 
+    		if( status == 0){
+    			up.style.cssText = "transform:rotate(180deg);transition: .3s";
+    			up.setAttribute("data-status",'1');
+    			console.log('向上的status---' + status + '向上的rotate' + tr);
+//  			alert(up.style.transform) 
+    		}else{
+    			up.style.cssText = "transform:rotate( 0deg);transition: .3s"; 
+    			up.setAttribute("data-status",'0');
+    			console.log('向下的status---' + status + '向下的rotate' + tr);
+//  			alert(up.style.transform)
+    		}
+    		
+//			$("#up").css("transform","rotate(180deg)");
+    	});
+    	
+    	$('#firstSelect').on('click',function () {
+			$('.mask_calendar').show();
+		});
+		$('.mask_calendar').on('click',function (e) {
+			if(e.target.className == "mask_calendar"){
+				$('.calendar').slideUp(200);
+				$('.mask_calendar').fadeOut(200);
+			}
+		})
+		$('#firstSelect').calendarSwitch({
+			selectors : {
+				sections : ".calendar"
+			},
+			index : 5,      //展示的月份个数
+			animateFunction : "slideToggle",        //动画效果
+			controlDay:true,//知否控制在daysnumber天之内，这个数值的设置前提是总显示天数大于90天
+			daysnumber : "120",     //控制天数
+			comeColor : "#2EB6A8",       //入住颜色
+			outColor : "#2EB6A8",      //离店颜色
+			comeoutColor : "#E0F4F2",        //入住和离店之间的颜色
+			callback :function(){//回调函数
+				$('.mask_calendar').fadeOut(200);
+				var startDate = $('#startDate').val();  //入住的天数
+				var endDate = $('#endDate').val();      //离店的天数
+				var NumDate = $('.NumDate').text();    //共多少晚
+				console.log(startDate);
+				console.log(endDate);
+				console.log(NumDate);
+				//下面做ajax请求
+				//show_loading();
+				/*$.post("demo.php",{startDate:startDate, endDate:endDate, NumDate:NumDate},function(data){
+					if(data.result==1){
+						//成功
+					} else {
+						//失败
+					}
+				});*/
+			}  ,   
+			comfireBtn:'.comfire'//确定按钮的class或者id
+		});
+		
+		var b=new Date();
+		var mo=b.getMonth()+1;
+		mo = mo<10?mo:mo;
+		var da=b.getDate();
+		da = da<10?da:da;
+		$('#startDate').val(mo+'月'+da+'日');
+		b=new Date(b.getTime()+24*3600*1000);
+		var mo=b.getMonth()+1;
+		mo = mo<10?mo:mo;
+		var da=b.getDate();
+		da = da<10?da:da;
+		$('#endDate').val(mo+'月'+da+'日');
+		
+		$(".add").click(function(){
+			var num = $(".room1").text() * 1;
+			num++;
+			$(".room1").text(num);
+			$(".room2").text(num);
+			$(".reduce").css("color","#00c1de")
+		});
+		$(".reduce").click(function(){
+			var num = $(".room1").text() * 1;
+			if( num <= 1){
+				return;
+			}else if( num == 2){
+				$(this).css("color","#666");
+				num--;
+			}
+			else{
+				num--
+			}
+			$(".room1").text(num);
+			$(".room2").text(num) 
+		});
+		
+		var i = 0; 
+		$(".adds").click(function(){
+			$(`
+				<div class='add_per' index='${i}'>
+					<input type='text' placeholder='入住人姓名' />
+					<span class='iconfont icon-icon_roundreduce reduce_per' index='${i}'></span>
+				</div>
+			`).appendTo(".room_name");
+			i++;
+			$(".add_per").on('click','.reduce_per', function(event){
+				var index = $(this).attr("index");
+				$($(".add_per")[index]).css("display","none");
+	        });
+		});
+		
+		//验证码倒计时
+		var countdown=60; 
+		function sendemail(){
+		    var obj = $("#identify_code");
+		    settime(obj);   
+		}
+		function settime(obj) { //发送验证码倒计时
+		    if (countdown == 0) { 
+		        obj.attr('disabled',false); 
+		        //obj.removeattr("disabled"); 
+		        obj.val("发送验证码");
+		        countdown = 60; 
+		        return;
+		    } else { 
+		        obj.attr('disabled',true);
+		        obj.val("重新发送(" + countdown + ")");
+		        countdown--; 
+		    } 
+			setTimeout(function() { 
+		    	settime(obj) }
+		    ,1000) 
+		}
+		
+		
+		
+		
+		
+				
+    </script>
+</body>
+</html>

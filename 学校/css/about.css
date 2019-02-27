@@ -1,0 +1,344 @@
+/*about*/
+.mainbox{
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.sidebar{
+    width: 260px;
+    float: left;
+    border: 2px solid #1f5bb1;
+    display: inline-block;
+}
+.sidebar p{
+    background-color: #1f5bb1;
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 0;
+    background-image: url(../images/book1.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 7% 40%;
+    text-indent: 4em;
+}
+.sidebar ul{
+    margin-top: 12px;
+}
+.sidebar ul li{
+    width: 100%;
+}
+.sidebar ul li a{
+    display: block;
+    width: 90%;
+    margin: 0 auto 12px auto;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    line-height: 35px;
+    background-color: #1f5bb1;
+}
+.sidebar ul li a:hover{
+    background-color: #1899cd;
+}
+.maintext{
+    width: 850px;
+    float: right;
+    display: inline-block;
+}
+.text_title{
+    border-bottom: 2px solid #1f5bb1;
+    padding-bottom: 20px;
+    background: url(../images/book.png) no-repeat left top;
+    background-size: 80px;
+}
+.text_title span{
+    font-size: 20px;
+    color: #000;
+    margin-left: 95px;
+    margin-top: 28px;
+    display: inline-block;
+}
+.maincontext{
+    padding: 15px;
+}
+.maincontext .intro{
+    font-size: 15px;
+    color: #666;
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+/*major_details*/
+.maincontext .majorsbox li{
+    width: 100%;
+    border-bottom: 1px dashed #ccc;
+    background: url(../images/arrow.png) no-repeat 0 50%;
+    background-size: 16px;
+    text-indent: 1.7em;
+}
+.maincontext .majorsbox li:hover{
+    background-color: #eee;
+}
+.maincontext .majorsbox li a{
+    display: block;
+    font-size: 13px;
+    color: #333;
+    line-height: 34px;
+}
+.maincontext .majorsbox li a:hover{
+    color: #dc0201;
+}
+.sidebar .majorsbox li a.actived{
+    background-color: #1899cd;
+}
+.pages{
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.pages a{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #333;
+    margin: 0 5px;
+}
+.pages a:hover{
+    background-color: #1f5bb1;
+    color: #fff;
+    border-color: #1f5bb1;
+}
+.pages .prev,.pages .next, .pageon{
+    background-color: #1f5bb1;
+    color: #fff !important;
+    border-color: #1f5bb1 !important;
+}
+
+/*major_news*/
+.maincontext h3{
+    text-align: center;
+    border-bottom: 1px dashed #ccc;
+    line-height: 44px;
+}
+.course_name{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    text-indent: 1em;
+    margin: 10px 0 30px 0;
+}
+.maincontext h4{
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+.maincontext .com_p{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+.changepage {
+    overflow: hidden;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+.changepage p{
+    display: inline-block;
+    font-size: 14px;
+}
+.changepage a:hover{
+    color: #dc0201;
+}
+.changepage .bef{
+    float: left;
+}
+.changepage .aft{
+    float: right;
+}
+
+/*recruit*/
+.main_sty h2{
+    font-size: 24px;
+    font-weight: normal;
+    border-bottom: 1px dashed #ccc;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+.restudent{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    text-indent: 2em;
+    margin-bottom: 15px;
+}
+.main_sty h5{
+    font-size: 18px;
+    font-weight: normal;
+    color: #000;
+    margin: 30px 0 8px 0;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 10px;
+}
+.maincontext .nav{
+    text-align: center;
+    margin: 15px 0;
+}
+.maincontext .nav a{
+    display: inline-block;
+    font-size: 15px;
+    color: #333;
+    margin: 0 10px;
+    border: 1px solid #0bccef;
+    padding: 0 15px;
+    line-height: 30px;
+}
+.nav_on{
+    color: #fff !important;
+    border-color: transparent !important;
+    background-color: #0bccef;
+}
+.postgraduate{
+    display: none;
+}
+.postgraduate span{
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.postgraduate em{
+    position: relative;
+    font-style: normal;
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+    display: block;
+    padding-left: 10px;
+    margin-left: 4px;
+}
+.postgraduate em:before{
+    position: absolute;
+    content: "";
+    top: 40%;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: #333;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*coursees*/
+.maintext table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.maintext table th, .maintext table td{
+    border: 1px solid #ccc;
+    line-height: 34px;
+    font-size: 15px;
+    text-align: center;
+}
+.maintext table thead tr th:nth-child(1){
+    width: 15%;
+}
+.maintext table thead tr th:nth-child(2){
+    width: 25%;
+}
+.maintext table thead tr th:nth-child(3){
+    width: 30%;
+}
+.maintext table thead tr th:nth-child(4){
+    width: 15%;
+}
+.maintext table thead tr th:nth-child(5){
+    width: 15%;
+}
+.maintext table tbody tr td:nth-child(3){
+    text-align: left !important;
+    padding-left: 10px;
+}
+
+/*schooyard*/
+.schoolyardbox{
+    width: 100%;
+}
+.schoolyardbox li{
+    width: 33.33%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+.schoolyardbox li a{
+    display: block;
+    text-align: center;
+}
+.schoolyardbox li a:hover span{
+    color: #dc0201;
+}
+.schoolyardbox li a img{
+    width: 100%;
+    height: 160px;
+    border: 2px solid #0285d7;
+    padding: 5px;
+}
+.schoolyardbox li a span{
+    font-size: 14px;
+    color: #333;
+}
+.trainimg{
+    width: 100%;
+    margin: 10px 0;
+}
+.schoolyarddate{
+    text-align: center;
+    margin: 10px 0;
+}
+.schoolyarddate span{
+    font-size: 14px;
+    color: #999;
+    margin: 0 10px;
+}
+.hotline{
+    padding-left: 15px;
+}
+.hotline span{
+    font-size: 14px;
+    font-weight: bold;
+}
+.hotline p{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+.contactphone{
+    margin-bottom: 15px;
+}
+.contactway p{
+    font-size: 15px;
+    color: #333;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

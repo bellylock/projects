@@ -1,0 +1,1228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发布房源信息</title>
+    <link rel="stylesheet" href="fontes/iconfont.css">
+    <link rel="stylesheet" href="css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <a href="index.html" class="logo headleft">Hotel&Inn</a>
+        <div class="area headleft">
+            <p>UK</p>
+            <ul>
+                <li><a href="###">London</a></li>
+                <li><a href="###">Scotland</a></li>
+                <li><a href="###">Edinburgh</a></li>
+                <li><a href="###">Cardiff</a></li>
+                <li><a href="###">Cambridge</a></li>
+                <li><a href="###">Manchester</a></li>
+            </ul>
+        </div>
+        <div class="headleft headsearch">
+            <input type="text" placeholder="搜索您感兴趣的内容">
+            <a href="search.html" class="comser iconfont icon-search"></a>
+        </div>
+        <ul class="nav headleft">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="houses.html">房源</a></li>
+            <li><a href="furniture.html">转手卖</a></li>
+            <li><a href="essay.html">社区</a></li>
+            <li><a href="concern.html">关注</a></li>
+            <li><a href="publish.html">发布信息</a></li>
+        </ul>
+        <div class="nav_vice">
+            <a href="log.html" class="log">登录</a>
+            <a href="register.html">注册</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <a href="###" id="backUp"></a>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="pub_details_box">
+            <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                <span class="rent_sty"><i class="pub_mark">*</i>出租方式</span>
+                <ul class="layui-tab-title rent_ways">
+                    <li class="layui-this"><i class="layui-anim layui-icon"></i>整租</li>
+                    <li><i class="layui-anim layui-icon"></i>合租</li>
+                </ul>
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">
+                        <p class="pub_subtitle">基础信息</p>
+                        <form class="layui-form layui-form-pane1 pub_form" action="">
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_district">请填写房屋类型</p>
+                                <label class="layui-form-label"><i class="pub_mark">*</i>地段</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="xxx " autocomplete="off" class="layui-input pub_district">
+                                </div>
+                            </div>
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_roomsty">请填写房屋类型</p>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>房屋类型</label>
+                                    <div class="layui-input-inline room_sty" style="width: 100px;">
+                                        <input type="text" autocomplete="off" maxlength="1"
+                                               class="layui-input judge_room1 judge_rooms">
+                                        <span class="last">室</span>
+                                    </div>
+                                    <div class="layui-input-inline room_sty" style="width: 100px;">
+                                        <input type="text" autocomplete="off" maxlength="1"
+                                               class="layui-input judge_room2 judge_rooms">
+                                        <span class="last">厅</span>
+                                    </div>
+                                    <div class="layui-input-inline room_sty" style="width: 100px;">
+                                        <input type="text" autocomplete="off" maxlength="1"
+                                               class="layui-input judge_room3 judge_rooms">
+                                        <span class="last">卫</span>
+                                    </div>
+                                </div>
+                                <div class="layui-inline pub_direction">
+                                    <div class="layui-input-block">
+                                        <select name="quiz" lay-verify="required" lay-verType="tips">
+                                            <option value="请选择朝向">请选择朝向</option>
+                                            <option value="北">北</option>
+                                            <option value="南">南</option>
+                                            <option value="东">东</option>
+                                            <option value="西">西</option>
+                                            <option value="东南">东南</option>
+                                            <option value="东北">东北</option>
+                                            <option value="东西">东西</option>
+                                            <option value="西南">西南</option>
+                                            <option value="西北">西北</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_floor">请填写楼层</p>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>楼层</label>
+                                    <div class="layui-input-inline room_sty" style="width: 140px;">
+                                        <span class="first">第</span>
+                                        <input type="text" autocomplete="off" class="layui-input judge_floor floornext">
+                                        <span class="last">层</span>
+                                    </div>
+                                    <div class="layui-input-inline room_sty" style="width: 140px;">
+                                        <span class="first">共</span>
+                                        <input type="text" autocomplete="off" class="layui-input judge_floorNumbers">
+                                        <span class="last">层</span>
+                                    </div>
+                                </div>
+                                <div class="layui-inline pub_direction">
+                                    <div class="layui-input-block">
+                                        <select name="quiz" lay-verify="required" lay-verType="tips">
+                                            <!--<option value="有无电梯">有无电梯</option>-->
+                                            <option value="有电梯">有电梯</option>
+                                            <option value="没电梯">没电梯</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>车位</label>
+                                </div>
+                                <div class="layui-inline pub_direction">
+                                    <div class="layui-input-block">
+                                        <select name="quiz" lay-verify="required" lay-verType="tips">
+                                            <!--<option value="有无车位">有无车位</option>-->
+                                            <option value="有车位">有车位</option>
+                                            <option value="没车位">没车位</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_rent">请填写租金</p>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>租金</label>
+                                    <div class="layui-input-inline room_sty" style="width: 188px;">
+                                        <input type="text" autocomplete="off" class="layui-input judge_rent">
+                                        <span class="last">英镑/月</span>
+                                    </div>
+                                </div>
+                                <div class="layui-inline pub_direction">
+                                    <div class="layui-input-block">
+                                        <select name="quiz" lay-verify="required" lay-verType="tips">
+                                            <option value="请选择租金">租金方式</option>
+                                            <option value="押一付一">押一付一</option>
+                                            <option value="押一付三">押一付三</option>
+                                            <option value="半年付">半年付</option>
+                                            <option value="年付">年付</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item" pane>
+                                <label class="layui-form-label">租金包含</label>
+                                <div class="layui-input-block">
+                                    <input type="checkbox" lay-skin="primary" title="水费">
+                                    <input type="checkbox" lay-skin="primary" title="电费">
+                                    <input type="checkbox" lay-skin="primary" title="燃气费">
+                                    <input type="checkbox" lay-skin="primary" title="宽带费">
+                                    <input type="checkbox" lay-skin="primary" title="物业费">
+                                    <input type="checkbox" lay-skin="primary" title="取暖费">
+                                    <input type="checkbox" lay-skin="primary" title="停车费">
+                                    <input type="checkbox" lay-skin="primary" title="有线电视费">
+                                </div>
+                            </div>
+                            <div class="layui-form-item" pane>
+                                <label class="layui-form-label">房屋配置</label>
+                                <div class="layui-input-block">
+                                    <input type="checkbox" lay-skin="primary" title="床">
+                                    <input type="checkbox" lay-skin="primary" title="衣柜">
+                                    <input type="checkbox" lay-skin="primary" title="沙发">
+                                    <input type="checkbox" lay-skin="primary" title="宽带">
+                                    <input type="checkbox" lay-skin="primary" title="电视">
+                                    <input type="checkbox" lay-skin="primary" title="空调">
+                                    <input type="checkbox" lay-skin="primary" title="洗衣机">
+                                    <input type="checkbox" lay-skin="primary" title="冰箱">
+                                    <input type="checkbox" lay-skin="primary" title="暖气">
+                                    <input type="checkbox" lay-skin="primary" title="热水器">
+                                    <input type="checkbox" lay-skin="primary" title="独立卫生间">
+                                    <input type="checkbox" lay-skin="primary" title="阳台">
+                                    <input type="checkbox" lay-skin="primary" title="桌椅">
+                                    <input type="checkbox" lay-skin="primary" title="微波炉">
+                                    <input type="checkbox" lay-skin="primary" title="燃气灶">
+                                </div>
+                            </div>
+                            <p class="pub_subtitle">详细信息</p>
+                            <div class="layui-form-item" pane>
+                                <label class="layui-form-label">看房时间</label>
+                                <div class="layui-input-block">
+                                    <input type="radio" name="checkroom" value="仅周末" title="仅周末" checked>
+                                    <input type="radio" name="checkroom" value="工作日" title="工作日">
+                                    <input type="radio" name="checkroom" value="随时看房" title="随时看房">
+                                </div>
+                            </div>
+                            <div class="layui-form">
+                                <div class="layui-form-item judge">
+                                    <p class="judge_tip tip_time">请填写入住时间</p>
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label pub_lefthead"><i
+                                                class="pub_mark">*</i>入住时间</label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" class="layui-input judge_time" id="time1" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_checkin">请填写入住人数</p>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>入住人数</label>
+                                    <div class="layui-input-inline room_sty" style="width: 100px;">
+                                        <input type="text" autocomplete="off" class="layui-input judge_checkin">
+                                        <span class="last">人</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="pub_subtitle">补充信息</p>
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_ps">请填写标题</p>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>标题</label>
+                                    <div class="layui-input-inline" style="width: 500px;">
+                                        <input type="text" autocomplete="off" class="layui-input judge_ps">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item layui-form-text judge">
+                                <p class="judge_tip tip_info">请填写补充说明</p>
+                                <label class="layui-form-label"><i class="pub_mark">*</i>补充说明</label>
+                                <div class="layui-input-block">
+                                    <textarea placeholder="对房子家电或者其他情况的说明"
+                                              class="layui-textarea pub_textarea judge_info"></textarea>
+                                </div>
+                            </div>
+                            <div id="uploadpic1" class="uploadimg">
+                                <p class="judge_tip tip_img">请上传图片</p>
+                                <span class="unload_name"><i class="pub_mark">*</i>上传图片</span>
+                                <div class="hello">
+                                    <div class="upload">
+                                        <div class="upload_warp">
+                                            <div class="upload_warp_left" @click="fileClick">
+                                                <a href="###" class="uploadImg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="upload_warp_text">
+                                            选中{{imgList.length}}张图片，共{{bytesToSize(this.size)}}，最多还能上传{{this.surplus -
+                                            imgList.length}}张
+                                        </div>
+                                        <input @change="fileChange($event)" type="file" id="upload_file1" multiple
+                                               style="display: none"/>
+                                        <div class="upload_warp_img " v-show="imgList.length!=0">
+                                            <div class="upload_warp_img_div" v-for="(item,index) of imgList">
+                                                <div class="upload_warp_img_div_top">
+                                                    <div class="upload_warp_img_div_text">
+                                                        {{item.file.name}}
+                                                    </div>
+                                                    <img src="images/del.png" class="upload_warp_img_div_del"
+                                                         @click="fileDel(index)">
+                                                </div>
+                                                <img :src="item.file.src">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mapBox">
+                                <span>选择位置</span>
+                                <iframe src="map_publish.html" class="location_pub" frameborder="0"></iframe>
+                            </div>
+                            <p class="pub_subtitle">其他信息</p>
+                            <div class="layui-form-item">
+                                <div class="layui-inline judge">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>联系人</label>
+                                    <div class="layui-input-inline" style="width: 200px;">
+                                        <input type="text" autocomplete="off"
+                                               class="layui-input judge_input judge_person">
+                                    </div>
+                                    <p class="judge_tip tip_person">请填写联系人</p>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="layui-inline judge">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>联系电话</label>
+                                    <div class="layui-input-inline" style="width: 200px;">
+                                        <input type="number" autocomplete="off"
+                                               class="layui-input contact_phone judge_input judge_phone">
+                                    </div>
+                                    <p class="judge_tip tip_phone">请填写联系电话</p>
+                                </div>
+                            </div>
+                            <!--<a href="houses_list.html" class="pub_submit">发布</a>-->
+                            <a href="###" class="pub_submit submit1">整租发布</a>
+                        </form>
+                    </div>
+                    <div class="layui-tab-item">
+                        <p class="pub_subtitle">基础信息</p>
+                        <form class="layui-form layui-form-pane1 pub_form" action="">
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_districts">请填写房屋类型</p>
+                                <label class="layui-form-label"><i class="pub_mark">*</i>地段</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="xxx " autocomplete="off"
+                                           class="layui-input pub_district pub_districts">
+                                </div>
+                            </div>
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_roomstyt">请填写房屋类型</p>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>房屋类型</label>
+                                    <div class="layui-input-inline room_sty" style="width: 100px;">
+                                        <input type="text" autocomplete="off"
+                                               class="layui-input judge_room4 judge_roomes">
+                                        <span class="last">室</span>
+                                    </div>
+                                    <div class="layui-input-inline room_sty" style="width: 100px;">
+                                        <input type="text" autocomplete="off"
+                                               class="layui-input judge_room5 judge_roomes">
+                                        <span class="last">厅</span>
+                                    </div>
+                                    <div class="layui-input-inline room_sty" style="width: 100px;">
+                                        <input type="text" autocomplete="off"
+                                               class="layui-input judge_room6 judge_roomes">
+                                        <span class="last">卫</span>
+                                    </div>
+                                </div>
+                                <div class="layui-inline pub_direction">
+                                    <div class="layui-input-block">
+                                        <select name="quiz" lay-verify="required" lay-verType="tips">
+                                            <option value="请选择朝向">请选择朝向</option>
+                                            <option value="北">北</option>
+                                            <option value="南">南</option>
+                                            <option value="东">东</option>
+                                            <option value="西">西</option>
+                                            <option value="东南">东南</option>
+                                            <option value="东北">东北</option>
+                                            <option value="东西">东西</option>
+                                            <option value="西南">西南</option>
+                                            <option value="西北">西北</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_floort">请填写楼层</p>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>楼层</label>
+                                    <div class="layui-input-inline room_sty" style="width: 140px;">
+                                        <span class="first">第</span>
+                                        <input type="text" autocomplete="off" class="layui-input judge_floort">
+                                        <span class="last">层</span>
+                                    </div>
+                                    <div class="layui-input-inline room_sty" style="width: 140px;">
+                                        <span class="first">共</span>
+                                        <input type="text" autocomplete="off" class="layui-input judge_floorNumbers2">
+                                        <span class="last">层</span>
+                                    </div>
+                                </div>
+                                <div class="layui-inline pub_direction">
+                                    <div class="layui-input-block">
+                                        <select name="quiz" lay-verify="required" lay-verType="tips">
+                                            <!--<option value="有无电梯">有无电梯</option>-->
+                                            <option value="有电梯">有电梯</option>
+                                            <option value="没电梯">没电梯</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_rooms">请填写剩余卧室</p>
+                                <p class="judge_tip tip_rooms_ps">剩余卧室不能大于总卧室数</p>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>剩余卧室</label>
+                                    <div class="layui-input-inline" style="width: 140px;">
+                                        <input style="text-align: center" type="number" autocomplete="off" class="layui-input surplus_rooms">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>车位</label>
+                                </div>
+                                <div class="layui-inline pub_direction">
+                                    <div class="layui-input-block">
+                                        <select name="quiz" lay-verify="required" lay-verType="tips">
+                                            <!--<option value="有无车位">有无车位</option>-->
+                                            <option value="有车位">有车位</option>
+                                            <option value="没车位">没车位</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_rents">请填写租金</p>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>租金</label>
+                                    <div class="layui-input-inline room_sty" style="width: 188px;">
+                                        <input type="text" autocomplete="off" class="layui-input judge_rents">
+                                        <span class="last">英镑/月</span>
+                                    </div>
+                                </div>
+                                <div class="layui-inline pub_direction">
+                                    <div class="layui-input-block">
+                                        <select name="quiz" lay-verify="required" lay-verType="tips">
+                                            <option value="请选择租金">租金方式</option>
+                                            <option value="押一付一">押一付一</option>
+                                            <option value="押一付三">押一付三</option>
+                                            <option value="半年付">半年付</option>
+                                            <option value="年付">年付</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item" pane>
+                                <label class="layui-form-label">租金包含</label>
+                                <div class="layui-input-block">
+                                    <input type="checkbox" lay-skin="primary" title="水费">
+                                    <input type="checkbox" lay-skin="primary" title="电费">
+                                    <input type="checkbox" lay-skin="primary" title="燃气费">
+                                    <input type="checkbox" lay-skin="primary" title="宽带费">
+                                    <input type="checkbox" lay-skin="primary" title="物业费">
+                                    <input type="checkbox" lay-skin="primary" title="取暖费">
+                                    <input type="checkbox" lay-skin="primary" title="停车费">
+                                    <input type="checkbox" lay-skin="primary" title="有线电视费">
+                                </div>
+                            </div>
+                            <p class="pub_subtitle">详细信息</p>
+                            <div class="layui-form-item" pane>
+                                <label class="layui-form-label">看房时间</label>
+                                <div class="layui-input-block">
+                                    <input type="radio" name="checkroom" value="仅周末" title="仅周末" checked>
+                                    <input type="radio" name="checkroom" value="工作日" title="工作日">
+                                    <input type="radio" name="checkroom" value="随时看房" title="随时看房">
+                                </div>
+                            </div>
+                            <div class="layui-form">
+                                <div class="layui-form-item judge">
+                                    <p class="judge_tip tip_timet">请填写入住时间</p>
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label pub_lefthead"><i
+                                                class="pub_mark">*</i>入住时间</label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" class="layui-input judge_timet" id="time2"
+                                                   placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item" pane>
+                                <label class="layui-form-label">房屋配置</label>
+                                <div class="layui-input-block">
+                                    <input type="checkbox" lay-skin="primary" title="床">
+                                    <input type="checkbox" lay-skin="primary" title="衣柜">
+                                    <input type="checkbox" lay-skin="primary" title="沙发">
+                                    <input type="checkbox" lay-skin="primary" title="宽带">
+                                    <input type="checkbox" lay-skin="primary" title="电视">
+                                    <input type="checkbox" lay-skin="primary" title="空调">
+                                    <input type="checkbox" lay-skin="primary" title="洗衣机">
+                                    <input type="checkbox" lay-skin="primary" title="冰箱">
+                                    <input type="checkbox" lay-skin="primary" title="暖气">
+                                    <input type="checkbox" lay-skin="primary" title="热水器">
+                                    <input type="checkbox" lay-skin="primary" title="独立卫生间">
+                                    <input type="checkbox" lay-skin="primary" title="阳台">
+                                    <input type="checkbox" lay-skin="primary" title="桌椅">
+                                    <input type="checkbox" lay-skin="primary" title="微波炉">
+                                    <input type="checkbox" lay-skin="primary" title="燃气灶">
+                                </div>
+                            </div>
+                            <div class="layui-form-item" pane>
+                                <label class="layui-form-label"><i class="pub_mark">*</i>租客性别</label>
+                                <div class="layui-input-block">
+                                    <input type="radio" name="sex" value="限男生" title="限男生" checked>
+                                    <input type="radio" name="sex" value="限女生" title="限女生">
+                                    <input type="radio" name="sex" value="男女不限" title="男女不限">
+                                </div>
+                            </div>
+                            <div class="layui-form-item" pane>
+                                <label class="layui-form-label">禁养宠物</label>
+                                <div class="layui-input-block">
+                                    <input type="radio" name="pet" value="禁止" title="禁止">
+                                    <input type="radio" name="pet" value="允许" title="允许">
+                                </div>
+                            </div>
+                            <p class="pub_subtitle">补充信息</p>
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_titlet">请填写标题</p>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>标题</label>
+                                    <div class="layui-input-inline" style="width: 500px;">
+                                        <input type="text" autocomplete="off" class="layui-input judge_titlet">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item layui-form-text judge">
+                                <p class="judge_tip tip_infot">请填写房源说明</p>
+                                <label class="layui-form-label"><i class="pub_mark">*</i>房源说明</label>
+                                <div class="layui-input-block">
+                                    <textarea placeholder="对租客要求或者周边环境简介"
+                                              class="layui-textarea pub_textarea pub_textareas"></textarea>
+                                </div>
+                            </div>
+                            <div id="uploadpic2" class="uploadimg">
+                                <p class="judge_tip tip_imgt">请上传图片</p>
+                                <span class="unload_name"><i class="pub_mark">*</i>上传图片</span>
+                                <div class="hello">
+                                    <div class="upload">
+                                        <div class="upload_warp">
+                                            <div class="upload_warp_left" @click="fileClick">
+                                                <a href="###" class="uploadImg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="upload_warp_text">
+                                            选中{{imgList.length}}张图片，共{{bytesToSize(this.size)}}，最多还能上传{{this.surplus -
+                                            imgList.length}}张
+                                        </div>
+                                        <input @change="fileChange($event)" type="file" id="upload_file2" multiple
+                                               style="display: none"/>
+                                        <div class="upload_warp_img" v-show="imgList.length!=0">
+                                            <div class="upload_warp_img_div" v-for="(item,index) of imgList">
+                                                <div class="upload_warp_img_div_top">
+                                                    <div class="upload_warp_img_div_text">
+                                                        {{item.file.name}}
+                                                    </div>
+                                                    <img src="images/del.png" class="upload_warp_img_div_del"
+                                                         @click="fileDel(index)">
+                                                </div>
+                                                <img :src="item.file.src">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mapBox">
+                                <span>选择位置</span>
+                                <iframe src="map_publish.html" class="location_pub" frameborder="0"></iframe>
+                            </div>
+                            <p class="pub_subtitle">其他信息</p>
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_persont">请填写联系人</p>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>联系人</label>
+                                    <div class="layui-input-inline" style="width: 200px;">
+                                        <input type="text" autocomplete="off" class="layui-input judge_persont">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item judge">
+                                <p class="judge_tip tip_phonet">请填写联系电话</p>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>联系电话</label>
+                                    <div class="layui-input-inline" style="width: 200px;">
+                                        <input type="number" autocomplete="off"
+                                               class="layui-input contact_phone judge_phonet">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<a href="houses_list.html" type="submit" class="pub_submit">发布</a>-->
+                            <a href="###" type="submit" class="pub_submit submit2">合租发布</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer_info">
+            <ul class="left">
+                <li>
+                    <p class="footername">关于我们</p>
+                    <p><a href="###">关于我们</a></p>
+                    <p><a href="###">联系我们</a></p>
+                    <p><a href="###">加入我们</a></p>
+                </li>
+                <li>
+                    <p class="footername">业务服务</p>
+                    <p><a href="###">业务体系</a></p>
+                    <p><a href="###">相关服务</a></p>
+                    <p><a href="###">相关产品</a></p>
+                </li>
+                <li>
+                    <p class="footername">关注我们</p>
+                    <p><a href="###">住宿微信</a></p>
+                    <p><a href="###">下载APP</a></p>
+                </li>
+            </ul>
+            <div class="right">
+                <div class="code">
+                    <img src="images/code.png" alt="">
+                    <span>下载APP</span>
+                </div>
+                <div class="code">
+                    <img src="images/code.png" alt="">
+                    <span>关注微信</span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="copyright">
+            <span>E-mail：<a href="###">info@ynweb.com</a></span>
+            <span>Copyright © 2004-2018 Ynweb All Rights Reserved.</span>
+            <span><a href="###"> 滇ICP备15008235号</a></span><br/>
+            <a href="###" class="securitynum">滇公网安备 53011202000074号</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="layui.js"></script>
+<script type="text/javascript" src="js/vue.min.js"></script>
+<script>
+    $(".pub_bin").hover(function () {
+        $(this).children("ul").stop().slideToggle(300);
+    });
+
+    $(".pub_bin").hover(function () {
+        $(this).children("p").css({"borderColor": "orange", "color": "orange"})
+    }, function () {
+        $(this).children("p").css({"borderColor": "#9c9c9c", "color": "#000"})
+    });
+
+    $(".room_sty input").on('input', function () {
+        this.value = this.value.replace(/\D/g, "");
+    });
+
+    $(".contact_phone").on('input', function () {
+        this.value = this.value.replace(/\D/g, "");
+    });
+    $(".room_sty input").on('blur', function () {
+        var value = $(this).val();
+        this.value = this.value.replace(/\D/g, "");
+    });
+
+    // 整租发布判断是否为空
+    $(".submit1").click(function () {
+        var v1 = $(".judge_person").val(); //联系人
+        var v2 = $(".judge_phone").val();  //联系电话
+        var len1 = uploadpic1.imgList.length;  //上传图片 整租
+        var v3 = $(".judge_info").val();    //补充说明
+        var v4 = $(".judge_ps").val();  //标题
+        var v5 = $(".judge_checkin").val();  //入住人数
+        var v6 = $(".judge_time").val();  //入住时间
+        var v7 = $(".judge_rent").val(); //租金
+        var v8 = $(".judge_floor").val(); //楼层
+        var v13 = $(".judge_floorNumbers").val()   //总楼层
+        var v9 = $(".judge_room1").val();  //室
+        var v10 = $(".judge_room2").val(); //厅
+        var v11 = $(".judge_room3").val(); //卫
+        var v12 = $(".pub_district").val(); //地段
+        if (v1 == "") {
+            $(".tip_person").slideDown();
+        } else {
+            $(".tip_person").fadeOut();
+        }
+        if (v2 == "") {
+            $(".tip_phone").slideDown();
+        } else {
+            $(".tip_phone").fadeOut();
+        }
+        if (len1 == 0) {
+            $(".tip_img").slideDown();
+        } else {
+            $(".tip_img").fadeOut();
+        }
+        $(".judge_person").on("input", function () {
+            $(".tip_person").fadeOut();
+        });
+        $(".judge_phone").on("input", function () {
+            $(".tip_phone").fadeOut();
+        });
+        if (v3 == "") {
+            $(".tip_info").slideDown();
+        } else {
+            $(".tip_info").fadeOut();
+        }
+        $(".judge_info").on("input", function () {
+            $(".tip_info").fadeOut();
+        });
+        if (v4 == "") {
+            $(".tip_ps").slideDown();
+        } else {
+            $(".tip_ps").fadeOut();
+        }
+        $(".judge_ps").on("input", function () {
+            $(".tip_ps").fadeOut();
+        });
+        if (v5 == "") {
+            $(".tip_checkin").slideDown();
+        } else {
+            $(".tip_checkin").fadeOut();
+        }
+        $(".judge_checkin").on("input", function () {
+            $(".tip_checkin").fadeOut();
+        });
+        if (v6 == "") {
+            $(".tip_time").slideDown();
+        } else {
+            $(".tip_time").fadeOut();
+        }
+        if (v7 == "") {
+            $(".tip_rent").slideDown();
+        } else {
+            $(".tip_rent").fadeOut();
+        }
+        $(".judge_rent").on("input", function () {
+            $(".tip_rent").fadeOut();
+        });
+        if (v8 == "") {
+            $(".tip_floor").slideDown();
+        } else {
+            $(".tip_floor").fadeOut();
+        }
+        $(".judge_floor").on("input", function () {
+            $(".tip_floor").fadeOut();
+        });
+        if (v13 == "") {
+            $(".tip_floor").slideDown();
+        } else {
+            $(".tip_floor").fadeOut();
+        }
+        $(".judge_floorNumbers").on("input", function () {
+            $(".tip_floor").fadeOut();
+        });
+        if (v9 == "" || v10 == "" || v11 == "") {
+            $(".tip_roomsty").slideDown();
+        } else {
+            $(".tip_roomsty").fadeOut();
+        }
+        $(".judge_rooms").on("input", function () {
+            var v9 = parseInt(v9);
+            var v10 = parseInt(v10);
+            var v11 = parseInt(v11);
+            if (typeof(v9) == "number" && typeof(v10) == "number" && typeof(v11) == "number") {
+                $(".tip_roomsty").fadeOut();
+            } else {
+                $(".tip_roomsty").fadeIn()
+            }
+        });
+        if (v12 == "") {
+            $(".tip_district").slideDown();
+        } else {
+            $(".tip_district").fadeOut();
+        }
+        $(".pub_district").on("input", function () {
+            $(".tip_district").fadeOut();
+        });
+        if (v1 != "" && v2 != "" && v3 != "" && v4 != "" && v5 != "" && v6 != "" && v7 != "" && v8 != "" && v13 != "" && v9 != "" && v10 != "" && v11 != "" && v12 != "" && len1 != 0) {
+            location.href = "houses_list.html"
+        }
+
+    });
+
+    $(".judge_room1").on("input", function () {
+        var value = $(this).val();
+        var value = parseInt(value);
+        if (!isNaN(value)) {
+            $(".judge_room2").focus();
+        }
+    });
+    $(".judge_room2").on("input", function () {
+        var value = $(this).val();
+        var value = parseInt(value);
+        if (!isNaN(value)) {
+            $(".judge_room3").focus();
+        }
+    });
+    $(".floornext").on("input", function () {
+        var value = $(this).val();
+        var value = parseInt(value);
+        if (!isNaN(value)) {
+            $(".judge_floorNumbers").focus();
+        }
+    });
+    $(".judge_floorNumbers").on("input", function () {
+        var value = $(this).val();
+        var valbef = $(".floornext").val();
+        if( value < valbef){
+            $(this).val("").focus()
+        }
+        console.log( value + "--" + valbef)
+    });
+
+    // 合租发布判断是否为空
+    $(".submit2").click(function () {
+        var v1 = $(".judge_persont").val(); //联系人
+        var v2 = $(".judge_phonet").val();  //联系电话
+        var len2 = uploadpic2.imgList.length;  //上传图片 合租
+        var v3 = $(".pub_textareas").val();  //房源说明
+        var v4 = $(".judge_titlet").val();    //标题
+        var v6 = $(".judge_timet").val();  //入住时间
+        var v7 = $(".judge_rents").val(); //租金
+        var v8 = $(".judge_floort").val(); //楼层
+        var v13 = $(".judge_floorNumbers2").val(); //总楼层
+        var v14 = $(".surplus_rooms").val(); //剩余卧室数量
+        var v9 = $(".judge_room4").val();  //室
+        var v10 = $(".judge_room5").val(); //厅
+        var v11 = $(".judge_room6").val(); //卫
+        var v12 = $(".pub_districts").val(); //地段
+        if (v1 == "") {
+            $(".tip_persont").slideDown();
+        } else {
+            $(".tip_persont").fadeOut();
+        }
+        if (v2 == "") {
+            $(".tip_phonet").slideDown();
+        } else {
+            $(".tip_phonet").fadeOut();
+        }
+        if (len2 == 0) {
+            $(".tip_imgt").slideDown();
+        } else {
+            $(".tip_imgt").fadeOut();
+        }
+        $(".judge_persont").on("input", function () {
+            $(".tip_persont").fadeOut();
+        });
+        $(".judge_phonet").on("input", function () {
+            $(".tip_phonet").fadeOut();
+        });
+        if (v3 == "") {
+            $(".tip_infot").slideDown();
+        } else {
+            $(".tip_infot").fadeOut();
+        }
+        $(".pub_textareas").on("input", function () {
+            $(".tip_infot").fadeOut();
+        });
+        if (v4 == "") {
+            $(".tip_titlet").slideDown();
+        } else {
+            $(".tip_titlet").fadeOut();
+        }
+        $(".judge_titlet").on("input", function () {
+            $(".tip_titlet").fadeOut();
+        });
+        if (v6 == "") {
+            $(".tip_timet").slideDown();
+        } else {
+            $(".tip_timet").fadeOut();
+        }
+        if (v7 == "") {
+            $(".tip_rents").slideDown();
+        } else {
+            $(".tip_rents").fadeOut();
+        }
+        $(".judge_rents").on("input", function () {
+            $(".tip_rents").fadeOut();
+        });
+        if (v8 == "") {
+            $(".tip_floort").slideDown();
+        } else {
+            $(".tip_floort").fadeOut();
+        }
+        $(".judge_floort").on("input", function () {
+            $(".tip_floort").fadeOut();
+        });
+        if (v13 == "") {
+            $(".tip_floort").slideDown();
+        } else {
+            $(".tip_floort").fadeOut();
+        }
+        $(".judge_floorNumbers2").on("input", function () {
+            $(".tip_floort").fadeOut();
+        });
+        if (v14 == "") {
+            $(".tip_rooms").slideDown();
+        } else {
+            $(".tip_rooms").fadeOut();
+        }
+        $(".surplus_rooms").on("input", function () {
+            var value = $(this).val();
+            var tol = $(".judge_room4").val();
+            if( value > tol ){
+                $(this).val("").focus();
+                $(".tip_rooms_ps").fadeIn()
+            }else{
+                $(".tip_rooms_ps").fadeOut()
+            }
+            $(".tip_rooms").fadeOut();
+        });
+        if (v9 == "" || v10 == "" || v11 == "") {
+            $(".tip_roomstyt").slideDown();
+        } else {
+            $(".tip_roomstyt").fadeOut();
+        }
+        $(".judge_roomes").on("input", function () {
+            var v9 = parseInt(v9);
+            var v10 = parseInt(v10);
+            var v11 = parseInt(v11);
+            if (typeof(v9) == "number" && typeof(v10) == "number" && typeof(v11) == "number") {
+                $(".tip_roomstyt").fadeOut();
+            } else {
+                $(".tip_roomstyt").fadeIn()
+            }
+        });
+        if (v12 == "") {
+            $(".tip_districts").slideDown();
+        } else {
+            $(".tip_districts").fadeOut();
+        }
+        $(".pub_districts").on("input", function () {
+            $(".tip_districts").fadeOut();
+        });
+        if (v1 != "" && v2 != "" && v3 != "" && v4 != "" && v6 != "" && v7 != "" && v8 != "" && v13 != "" && v14 != "" && v9 != "" && v10 != "" && v11 != "" && v12 != "" && len2 != 0) {
+            location.href = "houses_list.html"
+        }
+    });
+
+    $(".judge_room4").on("input", function () {
+        var value = $(this).val();
+        var value = parseInt(value);
+        if (!isNaN(value)) {
+            $(".judge_room5").focus();
+        }
+    });
+    $(".judge_room5").on("input", function () {
+        var value = $(this).val();
+        var value = parseInt(value);
+        if (!isNaN(value)) {
+            $(".judge_room6").focus();
+        }
+    });
+    $(".judge_floort").on("input", function () {
+        var value = $(this).val();
+        var value = parseInt(value);
+        if (!isNaN(value)) {
+            $(".judge_floorNumbers2").focus();
+        }
+    });
+    $(".judge_floorNumbers2").on("input",function(){
+       var value = $(this).val();
+       var valbef = $(".judge_floort").val();
+        if( value < valbef ){
+            $(this).val("").focus();
+        }
+    });
+    $(".surplus_rooms").on("input", function () {
+        var value = $(this).val();
+        var tol = $(".judge_room4").val();
+        if( value > tol ){
+            $(this).val("").focus();
+            $(".tip_rooms_ps").fadeIn();
+        }else{
+            $(".tip_rooms_ps").fadeOut()
+        }
+    });
+
+    layui.use('form', function () {
+        var form = layui.form;
+        // $('input:radio[name=sex]')[0].checked = false;
+        // $('input:radio[name=sex]')[1].checked = true;
+        form.render('radio');
+
+        //自定义验证规则
+        form.verify({
+            title: function (value) {
+                if (value.length < 5) {
+                    return '标题也太短了吧';
+                }
+            }
+            , pass: [/(.+){6,12}$/, '密码必须6到12位']
+        });
+
+        //事件监听
+        form.on('select', function (data) {
+            console.log('select: ', this, data);
+        });
+        form.on('select(quiz)', function (data) {
+            console.log('select.quiz：', this, data);
+        });
+        form.on('select(interest)', function (data) {
+            console.log('select.interest: ', this, data);
+        });
+        form.on('checkbox', function (data) {
+            console.log(this.checked, data.elem.checked);
+        });
+        form.on('switch', function (data) {
+            console.log(data);
+        });
+        form.on('radio', function (data) {
+            console.log(data);
+        });
+        //监听提交
+        form.on('submit(*)', function (data) {
+            console.log(data)
+            return false;
+        });
+
+    });
+
+    layui.use('element', function () {
+    });
+
+    layui.use('laydate', function () {
+        var laydate = layui.laydate;
+
+        laydate.render({
+            elem: '#time1'
+            , min: '0'
+            , done: function (value, date, endDate) {
+                //alert(value); //得到日期生成的值，如：2017-08-18
+                $(".judge_time").val(value);
+                $(".tip_time").fadeOut()
+            }
+        });
+
+        laydate.render({
+            elem: '#time2'
+            , min: '0'
+            , done: function (value, date, endDate) {
+                //alert(value); //得到日期生成的值，如：2017-08-18
+                $(".judge_timet").val(value);
+                $(".tip_timet").fadeOut()
+            }
+        });
+
+    });
+
+    //上传图片
+    var uploadpic1 = new Vue({
+        el: '#uploadpic1',
+        data() {
+            return {
+                imgList: [],
+                size: 0,
+                surplus: 9,
+                num: 0
+            };
+        },
+        methods: {
+            fileClick() {
+                document.getElementById('upload_file1').click();
+            },
+            fileChange(el) {
+                if (!el.target.files[0].size) return;
+                this.fileList(el.target);
+                el.target.value = '';
+            },
+            fileList(fileList) {
+                let files = fileList.files;
+                for (let i = 0; i < files.length; i++) {
+                    //判断是否为文件夹
+                    if (files[i].type != '') {
+                        this.fileAdd(files[i]);
+                    } else {
+                        //文件夹处理
+                        this.folders(fileList.items[i]);
+                    }
+                }
+            },
+            //文件夹处理
+            folders(files) {
+                let _this = this;
+                //判断是否为原生file
+                if (files.kind) {
+                    files = files.webkitGetAsEntry();
+                }
+                files.createReader().readEntries(function (file) {
+                    for (let i = 0; i < file.length; i++) {
+                        if (file[i].isFile) {
+                            _this.foldersAdd(file[i]);
+                        } else {
+                            _this.folders(file[i]);
+                        }
+                    }
+                });
+            },
+            foldersAdd(entry) {
+                let _this = this;
+                entry.file(function (file) {
+                    _this.fileAdd(file);
+                });
+            },
+            fileAdd(file) {
+                //总大小
+                this.size = this.size + file.size;
+                //判断是否为图片文件
+                if (file.type.indexOf('image') == -1) {
+                    file.src = 'wenjian.png';
+                    this.imgList.push({
+                        file
+                    });
+                } else {
+                    let reader = new FileReader();
+                    reader.vue = this;
+                    reader.readAsDataURL(file);
+                    reader.onload = function () {
+                        file.src = this.result;
+                        // 限制上传图片的个数
+                        if (this.vue.imgList.length >= 9) {
+                            return;
+                        } else {
+                            this.vue.imgList.push({
+                                file
+                            });
+
+                        }
+                    };
+                }
+                $(".tip_img").fadeOut();
+            },
+            fileDel(index) {
+                this.size = this.size - this.imgList[index].file.size;//总大小
+                this.imgList.splice(index, 1);
+            },
+            bytesToSize(bytes) {
+                if (bytes === 0) return '0 B';
+                let k = 1000, // or 1024
+                    sizes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
+                    i = Math.floor(Math.log(bytes) / Math.log(k));
+                return (bytes / Math.pow(k, i)).toPrecision(3) + ' ' + sizes[i];
+            }
+        }
+    });
+
+    var uploadpic2 = new Vue({
+        el: '#uploadpic2',
+        data() {
+            return {
+                imgList: [],
+                size: 0,
+                surplus: 9,
+                num: 0
+            };
+        },
+        methods: {
+            fileClick() {
+                document.getElementById('upload_file2').click();
+            },
+            fileChange(el) {
+                if (!el.target.files[0].size) return;
+                this.fileList(el.target);
+                el.target.value = '';
+            },
+            fileList(fileList) {
+                let files = fileList.files;
+                for (let i = 0; i < files.length; i++) {
+                    //判断是否为文件夹
+                    if (files[i].type != '') {
+                        this.fileAdd(files[i]);
+                    } else {
+                        //文件夹处理
+                        this.folders(fileList.items[i]);
+                    }
+                }
+            },
+            //文件夹处理
+            folders(files) {
+                let _this = this;
+                //判断是否为原生file
+                if (files.kind) {
+                    files = files.webkitGetAsEntry();
+                }
+                files.createReader().readEntries(function (file) {
+                    for (let i = 0; i < file.length; i++) {
+                        if (file[i].isFile) {
+                            _this.foldersAdd(file[i]);
+                        } else {
+                            _this.folders(file[i]);
+                        }
+                    }
+                });
+            },
+            foldersAdd(entry) {
+                let _this = this;
+                entry.file(function (file) {
+                    _this.fileAdd(file);
+                });
+            },
+            fileAdd(file) {
+                //总大小
+                this.size = this.size + file.size;
+                //判断是否为图片文件
+                if (file.type.indexOf('image') == -1) {
+                    file.src = 'wenjian.png';
+                    this.imgList.push({
+                        file
+                    });
+                } else {
+                    let reader = new FileReader();
+                    reader.vue = this;
+                    reader.readAsDataURL(file);
+                    reader.onload = function () {
+                        file.src = this.result;
+                        // 限制上传图片的个数
+                        if (this.vue.imgList.length >= 9) {
+                            return;
+                        } else {
+                            this.vue.imgList.push({
+                                file
+                            });
+
+                        }
+                    };
+                }
+                $(".tip_imgt").fadeOut();
+            },
+            fileDel(index) {
+                this.size = this.size - this.imgList[index].file.size;//总大小
+                this.imgList.splice(index, 1);
+            },
+            bytesToSize(bytes) {
+                if (bytes === 0) return '0 B';
+                let k = 1000, // or 1024
+                    sizes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
+                    i = Math.floor(Math.log(bytes) / Math.log(k));
+                return (bytes / Math.pow(k, i)).toPrecision(3) + ' ' + sizes[i];
+            }
+        }
+    });
+
+
+</script>
+</body>
+</html>

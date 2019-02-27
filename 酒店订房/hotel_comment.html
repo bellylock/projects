@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+    <link rel="stylesheet" href="css/hotel_comment.css" />
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon iconfont icon-return-o mui-pull-left"></a>
+        <h1 class="mui-title">标题</h1>
+    </header>
+    <nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item" id='index'>
+	        <span class="mui-icon iconfont icon-caidaniconshouyehui"></span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon iconfont icon_mid icon-PCbofangye_tuijian"></span>
+	        <span class="mui-tab-label">推荐</span>
+	    </a>
+	    <a class="mui-tab-item mui-active" id='user'>
+	        <span class="iconfont icon-user mui-icon"></span>
+	        <span class="mui-tab-label">我的</span>
+	    </a>
+	</nav>
+    <div class="mui-content">
+    	<div class="com_num">
+			<div class="left">
+				<span>4.8</span>
+				<p>98%好评</p>
+			</div>
+			<div class="right">
+				<span class="span1"></span>
+				<span class="span2"></span>
+				<span class="span3"></span>
+				<span class="span4"></span>
+				<i class="i1">卫生</i>
+				<i class="i2">服务</i>
+				<i class="i3">环境</i>
+				<i class="i4">性价比</i>
+			</div>
+    	</div>
+    	<div class="com_text">
+    		<div class="mui-slider">
+    		    <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+    		        <a class="mui-control-item mui-active" href="#item1">全部</a> 
+    		        <a class="mui-control-item" href="#item2">好评(25)</a>
+    		        <a class="mui-control-item" href="#item3">差评(10)</a>
+    		        <a class="mui-control-item" href="#item4">有图(12)</a>
+    		    </div>
+    		    <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+    		    <div class="mui-slider-group">
+    		        <div id="item1" class="mui-slider-item mui-control-content mui-active">
+    		        	<div class="box">
+    		        		<div class="title">
+    		        			<img class="img_name" src="images/1.jpg" alt="" />
+    		        			<div class="mid">
+    		        				<p>
+	    		        				<span>特洛伊</span>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<em>5.0</em>
+	    		        			</p>
+	    		        			<p>商务大床房</p>
+    		        			</div>
+    		        			<img class="img_com" src="images/nice.jpg" alt="" />
+    		        		</div>
+    		        		<p class="com">非常棒的住所，离海边很近，早上起来可以跑步，适合旅行，二月份还想去玩，体验很好。</p>
+    		        		<div class="pic">
+    		        			<img src="images/1.jpg" alt="" data-preview-src="" data-preview-group="1" />
+    		        			<img src="images/1.jpg" alt="" data-preview-src="" data-preview-group="1" />
+    		        			<img src="images/1.jpg" alt="" data-preview-src="" data-preview-group="1" />
+    		        			<img src="images/1.jpg" alt="" data-preview-src="" data-preview-group="1" />
+    		        		</div>
+    		        		<div class="tail">
+    		        			<span>2016-05-25</span>
+    		        			<a class="checkmsg" index="0" href="###">查看酒店回复<img  data-status='0' src="images/down.jpg" alt="" /></a>
+    		        			<p class="response" index="0">
+    		        				酒店回复：尊敬的顾客您好，首先感谢您选择入住我们酒店，由于出色的地理位置，一直广受欢迎，很高兴为您服务
+    		        			</p>
+    		        		</div>
+    		        	</div>
+    		        	<div class="box">
+    		        		<div class="title">
+    		        			<img class="img_name" src="images/1.jpg" alt="" />
+    		        			<div class="mid">
+    		        				<p>
+	    		        				<span>特洛伊</span>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<em>5.0</em>
+	    		        			</p>
+	    		        			<p>商务大床房</p>
+    		        			</div>
+    		        			<img class="img_com" src="images/nice.jpg" alt="" />
+    		        		</div>
+    		        		<p class="com drop_bef">非常棒的住所，离海边很近，早上起来可以跑步，适合旅行，二月份还想去玩，体验很好。非常棒的住所，离海边很近，早上起来可以跑步，适合旅行，二月份还想去玩，体验很好。</p>
+    		        		<p class="drop_text">非常棒的住所，离海边很近，早上起来可以跑步，适合旅行，二月份还想去玩，体验很好。非常棒的住所，离海边很近，早上起来可以跑步，适合旅行，二月份还想去玩，体验很好。</p>
+    		        		<p class="iconfont icon-up3-copy drops" data-status='0'></p>
+    		        		<div class="pic">
+    		        			<img src="images/1.jpg" alt="" data-preview-src="" data-preview-group="2" />
+    		        			<img src="images/1.jpg" alt="" data-preview-src="" data-preview-group="2" />
+    		        			<img src="images/1.jpg" alt="" data-preview-src="" data-preview-group="2" />
+    		        			<img src="images/1.jpg" alt="" data-preview-src="" data-preview-group="2" />
+    		        		</div>
+    		        		<div class="tail">
+    		        			<span>2016-05-25</span>
+    		        			<a class="checkmsg" index="1" href="###">查看酒店回复<img data-status='0' src="images/down.jpg" alt="" /></a>
+    		        			<p class="response" index="1">
+    		        				酒店回复：尊敬的顾客您好，首先感谢您选择入住我们酒店，由于出色的地理位置，一直广受欢迎，很高兴为您服务
+    		        			</p>
+    		        		</div>
+    		        	</div>
+    		        	<div class="box">
+    		        		<div class="title">
+    		        			<img class="img_name" src="images/1.jpg" alt="" />
+    		        			<div class="mid">
+    		        				<p>
+	    		        				<span>特洛伊</span>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<em>5.0</em>
+	    		        			</p>
+	    		        			<p>商务大床房</p>
+    		        			</div>
+    		        			<!--<img class="img_com" src="images/nice.jpg" alt="" />-->
+    		        		</div>
+    		        		<p class="com">非常棒的住所，离海边很近，早上起来可以跑步，适合旅行，二月份还想去玩，体验很好。</p>
+    		        		<div class="pic">
+    		        			<img src="images/1.jpg" alt="" data-preview-src="" data-preview-group="3" />
+    		        			<img src="images/1.jpg" alt="" data-preview-src="" data-preview-group="3" />
+    		        			<img src="images/1.jpg" alt="" data-preview-src="" data-preview-group="3" />
+    		        			<img src="images/1.jpg" alt="" data-preview-src="" data-preview-group="3" />
+    		        		</div>
+    		        		<div class="tail">
+    		        			<span>2016-05-25</span>
+    		        			<a class="checkmsg " index="2" href="###">查看酒店回复<img data-status='0' src="images/down.jpg" alt="" /></a>
+    		        			<p class="response " index="2">
+    		        				酒店回复：尊敬的顾客您好，首先感谢您选择入住我们酒店，由于出色的地理位置，一直广受欢迎，很高兴为您服务
+    		        			</p>
+    		        		</div>
+    		        	</div>
+    		        </div>
+    		        <div id="item2" class="mui-slider-item mui-control-content">
+    		        	<div class="box">
+    		        		<div class="title">
+    		        			<img class="img_name" src="images/2.jpg" alt="" />
+    		        			<div class="mid">
+    		        				<p>
+	    		        				<span>特洛伊</span>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<em>5.0</em>
+	    		        			</p>
+	    		        			<p>商务大床房</p>
+    		        			</div>
+    		        			<img class="img_com" src="images/nice.jpg" alt="" />
+    		        		</div>
+    		        		<p class="com">非常棒的住所，离海边很近，早上起来可以跑步，适合旅行，二月份还想去玩，体验很好。</p>
+    		        		<div class="pic">
+    		        			<img src="images/2.jpg" alt="" data-preview-src="" data-preview-group="4" />
+    		        			<img src="images/2.jpg" alt="" data-preview-src="" data-preview-group="4" />
+    		        			<img src="images/2.jpg" alt="" data-preview-src="" data-preview-group="4" />
+    		        			<img src="images/2.jpg" alt="" data-preview-src="" data-preview-group="4" />
+    		        		</div>
+    		        		<div class="tail">
+    		        			<span>2016-05-25</span>
+    		        			<a class="checkmsg " index="3" href="###">查看酒店回复<img  data-status='0' src="images/down.jpg" alt="" /></a>
+    		        			<p class="response " index="3">
+    		        				酒店回复：尊敬的顾客您好，首先感谢您选择入住我们酒店，由于出色的地理位置，一直广受欢迎，很高兴为您服务
+    		        			</p>
+    		        		</div>
+    		        	</div>
+    		        	<div class="box">
+    		        		<div class="title">
+    		        			<img class="img_name" src="images/2.jpg" alt="" />
+    		        			<div class="mid">
+    		        				<p>
+	    		        				<span>特洛伊</span>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<em>5.0</em>
+	    		        			</p>
+	    		        			<p>商务大床房</p>
+    		        			</div>
+    		        			<img class="img_com" src="images/nice.jpg" alt="" />
+    		        		</div>
+    		        		<p class="com">非常棒的住所，离海边很近，早上起来可以跑步，适合旅行，二月份还想去玩，体验很好。</p>
+    		        		<div class="pic">
+    		        			<img src="images/2.jpg" alt="" data-preview-src="" data-preview-group="5" />
+    		        			<img src="images/2.jpg" alt="" data-preview-src="" data-preview-group="5" />
+    		        			<img src="images/2.jpg" alt="" data-preview-src="" data-preview-group="5" />
+    		        			<img src="images/2.jpg" alt="" data-preview-src="" data-preview-group="5" />
+    		        		</div>
+    		        		<div class="tail">
+    		        			<span>2016-05-25</span>
+    		        			<a class="checkmsg" index="4" href="###">查看酒店回复<img  data-status='0' src="images/down.jpg" alt="" /></a>
+    		        			<p class="response " index="4">
+    		        				酒店回复：尊敬的顾客您好，首先感谢您选择入住我们酒店，由于出色的地理位置，一直广受欢迎，很高兴为您服务
+    		        			</p>
+    		        		</div>
+    		        	</div>
+    		        </div>
+    		        <div id="item3" class="mui-slider-item mui-control-content">
+    		        	<div class="box">
+    		        		<div class="title">
+    		        			<img class="img_name" src="images/3.jpg" alt="" />
+    		        			<div class="mid">
+    		        				<p>
+	    		        				<span>特洛伊</span>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<em>5.0</em>
+	    		        			</p>
+	    		        			<p>商务大床房</p>
+    		        			</div>
+    		        			<!--<img class="img_com" src="images/nice.jpg" alt="" />-->
+    		        		</div>
+    		        		<p class="com">非常棒的住所，离海边很近，早上起来可以跑步，适合旅行，二月份还想去玩，体验很好。</p>
+    		        		<div class="pic">
+    		        			<img src="images/3.jpg" alt="" data-preview-src="" data-preview-group="6" />
+    		        			<img src="images/3.jpg" alt="" data-preview-src="" data-preview-group="6" />
+    		        			<img src="images/3.jpg" alt="" data-preview-src="" data-preview-group="6" />
+    		        			<img src="images/3.jpg" alt="" data-preview-src="" data-preview-group="6" />
+    		        		</div>
+    		        		<div class="tail">
+    		        			<span>2016-05-25</span>
+    		        			<a class="checkmsg " index="5" href="###">查看酒店回复<img  data-status='0' src="images/down.jpg" alt="" /></a>
+    		        			<p class="response " index="5">
+    		        				酒店回复：尊敬的顾客您好，首先感谢您选择入住我们酒店，由于出色的地理位置，一直广受欢迎，很高兴为您服务
+    		        			</p>
+    		        		</div>
+    		        	</div>
+    		        	<div class="box">
+    		        		<div class="title">
+    		        			<img class="img_name" src="images/3.jpg" alt="" />
+    		        			<div class="mid">
+    		        				<p>
+	    		        				<span>特洛伊</span>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<em>5.0</em>
+	    		        			</p>
+	    		        			<p>商务大床房</p>
+    		        			</div>
+    		        			<!--<img class="img_com" src="images/nice.jpg" alt="" />-->
+    		        		</div>
+    		        		<p class="com">非常棒的住所，离海边很近，早上起来可以跑步，适合旅行，二月份还想去玩，体验很好。</p>
+    		        		<div class="pic">
+    		        			<img src="images/3.jpg" alt="" data-preview-src="" data-preview-group="7" />
+    		        			<img src="images/3.jpg" alt="" data-preview-src="" data-preview-group="7" />
+    		        			<img src="images/3.jpg" alt="" data-preview-src="" data-preview-group="7" />
+    		        			<img src="images/3.jpg" alt="" data-preview-src="" data-preview-group="7" />
+    		        		</div>
+    		        		<div class="tail">
+    		        			<span>2016-05-25</span>
+    		        			<a class="checkmsg " index="6" href="###">查看酒店回复<img  data-status='0' src="images/down.jpg" alt="" /></a>
+    		        			<p class="response " index="6">
+    		        				酒店回复：尊敬的顾客您好，首先感谢您选择入住我们酒店，由于出色的地理位置，一直广受欢迎，很高兴为您服务
+    		        			</p>
+    		        		</div>
+    		        	</div>
+    		        </div>
+    		        <div id="item4" class="mui-slider-item mui-control-content">
+    		        	<div class="box">
+    		        		<div class="title">
+    		        			<img class="img_name" src="images/4.jpg" alt="" />
+    		        			<div class="mid">
+    		        				<p>
+	    		        				<span>特洛伊</span>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<em>5.0</em>
+	    		        			</p>
+	    		        			<p>商务大床房</p>
+    		        			</div>
+    		        			<!--<img class="img_com" src="images/nice.jpg" alt="" />-->
+    		        		</div>
+    		        		<p class="com">非常棒的住所，离海边很近，早上起来可以跑步，适合旅行，二月份还想去玩，体验很好。</p>
+    		        		<div class="pic">
+    		        			<img src="images/5.jpg" alt="" data-preview-src="" data-preview-group="8" />
+    		        			<img src="images/5.jpg" alt="" data-preview-src="" data-preview-group="8" />
+    		        			<img src="images/5.jpg" alt="" data-preview-src="" data-preview-group="8" />
+    		        			<img src="images/5.jpg" alt="" data-preview-src="" data-preview-group="8" />
+    		        		</div>
+    		        		<div class="tail">
+    		        			<span>2016-05-25</span>
+    		        			<a class="checkmsg " index="7" href="###">查看酒店回复<img  data-status='0' src="images/down.jpg" alt="" /></a>
+    		        			<p class="response " index="7">
+    		        				酒店回复：尊敬的顾客您好，首先感谢您选择入住我们酒店，由于出色的地理位置，一直广受欢迎，很高兴为您服务
+    		        			</p>
+    		        		</div>
+    		        	</div>
+    		        	<div class="box">
+    		        		<div class="title">
+    		        			<img class="img_name" src="images/4.jpg" alt="" />
+    		        			<div class="mid">
+    		        				<p>
+	    		        				<span>特洛伊</span>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<i class="iconfont icon-star1"></i>
+	    		        				<em>5.0</em>
+	    		        			</p>
+	    		        			<p>商务大床房</p>
+    		        			</div>
+    		        			<img class="img_com" src="images/nice.jpg" alt="" />
+    		        		</div>
+    		        		<p class="com">非常棒的住所，离海边很近，早上起来可以跑步，适合旅行，二月份还想去玩，体验很好。</p>
+    		        		<div class="pic">
+    		        			<img src="images/5.jpg" alt="" data-preview-src="" data-preview-group="9" />
+    		        			<img src="images/5.jpg" alt="" data-preview-src="" data-preview-group="9" />
+    		        			<img src="images/5.jpg" alt="" data-preview-src="" data-preview-group="9" />
+    		        			<img src="images/5.jpg" alt="" data-preview-src="" data-preview-group="9" />
+    		        		</div>
+    		        		<div class="tail">
+    		        			<span>2016-05-25</span>
+    		        			<a class="checkmsg " index="8" href="###">查看酒店回复<img  data-status='0' src="images/down.jpg" alt="" /></a>
+    		        			<p class="response " index="8">
+    		        				酒店回复：尊敬的顾客您好，首先感谢您选择入住我们酒店，由于出色的地理位置，一直广受欢迎，很高兴为您服务
+    		        			</p>
+    		        		</div>
+    		        	</div>
+    		        </div>
+    		    </div>
+    		</div>
+    	</div>
+    </div>
+    <script src="js/jquery-3.3.1min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui.zoom.js"></script>
+	<script src="js/mui.previewimage.js"></script>
+    <script type="text/javascript">
+    	mui.init();
+    	mui.previewImage();
+		mui('.mui-slider').slider().stopped = true;
+
+    	$(".checkmsg").click(function(){
+    		var status = $(this).children("img").attr("data-status");
+    		var index = $(this).siblings(".response").attr("index");
+    		if( status == 0){
+    			$($(".response")[index]).css("display","block");
+    			$(this).children("img").attr("src","images/up.jpg");
+    			$(this).children("img").attr("data-status",1)
+    		}else{
+    			$($(".response")[index]).css("display","none");
+    			$(this).children("img").attr("src","images/down.jpg");
+    			$(this).children("img").attr("data-status",0)
+    		}
+    	});
+    	
+    	$(".drops").click(function(){
+    		var status = $(this).attr("data-status");
+    		if( status == 0){
+    			$(".drop_bef").css("display","none");
+    			$(".drop_text").css("display","block");
+    			$(this).attr("data-status",1);
+    			$(this).removeClass("icon-up3-copy").addClass("icon-up3");
+    		}else{
+    			$(".drop_bef").css("display","block");
+    			$(".drop_text").css("display","none");
+    			$(this).attr("data-status",0);
+    			$(this).removeClass("icon-up3").addClass("icon-up3-copy");
+    		}
+    	});
+    	
+    	document.getElementById("index").addEventListener('tap',function(){
+    		mui.openWindow({
+    			url:"index.html",
+    			id:'index'
+    		})
+    	});
+    	
+    	document.getElementById("user").addEventListener('tap',function(){
+    		mui.openWindow({
+    			url:"myorder.html",
+    			id:'myorder'
+    		})
+    	})
+    </script>   
+</body>
+</html>

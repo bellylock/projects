@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于我们</title>
+    <link type="text/css" rel="stylesheet" href="css/demo_m.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.positioning.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="dist/aos.css">
+    <link rel="stylesheet" href="css/index_m.css">
+</head>
+<body>
+<div id="page">
+    <header id="header">
+        <a id="menubtn" href="#menu"></a>
+        <a id="home" href="index_m.html">同讯互联网</a>
+    </header>
+    <div id="content">
+        <img src="images/banner8.jpg" class="bannerdraw" alt="" aos="zoom-in">
+        <div class="Box">
+            <h3 class="about_title" aos="fade-left">关于我们</h3>
+            <span class="about_vice" aos="fade-up">About Us</span>
+            <p class="about_info" aos="fade-right">专注品牌事业十余年，是一家兼具国际视野、创新动力全方位跨平台的品牌咨询与设计整合服务公司。公司业务涉及大数据、智能多媒体、物联网、云计算等。目前已为上百家国内优秀企业及全球500强企业提供了专业有效的品牌传播解决方案。</p>
+            <p class="about_info" aos="fade-right">同时我们也在为成为国际化品牌服务公司做着不懈的努力，为“从中国制造到中国创造”贡献自己的一份力量。</p>
+            <div class="about_cbin">
+                <div class="about_bin" aos="fade-right">
+                    <div class="circle"><p>创新</p><span>innovation</span></div>
+                </div>
+                <div class="about_bin" aos="fade-left">
+                    <div class="circle"><p>设计</p><span>design</span></div>
+                </div>
+                <div class="about_bin" aos="fade-right">
+                    <div class="circle"><p>技术</p><span>technology</span></div>
+                </div>
+                <div class="about_bin" aos="fade-left">
+                    <div class="circle"><p>营销</p><span>marketing</span></div>
+                </div>
+            </div>
+            <h3 class="about_title" aos="fade-up">服务理念</h3>
+            <span class="about_vice">Service Idea</span>
+            <p class="about_info" aos="fade-left">多年来我们始终专注于高水准的品牌整合服务，立足北京放眼全球我们了解市场更善于将创新运用其中；绝妙的创意配以高水平的执行及传播渠道的有效整合使我们跻身国内优秀品牌顾问公司之列。 同时我们也在为成为国际化品牌服务公司做着不懈的努力，为“从中国制造到中国创造”贡献自己的一份力量。</p>
+            <img src="images/g5.png" class="bannerdraw" aos="flip-left" alt="">
+            <h3 class="about_title" aos="fade-down">品牌理念</h3>
+            <span class="about_vice">Brand Idea</span>
+            <p class="about_info" aos="slide-up">专注品牌事业十余年，是一家兼具国际视野、创新动力全方位跨平台的品牌咨询与设计整合服务公司。公司业务涉及大数据、智能多媒体、物联网、云计算等。目前已为上百家国内优秀企业及全球500强企业提供了专业有效的品牌传播解决方案。</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>地址：昆明市西山区滇池柏悦5栋33楼</p>
+        <p>电话：0871-63935390</p>
+        <p>邮箱：info@ynweb.com</p>
+        <img src="images/code.png" alt="">
+        <span>微信公众号</span>
+        <p>Copyright © 2009 - 2014 Cld , All Rights Reserved</p>
+    </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="index_m.html">首页</a></li>
+            <li><a href="about_m.html" class="active">关于我们</a></li>
+            <li><a href="service_m.html">服务简介</a></li>
+            <li><a href="news_m.html">新闻动态</a></li>
+            <li><a href="contact_m.html">联系我们</a></li>
+        </ul>
+    </nav>
+</div>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="dist/aos.js"></script>
+<script type="text/javascript">
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+
+    $(function() {
+        var $html 	= $('html'),
+            $menu	= $('nav#menu'),
+            $both	= $html.add( $menu );
+
+        $menu.mmenu();
+
+        var swiper = new Swiper('.swiperBanner', {
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false
+            },
+        });
+
+
+
+    });
+</script>
+</body>
+</html>
+
+
+

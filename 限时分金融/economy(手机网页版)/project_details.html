@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>项目详情</title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="fontes/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="css/project_details.css"/>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left return"></a>
+	    <h1 class="mui-title">项目详情</h1>
+	</header>
+	<div class="mui-content content" id="money">
+		<div class="sur">
+			<span>15%</span>
+			<p>到期收益率</p>
+		</div>
+		<div class="menu">
+			<div class="box boxborder">
+				<span>300万</span>
+				<p>融资金额（元）</p>
+			</div>
+			<div class="box boxborder">
+				<span>3天</span>
+				<p>融资期限（天）</p>
+			</div>
+			<div class="box">
+				<span>80%</span>
+				<p>融资进度</p>
+			</div>
+		</div>	
+		<ul class="mui-table-view fontbox">
+	        <li class="mui-table-view-cell lists">
+	            <span>肯定盈·到期还本息</span>
+	        </li>
+	        <li class="mui-table-view-cell lists">
+	            <p>
+	            	<i>起投金额：</i>
+	            	<em>￥100.00</em>
+	            </p>
+	            <p class="dw">
+	            	<i>投资限额：</i>
+	            	<em>￥10000.00</em>
+	            </p>
+	        </li>
+	    </ul>
+	    <ul class="mui-table-view fontbox inf">
+            <li class="mui-table-view-cell pro">
+                <span>项目描述</span> 
+            </li>
+        </ul>
+        <div class="ph">
+        	<p>我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我借款企业具备相关的营业许可，企业向某某某有限公司旗下运营的《某某产品》平台提出借款申请，用于公司日常投标等相关业务经营。该企业已经过平台方风控考察审批通过授信额度为300万元，且该借款企业已经完成签订授信确认书、借款还款承诺书和法定代表人无限连带责任担保函。现向平台投资会员申请借款300万元现向平台投资会员申请借款300万元现向平台投资会员申请借款300万元现向平台投资会员申请借款300万元现向平台投资会员申请借款300万元现向平台投资会员申请借款300万元。</p>
+	        <div class="albums">
+	        	<img class="conpic spepic1" src="images/contract.png" alt="" data-preview-src="" data-preview-group="2" />
+	        	<img class="conpic" src="images/contract.png" alt="" data-preview-src="" data-preview-group="2" />
+	        	<img class="conpic spepic3" src="images/contract.png" alt="" data-preview-src="" data-preview-group="2" />
+	        	<img class="conpic spepic1" src="images/contract.png" alt="" data-preview-src="" data-preview-group="2" />
+	        	<img class="conpic" src="images/contract.png" alt="" data-preview-src="" data-preview-group="2" />
+	        	<img class="conpic spepic3" src="images/contract.png" alt="" data-preview-src="" data-preview-group="2" />
+	        </div>
+        </div>
+        <div class="dropbox">
+        	<img class="drop" data-status="0" src="images/drop.png" alt="" />
+        </div>
+        <ul class="mui-table-view limit fontbox">
+            <li class="mui-table-view-cell">
+                <span class="available">
+                	可用额度<em>￥10000.00</em>元
+                </span>
+                <a href="###">充值</a>
+            </li>
+            <li class="mui-table-view-cell chgmy">
+                <form class="mui-input-group chargebar">
+					<div class="mui-input-row">
+						<label class="pic_span">充值金额</label>
+						<input type="number" class="mui-input-clear sum pic_span" v-model='value'  placeholder="请输入充值金额">
+					</div>
+				</form>
+            </li>
+            <li class="mui-table-view-cell">
+            	<span class="available">
+                	预计收益<em>￥{{income}}</em>元
+              </span>
+            </li>
+        </ul>
+        <div class="agree" id="testBtn">
+        	<p>
+        		<i class=""></i>
+        		<span>同意</span>
+        	</p>
+        	<a href="###">购买协议</a>
+        </div>
+        <button class="mui-btn mui-disabled keeps" disabled="disabled">立即购买</button>
+	</div>
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <script src="js/mui.zoom.js"></script>
+    <script src="js/mui.previewimage.js"></script>
+	<script type="text/javascript">
+		mui.init();
+		mui.previewImage();
+
+		var app = new Vue({
+			el:"#money",
+			data:{
+				value:''
+			},
+			computed:{
+				income:function(){
+					var profit = this.value * 10;
+					return profit;
+				}
+			}
+		});
+		$(".agree p").click(function(){
+			console.log(1234);
+			if( $(".agree i").hasClass("pick")){
+				$(".agree i").removeClass("pick");
+				$(".keeps").css("opacity","0.6");
+			}else{
+				$(".agree i").addClass("pick");
+				$(".keeps").css("opacity","1");
+			}
+		});
+		
+		$(".sum").on("input",function(){
+			this.value = this.value.replace(/\D/g,"")
+		});
+		$(".drop").click(function(){
+			var status = $(this).attr("data-status");
+			if( status == 0){
+				$(this).css("transform","rotate(180deg)");
+				$(".ph").css({"overflow":"visible","height":"auto"});
+				status = 1;
+				$(this).attr("data-status",1)
+			}else{
+				$(this).css("transform","rotate(0deg)");
+				$(".ph").css({"overflow":"hidden","height":"126px"});
+				status = 0;
+				$(this).attr("data-status",0)
+			}
+			
+		});
+		
+		$(".morepic").click(function(){
+			var status = $(this).attr('data-status');
+			if( status == 0){
+				$(this).css("transform","rotate(180deg)");
+				$(".albums").css("display","none");
+				$(".albumbox").css("display","block");
+				status = 1;
+				$(this).attr("data-status",1)
+			}else{
+				$(this).css("transform","rotate(0deg)");
+				$(".albums").css("display","block");
+				$(".albumbox").css("display","none");
+				status = 0;
+				$(this).attr("data-status",0)
+			}
+		});	
+	</script>
+	
+</body>
+</html>

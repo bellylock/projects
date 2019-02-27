@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+    <link rel="stylesheet" href="css/calendar.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+</head>
+<body>
+    <div class="mui-content">
+    	<header class="mui-bar mui-bar-nav">
+	        <a class="mui-action-back mui-icon iconfont icon-return-o mui-pull-left"></a>
+	        <a data-status='0' class=" mui-icon iconfont icon-heart  right1"></a>
+	        <a class=" mui-icon iconfont icon-aui-icon-share  right2"></a>
+	    </header>
+    	<div id="slider" class="mui-slider" >
+    	  <div class="mui-slider-group mui-slider-loop">
+    	    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+    	    <div class="mui-slider-item mui-slider-item-duplicate">
+    	      <a href="#">
+    	        <img src="images/4.jpg">
+    	      </a>
+    	    </div>
+    	    <!-- 第一张 -->
+    	    <div class="mui-slider-item">
+    	      <a href="#">
+    	        <img src="images/1.jpg">
+    	      </a>
+    	    </div>
+    	    <!-- 第二张 -->
+    	    <div class="mui-slider-item">
+    	      <a href="#">
+    	        <img src="images/5.jpg">
+    	      </a>
+    	    </div>
+    	    <!-- 第三张 -->
+    	    <div class="mui-slider-item">
+    	      <a href="#">
+    	        <img src="images/3.jpg">
+    	      </a>
+    	    </div>
+    	    <!-- 第四张 -->
+    	    <div class="mui-slider-item">
+    	      <a href="#">
+    	        <img src="images/4.jpg">
+    	      </a>
+    	    </div>
+    	    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+    	    <div class="mui-slider-item mui-slider-item-duplicate">
+    	      <a href="#">
+    	        <img src="images/1.jpg">
+    	      </a>
+    	    </div>
+    	  </div>
+    	  <div class="mui-slider-indicator">
+    	    <div class="mui-indicator mui-active"></div>
+    	    <div class="mui-indicator"></div>
+    	    <div class="mui-indicator"></div>
+    	    <div class="mui-indicator"></div>
+    	  </div>
+    	</div>
+    	<div class="info">
+    		<p class="title">
+    			<span>喜来登度假酒店金沙江路店</span>
+    			<i>品牌</i>
+    		</p>
+    		<p class="privilege">
+    			<span class="pris">无线上网</span>
+    			<span class="pris">免费停车</span>
+    			<span class="price">
+    				<i>￥</i>
+    				<em>588</em>
+    				<i>/起</i>
+    			</span>
+    		</p>
+    	</div>
+    	<div class="menu">
+    		<div class="box">
+    			<span class="iconfont icon-weibiao45127"></span>
+    			<span>酒店详情</span>
+    		</div>
+    		<div class="box" onclick="callphone()">
+    			<span class="iconfont icon-phone"></span>
+    			<span>咨询酒店</span>
+    		</div>
+    	</div>
+    	<div class="position">
+    		<img src="images/6.jpg" alt="" />
+    		<p>
+    			<span class="iconfont icon-position"></span>
+    			<span>宁波市财富广场附近</span>
+    		</p>
+    	</div>
+    	<div class="sty">
+    		<div class="mui-slider">
+    		    <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+    		        <a class="mui-control-item" href="#item1">全日房</a> 
+    		        <a class="mui-control-item" href="#item2">钟点房</a>
+    		    </div>
+    		    <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
+    		    <div class="pick_time">
+			    	<div id="checkinout">
+						<div id="firstSelect" style="width:100%;">
+							<div class="Date_lr" style="float:left;">
+								<P>入住</p>
+								<input id="startDate" type="text" value=""style="" readonly>
+							</div>
+							<div class="Date_lr" style="float:right;">
+								<p>离店</p>
+								<input id="endDate" type="text" value="" style="" readonly>
+							</div>
+							<span class="span21">共<span class="NumDate">1</span>晚</span>
+						</div>
+					</div>
+					<div class="mask_calendar"> 
+						<div class="calendar"></div>
+					</div>
+			    </div>
+    		    <div class="mui-slider-group">
+    		        <div id="item1" class="mui-slider-item mui-control-content mui-active">
+    		            <ul class="mui-table-view">
+    		                <li class="mui-table-view-cell list">
+    		                	<div class="left">
+    		                		<img src="images/1.jpg" alt="" />
+    		                		<div class="text">
+    		                			<p class="bed_size">商务大床房</p>
+    		                			<p class="size">
+    		                				<span>32m</span><sup>2</sup>
+    		                				<span class="bed">大床</span><span>1.8米</span>
+    		                			</p>
+    		                		</div>
+    		                	</div>
+    		                	<div class="right">
+    		                		<i>￥</i>
+    		                		<em>588</em>
+    		                		<i>/起</i>
+    		                	</div>
+    		                </li>
+    		                <li class="mui-table-view-cell list">
+    		                	<div class="left">
+    		                		<img src="images/2.jpg" alt="" />
+    		                		<div class="text">
+    		                			<p class="bed_size">大床房</p>
+    		                			<p class="size">
+    		                				<span>30m</span><sup>2</sup>
+    		                				<span class="bed">大床</span><span>1.8米</span>
+    		                			</p>
+    		                		</div>
+    		                	</div>
+    		                	<div class="right">
+    		                		<i>￥</i>
+    		                		<em>432</em>
+    		                		<i>/起</i>
+    		                	</div>
+    		                </li>
+    		            </ul>
+    		        </div>
+    		        <div id="item2" class="mui-slider-item mui-control-content">
+    		            <ul class="mui-table-view">
+    		                <li class="mui-table-view-cell list">
+    		                	<div class="left">
+    		                		<img src="images/3.jpg" alt="" />
+    		                		<div class="text">
+    		                			<p class="bed_size">标间</p>
+    		                			<p class="size">
+    		                				<span>40m</span><sup>2</sup>
+    		                				<span class="bed">两张床</span><span>1.8米</span>
+    		                			</p>
+    		                		</div>
+    		                	</div>
+    		                	<div class="right">
+    		                		<i>￥</i>
+    		                		<em>128</em>
+    		                		<i>/起</i>
+    		                	</div>
+    		                </li>
+    		                <li class="mui-table-view-cell list">
+    		                	<div class="left">
+    		                		<img src="images/4.jpg" alt="" />
+    		                		<div class="text">
+    		                			<p class="bed_size">大床房</p>
+    		                			<p class="size">
+    		                				<span>30m</span><sup>2</sup>
+    		                				<span class="bed">大床</span><span>1.8米</span>
+    		                			</p>
+    		                		</div>
+    		                	</div>
+    		                	<div class="right">
+    		                		<i>￥</i>
+    		                		<em>200</em>
+    		                		<i>/起</i>
+    		                	</div>
+    		                </li>
+    		            </ul>
+    		        </div>
+    		    </div>
+    		</div>
+    	</div>   	  	
+    </div>
+    <script src="js/jquery-3.3.1min.js"></script>
+    <script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/date_modify.js"></script>
+    <script type="text/javascript">
+    	mui.init();
+    	mui('.mui-slider').slider().stopped = true;
+    	var gallery = mui('#slider');
+		gallery.slider({
+			interval:2000
+		});
+	  	
+	  	var links = $(".list");
+	  	links.each(function(i,every){
+	  		every.addEventListener('tap',function(){
+	  			mui.openWindow({
+	  				url:'order.html',
+	  				id:'coms'
+	  			})
+	  		})
+	  	});
+		
+		$(".right1").click(function(){
+      		var status = $(this).attr("data-status");
+      		if( status == 0){
+      			$(this).removeClass('icon-heart').addClass('icon-heartcoloring');
+      			$(this).attr("data-status",1);
+      		}else{
+      			$(this).removeClass('icon-heartcoloring').addClass('icon-heart');
+      			$(this).attr("data-status",0);
+      		}
+      	});
+      	
+      	$(function(){
+		$('#firstSelect').on('click',function () {
+			$('.mask_calendar').show();
+		});
+		$('.mask_calendar').on('click',function (e) {
+			if(e.target.className == "mask_calendar"){
+				$('.calendar').slideUp(200);
+				$('.mask_calendar').fadeOut(200);
+			}
+		})
+		$('#firstSelect').calendarSwitch({
+			selectors : {
+				sections : ".calendar"
+			},
+			index : 4,      //展示的月份个数
+			animateFunction : "slideToggle",        //动画效果
+			controlDay:true,//知否控制在daysnumber天之内，这个数值的设置前提是总显示天数大于90天
+			daysnumber : "90",     //控制天数
+			comeColor : "#2EB6A8",       //入住颜色
+			outColor : "#2EB6A8",      //离店颜色
+			comeoutColor : "#E0F4F2",        //入住和离店之间的颜色
+			callback :function(){//回调函数
+				$('.mask_calendar').fadeOut(200);
+				var startDate = $('#startDate').val();  //入住的天数
+				var endDate = $('#endDate').val();      //离店的天数
+				var NumDate = $('.NumDate').text();    //共多少晚
+				console.log(startDate);
+				console.log(endDate);
+				console.log(NumDate);
+				//下面做ajax请求
+				//show_loading();
+				/*$.post("demo.php",{startDate:startDate, endDate:endDate, NumDate:NumDate},function(data){
+					if(data.result==1){
+						//成功
+					} else {
+						//失败
+					}
+				});*/
+			}  ,   
+			comfireBtn:'.comfire'//确定按钮的class或者id
+		});
+		var b=new Date();
+		var mo=b.getMonth()+1;
+		mo = mo<10?mo:mo;
+		var da=b.getDate();
+		da = da<10?da:da;
+		$('#startDate').val(mo+'月'+da+'日');
+		b=new Date(b.getTime()+24*3600*1000);
+		var mo=b.getMonth()+1;
+		mo = mo<10?mo:mo;
+		var da=b.getDate();
+		da = da<10?da:da;
+		$('#endDate').val(mo+'月'+da+'日');
+	});
+	
+	function callphone(){    
+        window.location.href = "tel:18220601757";
+   }		
+				
+//    	(function($){
+//		    $(".mui-content").scroll({
+//		        bounce: false,//滚动条是否有弹力默认是true
+//		        indicators: true //是否显示滚动条,默认是true 
+//		    }); 
+//		    
+//		})(mui);
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>联系我们</title>
+    <link type="text/css" rel="stylesheet" href="css/demo_m.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.positioning.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="dist/aos.css">
+    <link rel="stylesheet" href="css/index_m.css">
+</head>
+<body>
+<div id="page">
+    <header id="header">
+        <a id="menubtn" href="#menu"></a>
+        <a id="home" href="index_m.html">同讯互联网</a>
+    </header>
+    <div id="content">
+        <img src="images/banner9.jpg" aos="flip-up" class="bannerdraw" alt="">
+        <h3 class="about_title" aos="zoom-in">联系我们</h3>
+        <div class="map" aos="fade-up">
+            <iframe src="map_m.html" frameborder="0"></iframe>
+        </div>
+        <div class="contact_info" aos="fade-right">
+            <img src="images/code.png" alt="">
+            <div class="contact_address">
+                <p>联系地址：昆明市西山区滇池柏悦5栋33层</p>
+                <p>业务电话：0871-63935390</p>
+                <p>E-mail：info@ynweb.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>地址：昆明市西山区滇池柏悦5栋33楼</p>
+        <p>电话：0871-63935390</p>
+        <p>邮箱：info@ynweb.com</p>
+        <img src="images/code.png" alt="">
+        <span>微信公众号</span>
+        <p>Copyright © 2009 - 2014 Cld , All Rights Reserved</p>
+    </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="index_m.html">首页</a></li>
+            <li><a href="about_m.html">关于我们</a></li>
+            <li><a href="service_m.html">服务简介</a></li>
+            <li><a href="news_m.html">新闻动态</a></li>
+            <li><a href="contact_m.html" class="active">联系我们</a></li>
+        </ul>
+    </nav>
+</div>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="dist/aos.js"></script>
+<script type="text/javascript">
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+
+    $(function() {
+        var $html 	= $('html'),
+            $menu	= $('nav#menu'),
+            $both	= $html.add( $menu );
+
+        $menu.mmenu();
+
+        var swiper = new Swiper('.swiperBanner', {
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false
+            },
+        });
+
+    });
+</script>
+</body>
+</html>
+
+
+

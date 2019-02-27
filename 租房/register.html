@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>注册</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/supersized.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="page-container">
+    <h1>注册</h1>
+    <form >
+        <input type="text" name="username" placeholder="昵称">
+        <input type="password" name="password" placeholder="密码">
+        <input type="password" name="password_confirm" placeholder="确认密码">
+        <input type="text" class="email" name="email" placeholder="邮箱">
+        <p class="email_ps">邮箱格式不正确！</p>
+        <p class="code_identify">
+            <input type="text" placeholder="输入邮箱验证码">
+            <input type="button" id="btn" value="邮箱验证" onclick="sendemail()" />
+        </p>
+        <button type="submit">注册</button>
+        <p class="funcbtn">
+            <a href="log.html">立即登录</a>
+            <a href="###">忘记密码</a>
+        </p>
+        <div class="error"><span>+</span></div>
+    </form>
+</div>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/supersized.3.2.7.min.js"></script>
+<script src="js/supersized-init.js"></script>
+<script>
+    //验证码倒计时
+    var countdown=60;
+    function sendemail(){
+        var obj = $("#btn");
+        var value = $(".email").val();
+        if(validatorEmail(value)){
+            settime(obj);
+            $(".email_ps").fadeOut()
+        }else{
+            $(".email_ps").fadeIn()
+        }
+    }
+
+
+    function validatorEmail(value){
+        // 正则验证格式
+        eval("var reg = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;");
+        return RegExp(reg).test(value);
+    }
+
+    function settime(obj) { //发送验证码倒计时
+        if (countdown == 0) {
+            obj.attr('disabled',false);
+            obj.css("cursor","pointer");
+            //obj.removeattr("disabled");
+            obj.val("邮箱验证");
+            countdown = 60;
+            return;
+        } else {
+            obj.attr('disabled',true);
+            obj.css("cursor","default");
+            obj.val("重新发送(" + countdown + ")");
+            countdown--;
+        }
+        // var timer = setTimeout(function() {
+        //     settime(obj);
+        //     clearTimeout(timer)
+        // },1000)
+        var timer = setInterval(function() {
+            settime(obj);
+            clearInterval(timer)
+        },1000)
+    }
+
+
+    // 兼容placeholder
+    if(!placeholderSupport()){   // 判断浏览器是否支持 placeholder 不支持则执行一下自定义代码
+        $('[placeholder]').focus(function() {
+            var input = $(this);
+            //判断如果你密码框，获取焦点之后属性修改为密码框 如果没有密码框此处判断可以删除 一下同理
+            if(input[0].id=='userPassword'){
+                input.prop('type','password');
+            }
+            if (input.val() == input.attr('placeholder')) {
+                input.val('');
+                input.removeClass('placeholder');
+            }
+        }).blur(function() {
+            var input = $(this);
+            if (input.val() == '' || input.val() == input.attr('placeholder')) {
+                //将所有input置为文本框  主要为了重置密码框
+                input.prop('type','text');
+                input.addClass('placeholder');
+                input.val(input.attr('placeholder'));
+            }else{
+                //密码框填写密码后 密码后恢复 密码框
+                if(input[0].id=='userPassword'){
+                    input.prop('type','password');
+                }
+            }
+        }).blur();
+    };
+
+    function placeholderSupport() {
+        return 'placeholder' in document.createElement('input');
+    }
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
+
+

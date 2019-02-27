@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>求购信息</title>
+    <link rel="stylesheet" href="fontes/iconfont.css">
+    <link rel="stylesheet" href="css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <a href="index.html" class="logo headleft">Hotel&Inn</a>
+        <div class="area headleft">
+            <p>UK</p>
+            <ul>
+                <li><a href="###">London</a></li>
+                <li><a href="###">Scotland</a></li>
+                <li><a href="###">Edinburgh</a></li>
+                <li><a href="###">Cardiff</a></li>
+                <li><a href="###">Cambridge</a></li>
+                <li><a href="###">Manchester</a></li>
+            </ul>
+        </div>
+        <div class="headleft headsearch">
+            <input type="text" placeholder="搜索您感兴趣的内容">
+            <a href="search.html" class="comser iconfont icon-search"></a>
+        </div>
+        <ul class="nav headleft">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="houses.html">房源</a></li>
+            <li><a href="furniture.html">转手卖</a></li>
+            <li><a href="essay.html">社区</a></li>
+            <li><a href="concern.html">关注</a></li>
+            <li><a href="publish.html">发布信息</a></li>
+        </ul>
+        <div class="nav_vice">
+            <a href="log.html" class="log">登录</a>
+            <a href="register.html">注册</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <a href="###" id="backUp"></a>
+</div>
+<div class="content">
+    <div class="container container_spe">
+        <div class="pub_details_box">
+            <p class="pub_subtitle">基础信息</p>
+            <form class="layui-form layui-form-pane1 pub_form" action="">
+                <div class="layui-form-item ">
+                    <label class="layui-form-label"><i class="pub_mark">*</i>类别</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="xxx" autocomplete="off" value="床" disabled class="layui-input buy_sty">
+                    </div>
+                </div>
+                <div class="layui-form-item buy_price judge">
+                    <p class="judge_tip tip_price">请填写价格</p>
+                    <label class="layui-form-label"><i class="pub_mark">*</i>价格</label>
+                    <div class="layui-input-block">
+                        <input type="number" name="xxx" autocomplete="off" class="layui-input buy_price1 buy_prices">
+                        <em>£</em>
+                        <span>-</span>
+                        <input type="number" name="xxx" autocomplete="off" class="layui-input buy_price2 buy_prices">
+                        <em>£</em>
+                    </div>
+                </div>
+                <div class="layui-form-item judge">
+                    <p class="judge_tip tip_ps">请填写标题</p>
+                    <div class="layui-inline">
+                        <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>标题</label>
+                        <div class="layui-input-inline" style="width: 500px;">
+                            <input type="text" autocomplete="off" class="layui-input judge_ps">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-form-text judge">
+                    <p class="judge_tip tip_info">请填写详细说明</p>
+                    <label class="layui-form-label"><i class="pub_mark">*</i>详细说明</label>
+                    <div class="layui-input-block">
+                        <textarea placeholder="对房子家电或者其他情况的说明" class="layui-textarea pub_textarea judge_info"></textarea>
+                    </div>
+                </div>
+                <p class="pub_subtitle">补充信息</p>
+                <div class="layui-form-item buyCabin acreage">
+                    <label class="layui-form-label">面积</label>
+                    <div class="layui-input-block">
+                        <input type="number" name="xxx" autocomplete="off" placeholder="输入您想要的面积" class="layui-input">
+                        <em>㎡</em>
+                    </div>
+                </div>
+                <div class="layui-form-item buyCabin">
+                    <label class="layui-form-label">颜色</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="xxx" autocomplete="off" placeholder="输入您想要的颜色" class="layui-input">
+                    </div>
+                </div>
+                <p class="pub_subtitle">其他信息</p>
+                <div class="layui-form-item">
+                    <div class="layui-inline judge">
+                        <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>联系人</label>
+                        <div class="layui-input-inline" style="width: 200px;">
+                            <input type="text" autocomplete="off" class="layui-input judge_input judge_person">
+                        </div>
+                        <p class="judge_tip tip_person">请填写联系人</p>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-inline judge">
+                        <label class="layui-form-label pub_lefthead"><i class="pub_mark">*</i>联系电话</label>
+                        <div class="layui-input-inline" style="width: 200px;">
+                            <input type="number" autocomplete="off" class="layui-input contact_phone judge_input judge_phone">
+                        </div>
+                        <p class="judge_tip tip_phone">请填写联系电话</p>
+                    </div>
+                </div>
+                <a href="###" class="pub_submit submit1">发布</a>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer_info">
+            <ul class="left">
+                <li>
+                    <p class="footername">关于我们</p>
+                    <p><a href="###">关于我们</a></p>
+                    <p><a href="###">联系我们</a></p>
+                    <p><a href="###">加入我们</a></p>
+                </li>
+                <li>
+                    <p class="footername">业务服务</p>
+                    <p><a href="###">业务体系</a></p>
+                    <p><a href="###">相关服务</a></p>
+                    <p><a href="###">相关产品</a></p>
+                </li>
+                <li>
+                    <p class="footername">关注我们</p>
+                    <p><a href="###">住宿微信</a></p>
+                    <p><a href="###">下载APP</a></p>
+                </li>
+            </ul>
+            <div class="right">
+                <div class="code">
+                    <img src="images/code.png" alt="">
+                    <span>下载APP</span>
+                </div>
+                <div class="code">
+                    <img src="images/code.png" alt="">
+                    <span>关注微信</span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="copyright">
+            <span>E-mail：<a href="###">info@ynweb.com</a></span>
+            <span>Copyright © 2004-2018 Ynweb All Rights Reserved.</span>
+            <span><a href="###"> 滇ICP备15008235号</a></span><br/>
+            <a href="###" class="securitynum">滇公网安备 53011202000074号</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="layui.js"></script>
+<script type="text/javascript" src="js/vue.min.js"></script>
+<script>
+    $(".room_sty input").on('input',function(){
+        this.value = this.value.replace(/\D/g,"");
+    });
+
+    $(".contact_phone").on('input',function(){
+        this.value = this.value.replace(/\D/g,"");
+    });
+    $(".room_sty input").on('blur',function(){
+        var value = $(this).val();
+        this.value = this.value.replace(/\D/g,"");
+    });
+
+    // 整租发布判断是否为空
+    $(".submit1").click(function(){
+        var v1 = $(".judge_person").val(); //联系人
+        var v2 = $(".judge_phone").val();  //联系电话
+        var v3 = $(".judge_info").val();    //补充说明
+        var v4 = $(".judge_ps").val();  //标题
+        var v5 = $(".buy_price1").val(); //价格
+        var v6 = $(".buy_price2").val();
+        if( v1 == ""){
+            $(".tip_person").slideDown();
+        }else{
+            $(".tip_person").fadeOut();
+        }
+        if( v2 == ""){
+            $(".tip_phone").slideDown();
+        }else{
+            $(".tip_phone").fadeOut();
+        }
+        $(".judge_person").on("input",function(){
+            $(".tip_person").fadeOut();
+        });
+        $(".judge_phone").on("input",function(){
+            $(".tip_phone").fadeOut();
+        });
+        if( v3 == ""){
+            $(".tip_info").slideDown();
+        }else{
+            $(".tip_info").fadeOut();
+        }
+        $(".judge_info").on("input",function(){
+            $(".tip_info").fadeOut();
+        });
+        if( v4 == ""){
+            $(".tip_ps").slideDown();
+        }else{
+            $(".tip_ps").fadeOut();
+        }
+        $(".judge_ps").on("input",function(){
+            $(".tip_ps").fadeOut();
+        });
+        if( v5 == "" || v6 == "" ){
+            $(".tip_price").slideDown();
+        }else{
+            $(".tip_price").fadeOut();
+        }
+        $(".buy_price").on("input",function(){
+            var v5 = parseInt(v5);
+            var v6 = parseInt(v6);
+            if( typeof(v5) == "number" && typeof(v6) == "number" ){
+                $(".tip_price").fadeOut();
+            }else{
+                $(".tip_price").fadeIn()
+            }
+        });
+
+        if( v1 != "" && v2 != "" && v3 != "" && v4 != "" && v5 != "" && v6 != ""){
+             location.href = "furniture.html"
+        }
+
+    });
+
+    layui.use('form', function () {
+        var form = layui.form;
+        // $('input:radio[name=sex]')[0].checked = false;
+        // $('input:radio[name=sex]')[1].checked = true;
+        form.render('radio');
+
+        //自定义验证规则
+        form.verify({
+            title: function (value) {
+                if (value.length < 5) {
+                    return '标题也太短了吧';
+                }
+            }
+            , pass: [/(.+){6,12}$/, '密码必须6到12位']
+        });
+
+        //事件监听
+        form.on('select', function (data) {
+            console.log('select: ', this, data);
+        });
+        form.on('select(quiz)', function (data) {
+            console.log('select.quiz：', this, data);
+        });
+        form.on('select(interest)', function (data) {
+            console.log('select.interest: ', this, data);
+        });
+        form.on('checkbox', function (data) {
+            console.log(this.checked, data.elem.checked);
+        });
+        form.on('switch', function (data) {
+            console.log(data);
+        });
+        form.on('radio', function (data) {
+            console.log(data);
+        });
+        //监听提交
+        form.on('submit(*)', function (data) {
+            console.log(data);
+            return false;
+        });
+
+    });
+
+    layui.use('element', function(){});
+
+</script>
+</body>
+</html>

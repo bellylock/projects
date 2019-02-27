@@ -1,0 +1,43 @@
+label{
+	width: 26% !important;
+	font-size: 15px;
+	color: #000;
+	margin-top: 2px;
+}
+input{
+	font-size: 15px;
+	color: #a3a3a3;
+}
+.mui-input-row label~input{
+	float: left !important;
+}
+.code{
+	width: 40% !important;
+}
+.get{
+	float: right;
+    display: inline-block;
+    line-height: 0.5rem;
+    padding: 0 15px;
+    margin-right: 15px;
+    color: white;
+    font-size: 0.22rem;
+    background-color: #1b5ed8;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+.chargebar{
+	margin: 10px 0;
+}
+.mui-input-group:before{
+	height: 0;
+}
+.mui-input-group:after{
+	height: 0;
+}
+.mui-input-group .mui-input-row:after{
+	left: 0;
+}
+.lastrow:after{
+	height: 0 !important;
+}

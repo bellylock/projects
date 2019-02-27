@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>财富</title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="fontes/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="css/charge.css"/>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/mui.min.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left back"></a>
+	    <h1 class="mui-title">充值</h1>
+	</header>
+	<div class="mui-content content fontes">
+		<form class="mui-input-group chargebar">
+			<div class="mui-input-row">
+				<label class="pic_span">充值金额</label>
+				<input type="number" class="mui-input-clear sum pic_span" placeholder="请输入充值金额">
+			</div>
+		</form>
+		<ul class="mui-table-view ways">
+	        <li class="mui-table-view-cell">
+	            <img class="pic" src="images/money.png" alt="" />
+	            <span class="pic_span">支付方式</span>
+	        </li>
+	    </ul>
+	    <ul class="mui-table-view mui-table-view-radio way">
+			<li class="mui-table-view-cell mui-selected" data-type="1">
+				<a class="mui-navigate-right">
+					<img class="payimg" src="images/wechat.png" alt="" />
+					<span>微信支付</span>
+				</a>
+			</li>
+			<li class="mui-table-view-cell" data-type="2">
+				<a class="mui-navigate-right">
+					<img class="payimg" src="images/zhi.png" alt="" />
+					<span>支付宝</span>
+				</a>
+			</li>
+			<li class="mui-table-view-cell" data-type="3">
+				<a class="mui-navigate-right">
+					<img class="payimg" src="images/card.png" alt="" />
+					<span>银行卡支付</span>
+				</a>
+			</li>
+		</ul>
+		<a href="###" class="keep">立即支付</a>
+		<div class="record">
+			<p class="title">银行卡支付收款信息</p>
+			<p class="text">持卡人：张三</p>
+			<p class="text">卡号：6215589654123658965</p>
+			<p class="text">开户行：昆明市西山区昆州路工行</p>
+		</div>
+	</div>
+	
+	
+    <script src="js/echarts-all.js"></script>
+	<script type="text/javascript">
+		mui.init();	
+		$(".sum").on("input",function(){
+			this.value = this.value.replace(/\D/g,"")
+		});
+		
+		document.querySelector('.mui-table-view.mui-table-view-radio').addEventListener('selected',function(e){		
+			var type = e.detail.el.attributes[1].textContent;
+			if( type == 3){
+				$(".record").css("display","block")
+			}else{
+				$(".record").css("display","none")
+			}
+		});
+		
+	
+	</script>
+	
+</body>
+</html>

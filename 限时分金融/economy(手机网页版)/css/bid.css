@@ -1,0 +1,41 @@
+.com_name{
+	font-size: 15px;
+	color: #000;
+}
+.cell{
+	padding: 0;
+}
+.cell:after{
+	height: 0 !important;
+}
+.cell input{
+	float: left !important;
+	font-size: 15px;
+	color: #a3a3a3;
+}
+.mui-input-group .mui-input-row:after{
+	height: 0 !important;
+}
+.mui-table-view-cell:after{ 
+	left: 0 !important;
+}
+.mui-table-view:after{
+	height: 0 !important;
+}
+form:before{
+	height: 0 !important;
+}
+form:after{
+	height: 0 !important;
+}
+label{
+	width: 29% !important;
+    margin-top: 2px;
+    padding-right: 0 !important;
+}
+.mui-table-view:before{
+	height: 0 !important;
+}
+.midcell{
+	border-bottom: 1px solid #f2f0fe ;
+}

@@ -1,0 +1,89 @@
+*{
+			font-family: "微软雅黑" !important;
+		}
+		.mui-bar-nav{
+			background-color: #4299ff;
+		}
+		.mui-title{
+			color: white;
+		}
+		.mui-pull-left{
+			color: white;
+		}
+		.mui-slider-indicator{
+			background-color: white;
+		}
+		.mui-slider-group{
+			margin-top: 20px;
+		}
+		.mui-slider-item{
+			border: none !important;
+		}
+		.box{
+			border: 1px solid #ccc;
+			width: 90%;
+			margin:0 auto 15px auto;
+			background-color: white;
+			padding: 10px;
+			border-radius: 5px;
+		}
+		.box .top{
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 5px;
+		}
+		.box .top h5{
+			font-size: 16px;
+			color: #000;
+			margin-bottom: 10px;
+		}
+		.box .top p{
+			margin-bottom: 5px;
+			font-size: 14px;
+			color: #999;
+		}
+		.box .top .iconfont{
+			font-size: 16px;
+			color: #369ff2;
+			margin-right: 8px;
+		}
+		.box .down{
+			padding-top: 10px;
+			overflow: hidden;
+		}
+		.box .down span{
+			font-size: 14px;
+			color: #999;
+			float: left;
+		}
+		.box .down i{
+			font-style: normal;
+			color: red;
+			font-size: 12px;
+			float: right;
+			line-height: 20px;
+		}
+		.time{
+			margin-right: 10px;
+		}
+		.prices{
+			font-size: 16px !important;
+		}
+		.status, .bun{
+			overflow: hidden;
+		}
+		.bun{
+			margin-top: 15px;
+		}
+		.box .down a{
+			float: right;
+			line-height: 24px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 0 10px;
+			margin-left: 10px;
+			color: #333;
+		}
+		.comment{
+			color: #369ff2 !important;
+			border-color: #369ff2 !important;
+		}

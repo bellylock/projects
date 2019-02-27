@@ -1,0 +1,58 @@
+.content{
+	width: 100%;
+	margin: 40px 0
+}
+.content{
+	overflow: hidden;
+}
+.content h2{
+	text-align: center;
+}
+.content .line{
+	width: 150px;
+	display: block;
+	margin: 0 auto;
+	height: 3px;
+	background:#00c1de;
+	margin-bottom: 40px
+}
+.content .left{
+	float: left;
+	width: 760px;
+	margin-right: 40px
+}
+.content .left img{
+	width: 100%
+}
+.content .right{
+	width: 340px;
+	float: left;
+	padding-top: 5px;
+}
+.content .right p{
+	font-size: 16px;
+}
+.maps{
+	border: none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

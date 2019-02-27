@@ -1,0 +1,127 @@
+@font-face{
+    font-family: "simkai";
+    src: url("../font/simkai.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding: 0;
+    overflow: hidden;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background: linear-gradient(to right,#305395, #234994);
+    overflow: hidden;
+    padding: 10px 15px;
+}
+#logimg{
+    width: 100px;
+    float: left;
+    display: block;
+}
+#logimg img{
+    width: 100%;
+}
+.header i{
+    float: right;
+    font-size: 26px;
+    color: #fff;
+}
+#cover{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    background: rgba(0,0,0,.8);
+}
+#menubox{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+    z-index: 999;
+    overflow: scroll;
+}
+#menubox .speli{
+    display: inline-block;
+    border: none !important;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    width: 20px;
+}
+#menubox .speli i{
+    font-size: 20px;
+    color: #fff;
+}
+#menubox li{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #fff;
+}
+#menubox li a{
+    line-height: 44px;
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+.childimg{
+    width: 100%;
+}
+.footer{
+    background: linear-gradient(to right,#305395, #234994);
+    padding: 25px 0px;
+}
+.footer p{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

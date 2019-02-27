@@ -1,0 +1,153 @@
+*{
+			font-family: "微软雅黑" !important;
+		}
+		.mui-bar-nav{
+			background-color: #4299ff;
+		}
+		.mui-title{
+			color: white;
+		}
+		.mui-pull-left{
+			color: white;
+		}
+		.title{
+			background-color: white;
+			padding: 15px 0;
+			text-align: center;
+			border-bottom: 1px solid #eee;
+		}
+		.title h5{
+			font-size: 16px;
+			color: #000;
+		}
+		.title span{
+			font-size: 15px;
+			color: red;
+		}
+		.title em{
+			font-style: normal;
+			font-size: 18px;
+			color: red;
+		}
+		.title p{
+			font-size: 14px;
+			color: #666666;
+			margin-bottom: 0;
+		}
+		.fee{
+			width: 100%;
+			background-color: white;
+			overflow: hidden;
+			padding: 15px;
+		}
+		.fee .left{
+			width: 30%;
+			float: left;
+		}
+		.fee .left img{
+			width: 85%;
+		}
+		.fee .right{
+			width: 70%;
+			float: left;
+		}
+		.fee .right p{
+			overflow: hidden;
+		}
+		.fee .right .dates{
+			float: left;
+		}
+		.fee .right .price{
+			float: right;
+			color: #333;
+		}
+		.fee .right em{
+			font-style: normal;
+			font-size: 12px;
+		}
+		.fee .right i{
+			font-style: normal;
+			font-size: 16px;
+		}
+		.drop{
+			font-size: 17px !important;
+			display: block;
+			text-align: center;
+		}
+		.dropdown{
+			display: none;
+		}
+		.room_details{
+			width: 100%;
+			background-color: white;
+			overflow: hidden;
+		}
+		.room_details img{
+			width: 15%;
+			float: left;
+			margin-right: 6px;
+		}
+		.room_details span{
+			font-size: 14px;
+			float: left;
+			color: #666;
+			line-height:20px ;
+		}
+		.room_details p{
+			float: left;
+			width: 43%;
+			padding-left: 15px;
+		}
+		.name{
+			margin: 15px 0;
+		}
+		.mui-table-view-cell:after{
+			left: 0 !important;
+		}
+		.special_nav:after{
+			content:none;
+		}
+		.hotel_name p{
+			font-size: 16px;
+			color: #000;
+		}
+		.hotel_name span{
+			font-size: 14px;
+			color: #666;
+		}
+		.context p{
+			font-size: 15px;
+			margin-bottom: 5px;
+		}
+		.context span{
+			color: #000;
+		}
+		.context i{
+			font-style: normal;
+			color: #999;
+			margin-right: 5px;
+		}
+		.dels{
+			width: 100%;
+			background-color: white;
+			padding: 10px 15px;
+		}
+		.dels p{
+			margin-bottom: 5px !important;
+			font-size: 15px;
+		}
+		.per{
+			letter-spacing: 5px;
+		}
+		.dels span{
+			color: #000;
+			width: 80px;
+			display: inline-block;
+			text-align: justify;
+		}
+		.dels i{
+			font-style: normal;
+		}
+		.bills{
+			margin-top: 15px;
+		}

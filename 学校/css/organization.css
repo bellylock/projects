@@ -1,0 +1,240 @@
+body{
+    background-color: #f3f3f3 !important;
+}
+.bannerdraw{
+    width: 100%;
+}
+.main{
+    padding: 16% 0 0;
+    background: url("../images/banner.gif") no-repeat left top;
+    background-size: 100%;
+    background-position: 0 0;
+}
+.main h3{
+    font-size: 22px;
+    color: #000;
+    padding-bottom: 15px;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+}
+.main .cover{
+    padding: 15px;
+    background: url(../images/bg.png) repeat 0 0;
+    background-size: 100%;
+    width: 1000px;
+    margin: 0 auto 30px auto;
+}
+.main .box{
+    margin: 20px 0;
+}
+.main .box span{
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0c7dd8;
+    padding: 0 30px;
+    line-height: 38px;
+}
+.main .box ul{
+    margin: 20px 0;
+}
+.main .box ul li{
+    width: 24%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+.main .box ul li a{
+    cursor: default;
+    display: block;
+    font-size: 14px;
+    color: #333;
+    background-color: #dddcdc;
+    text-align: center;
+    line-height: 44px;
+}
+.main .box ul li a:hover{
+    color: #dc0201;
+}
+
+/*news*/
+.newscontent{
+    background: url("../images/beijing.jpg") repeat center;
+    background-size: 30%;
+}
+.newsbox{
+    overflow: hidden;
+    padding: 40px 0;
+}
+.newsbox .mainnews{
+    width: 700px;
+    float: left;
+}
+.newsbox .mainnews h2{
+    font-size: 22px;
+    color: #1f5bb1;
+    border-bottom: 1px solid #1f5bb1;
+    padding-bottom: 15px;
+}
+.newsbox .mainnews ul{
+    padding-top: 25px;
+}
+.newsbox .mainnews ul li{
+    width: 33.33%;
+    margin-bottom: 25px;
+}
+.newsbox .mainnews ul li:nth-of-type(n){
+    padding-right: 20px;
+    padding-left: 0;
+}
+.newsbox .mainnews ul li:nth-of-type(3n+2){
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.newsbox .mainnews ul li:nth-of-type(3n){
+    padding-left: 20px;
+    padding-right: 0;
+}
+.newsbox .mainnews ul li .libox{
+    position: relative;
+    height: 344px;
+    background-color: white;
+    padding: 30px;
+}
+.newsbox .mainnews ul li .libox a{
+    font-size: 16px;
+    color: #333;
+    display: inline-block;
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 24px;
+}
+.newsbox .mainnews ul li .libox a:hover{
+    color: #dc0201;
+}
+.newsbox .mainnews ul li .libox span{
+    font-size: 14px;
+    color: #999;
+}
+.newsbox .mainnews ul li .libox p{
+    font-size: 13px;
+    color: #333;
+    background: url(../images/timelapse.png) no-repeat top left;
+    background-size: 15px;
+    line-height: 16px;
+    text-indent: 1.5em;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+.newsbox .hotnews{
+    width: 410px;
+    float: right;
+
+}
+.pages{
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.pages a{
+    border: 1px solid #1f5bb1;
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #333;
+    margin: 0 5px;
+}
+.pages a:hover{
+    background-color: #1f5bb1;
+    color: #fff;
+    border-color: #1f5bb1;
+}
+.pages .prev,.pages .next, .pageon{
+    background-color: #1f5bb1;
+    color: #fff !important;
+    border-color: #1f5bb1 !important;
+}
+.hotnews h3{
+    font-size: 20px;
+    color: #bd2980;
+    background: url(../images/recent.jpg) no-repeat left top;
+    background-size: 33px;
+    text-indent: 2.5em;
+    padding-bottom: 15px;
+    padding-top: 2px;
+}
+.hotnews ul{
+    border-top: 2px solid #bd2980;
+    margin-top: 12px;
+    padding-top: 15px;
+}
+.hotnews ul li{
+    width: 100%;
+    border-bottom: 1px dashed #bd2980;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+.hotnews ul li p{
+    background: url(../images/timelapse.png) no-repeat top left;
+    background-size: 15px;
+    font-size: 15px;
+    color: #666;
+    padding-left: 24px;
+    line-height: 16px;
+}
+.hotnews ul li a{
+    font-size: 14px;
+    color: #333;
+    display: block;
+    line-height: 20px;
+    margin-top: 8px;
+}
+.hotnews ul li a:hover{
+    color: #dc0201;
+}
+.newstext{
+    font-size: 15px;
+    color: #000;
+    margin: 25px 0;
+    text-indent: 2em;
+    line-height: 28px;
+    text-align: justify;
+}
+.newstext span{
+    font-weight: bold;
+}
+.newsimg{
+    width: 100%;
+}
+.newsedit{
+    text-align: right;
+    font-size: 15px;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

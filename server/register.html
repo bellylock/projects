@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/component.css">
+    <!--[if IE]>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="content">
+        <div id="large-header" class="logbg">
+            <canvas id="logcanvas"></canvas>
+            <a href="index.html" class="logimg"><img src="images/logo.png" alt=""></a>
+            <div class="registerbox">
+                <h3 class="comname">用户登录</h3>
+                <input type="text" placeholder="输入用户名">
+                <input type="number" placeholder="输入手机号">
+                <div class="lastrow">
+                    <input type="text" class=" code" placeholder="请输入验证码">
+                    <input class="codes" type="button" id="identify_code" value="发送验证码"  />
+                </div>
+                <input type="text" placeholder="输入邮箱">
+                <input type="password" placeholder="密码">
+                <input type="password" placeholder="确认密码">
+                <a href="###" class="registernow">登&nbsp;&nbsp;录</a>
+                <div class="return">
+                    <span>已有账号</span>
+                    <a href="login.html">返回登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script src="http://hovertree.com/texiao/jquery/43/jquery.JPlaceholder.js"></script>
+<script type="text/javascript" src="js/TweenLite.min.js"></script>
+<script type="text/javascript" src="js/EasePack.min.js"></script>
+<script type="text/javascript" src="js/canvas1.js"></script>
+    <script>
+        var countdown=60;
+        $("#identify_code").click(function(){
+            settime($(this))   //$(this)是实参
+        });
+        //obj是形参
+        function settime(obj) { //发送验证码倒计时
+            if (countdown == 0) {
+                obj.attr('disabled',false);
+                //obj.removeattr("disabled");
+                obj.val("发送验证码");
+                countdown = 60;
+                return;
+            } else {
+                obj.attr('disabled',true);
+                obj.val("重新发送(" + countdown + ")");
+                countdown--;
+            }
+            setTimeout(function() {
+                settime(obj)
+            },1000)
+        }
+    </script>
+</body>
+</html>

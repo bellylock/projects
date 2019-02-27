@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>个人中心</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="fontes/iconfont.css"/>
+    <link rel="stylesheet" href="css/user.css" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">个人中心</h1>
+	</header>
+	<div class="mui-content content">
+		<div class="tit">
+			<img class="portrait" src="images/1.jpg" alt="" />
+			<p class="titname">仙尊大盗</p>
+		</div>
+		<div class="menus fontes">
+			<div class="box ">
+				<img class="boximg" src="images/m5.png" alt="" />
+				<p>投资记录</p>
+			</div>
+			<div class="box">
+				<img class="boximg" src="images/m6.png" alt="" />
+				<p>提现记录</p>
+			</div>
+		</div>
+		<ul class="mui-table-view mui-grid-view mui-grid-9 fontbox nine">
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+			    <a href="#">
+			        <span class="mui-icon"><img class="upic" src="images/u1.png" alt="" /></span>
+			        <div class="mui-media-body">自动购买</div>
+			    </a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+			    <a href="#">
+			        <span class="mui-icon"><img class="upic" src="images/u2.png" alt="" /></span>
+			        <div class="mui-media-body">我的团队</div>
+			    </a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+			    <a href="#">
+			        <span class="mui-icon"><img class="upic" src="images/u3.png" alt="" /></span>
+			        <div class="mui-media-body">佣金明细</div>
+			    </a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+			    <a href="#">
+			        <span class="mui-icon"><img class="upic" src="images/u4.png" alt="" /></span>
+			        <div class="mui-media-body">邀请好友</div>
+			    </a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+			    <a href="#">
+			        <span class="mui-icon"><img class="upic" src="images/u5.png" alt="" /></span>
+			        <div class="mui-media-body">常见问题</div>
+			    </a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+			    <a href="#">
+			        <span class="mui-icon"><img class="upic" src="images/u6.png" alt="" /></span>
+			        <div class="mui-media-body">客服帮助</div>
+			    </a>
+			</li>
+		</ul>
+		<ul class="mui-table-view menues">
+	        <li class="mui-table-view-cell" id="phoneset">
+	            <a class="mui-navigate-right">
+	                <img class="simg" src="images/s1.png" alt="" />
+	                <span>手机号绑定</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell" id="bankset">
+	            <a class="mui-navigate-right">
+	                <img class="simg" src="images/s2.png" alt="" />
+	                <span>银行卡设置</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right" id="zhiset">
+	                <img class="simg" src="images/s3.png" alt="" />
+	                <span>支付宝设置</span>
+	            </a>
+	        </li>
+	   </ul>
+	</div>
+	
+    <script src="js/echarts-all.js"></script>
+	<script type="text/javascript">
+		mui.init();
+		document.getElementById("phoneset").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"bind.html"
+			})
+		});
+		document.getElementById("bankset").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"bankcard.html"
+			})
+		});
+		document.getElementById("zhiset").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"zhiset.html"
+			})
+		})
+		
+	</script>
+</body>
+</html>

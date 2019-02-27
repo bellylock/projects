@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>课程详情</title>
+    <link rel="stylesheet" href="fontes/iconfont.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common_m.css">
+    <link rel="stylesheet" href="css/index_m.css">
+</head>
+<body>
+<div class="header">
+    <div class="headBox">
+        <div class="nav">
+            <a href="index_m.html"><img src="images/logos.png" alt=""></a>
+            <span id="menu"></span>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <img class="draw aniview" av-animation="fadeIn" src="images/ban5.jpg" alt="">
+    <div class="cd_teacher">
+        <img src="images/t3.jpg" class="aniview" av-animation="slideInRight" alt="">
+        <p class="aniview" av-animation="slideInLeft">英语老师：上官燕</p>
+        <span class="aniview" av-animation="slideInDown">说到考证，大家的感受都是痛苦且无奈。在学习生活、社团活动之余挤出时间出来考证，可能多数人都是力不从心的。说到考证，大家的感受都是痛苦且无奈。在学习生活、社团活动之余挤出时间出来考证，可能多数人都是力不从心的。</span>
+    </div>
+    <div class="cd_about">
+        <h3 class="aniview" av-animation="slideInRight">课程特点</h3>
+    </div>
+    <div class="ad_box">
+        <ul class="aniview" av-animation="slideInUp">
+            <li><span>课程名称</span><span>英语</span></li>
+            <li><span>学生人数</span><span>120人</span></li>
+            <li><span>开课时间</span><span>10/12/2018</span></li>
+            <li><span>持续时间</span><span>6个月</span></li>
+            <li><span>上课时长</span><span>2小时</span></li>
+            <li><p>课程费用￥888</p></li>
+        </ul>
+        <div class="cd_cabin">
+            <div class="cd_bin aniview" av-animation="slideInUp">
+                <p>关于课程</p>
+                <span>说到考证，大家的感受都是痛苦且无奈。在学习生活、社团活动之余挤出时间出来考证，可能多数人都是力不从心的。除了考霸之外很多人都是被逼着走上考证这条路。那么究竟是怎样的吸引力，让每年千万大军走上了考证之路呢说到考证，大家的感受都是痛苦且无奈。</span>
+            </div>
+            <div class="cd_bin aniview" av-animation="slideInUp">
+                <p>如何学习</p>
+                <span>说到考证，大家的感受都是痛苦且无奈。在学习生活、社团活动之余挤出时间出来考证，可能多数人都是力不从心的。除了考霸之外很多人都是被逼着走上考证这条路。那么究竟是怎样的吸引力，让每年千万大军走上了考证之路呢说到考证，大家的感受都是痛苦且无奈。在学习生活社团活动之余挤出时间出来考证。</span>
+            </div>
+        </div>
+    </div>
+    <ul id="menulist">
+        <li><a href="index_m.html">首页</a></li>
+        <li><a href="about_m.html">关于我们</a></li>
+        <li><a href="course_m.html">课程</a></li>
+        <li><a href="news_m.html">资讯</a></li>
+        <li><a href="contact_m.html">联系我们</a></li>
+    </ul>
+</div>
+<div class="footer">
+    <p>©2018 版权所有</p>
+    <p> Copyright © 2018.Company name All rights reserved.</p>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.aniview.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script>
+    var i = {animateThreshold: 100};
+    $(".aniview").AniView(i);
+
+    var innerheight = $(window).innerHeight();
+    var height = innerheight - 50;
+    $("#menulist").css("height",height);
+
+
+    $("#menu").click(function(){
+        $("#menulist").slideToggle(200);
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border: none;
+}
+.mui-slider-indicator{
+	background-color: white;
+}
+.lists{
+	overflow: hidden;
+}
+.lists .left{
+	float: left;
+	width: 40%;
+}
+.lists .left span{
+	font-size: 0.33rem;
+    float: left;
+    margin-top: 11%;
+    margin-left: 10px;
+}
+.lists .right{
+	float: right;
+	width: 60%;
+	text-align: right;
+}
+.lists .right p{
+	font-size: 0.3rem;
+	color: #333;
+}
+.lists .right em{
+	font-style: normal;
+	color: #ff0000;
+}
+.npic{
+	width: 1rem !important;
+	height: 1rem;
+	border-radius: 50%;
+	float: left;
+}
+.sums{
+	margin-top: 8px;
+}
+.mui-table-view-cell:after{
+	left: 0;
+}
+.group{
+	margin-top: 10px;
+}

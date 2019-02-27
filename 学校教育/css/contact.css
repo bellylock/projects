@@ -1,0 +1,126 @@
+.main{
+    margin: 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.main .left{
+    width: 60%;
+}
+.main .right{
+    width: 35%;
+}
+.main h2{
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: normal;
+}
+.form{
+    margin-top: 40px;
+}
+.form input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 44px;
+    line-height: 44px;
+    font-size: 15px;
+    color: #000;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+    background-color: #ebe6dc;
+}
+.form input:focus{
+    outline: none;
+    border-color: orange;
+}
+.form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px;
+    resize: none;
+    border: 2px solid transparent;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #000;
+    background-color: #ebe6dc;
+    line-height: 44px;
+}
+.form textarea:focus{
+    outline: none;
+    border-color: orange;
+}
+.form a{
+    font-size: 15px;
+    color: #fff !important;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    background-color: orange;
+    margin-top: 20px;
+}
+.form a:hover{
+    background-color: #e59b13;
+}
+.joinclass{
+    font-size: 15px;
+    color: #666;
+    line-height: 30px;
+    margin: 30px 0;
+}
+.address{
+    padding-left: 40px;
+}
+.address li{
+    overflow: hidden;
+    background-size: 22px !important;
+    text-indent: 2.5em;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.address li:first-child{
+    background: url(../images/location.png) no-repeat top left;
+}
+.address li:nth-child(2){
+    background: url(../images/phones.png) no-repeat top left;
+}
+.address li:nth-child(3){
+    background: url(../images/email.png) no-repeat top left;
+}
+.address li span{
+    font-size: 15px;
+    color: #000;
+    line-height: 28px;
+}
+.map{
+    width: 100%;
+    margin-bottom: -6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

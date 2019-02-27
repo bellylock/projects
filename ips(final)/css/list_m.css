@@ -1,0 +1,48 @@
+.content h3{
+	text-align: center;
+    color: #0b8cac;
+    display: block;
+    border-bottom: 1px solid #0b8cac;
+    line-height: 37px;
+    margin: 24px auto;
+    width: 174px;
+}
+table{
+	width: 100%
+}
+table tbody{
+	width: 100%
+}
+table tr td{
+	width: 33%;
+	text-align: center;
+}
+.sur{
+	width: 99%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.span{
+	width: 49%;
+	float: left;
+	border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    font-size: 15px;
+    text-align: center;
+    margin: 3px 0;
+    line-height: 28px
+}
+.spans{
+	float: right !important;
+}
+table tr td span{
+	line-height: 30px;
+    width: 95%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    font-size: 15px;
+    margin: 3px 0;
+}

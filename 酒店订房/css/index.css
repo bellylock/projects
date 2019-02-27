@@ -1,0 +1,119 @@
+*{
+			font-family: "微软雅黑" !important;
+		}
+		.mui-bar-nav{
+			background-color: #4299ff;
+		}
+		.mui-title{
+			color: white;
+		}
+		.mui-pull-left{
+			color: white;
+		}
+		.mui-bar-tab{
+			box-shadow: none;
+			border-top: 1px solid #ccc;
+		}
+		.mui-card{
+			margin: 0 0 10px 0;
+			box-shadow: none;
+			border-radius: 0;
+		}
+		.mui-card-header{
+			border-radius: 0;
+		}
+		.mui-content>.mui-card:first-child{
+			margin-top: 0;
+		}
+		.title{
+			font-size: 16px;
+			color: #333;
+		}
+		.comment .iconfont{
+			color: #ff4342;
+		}
+		.comment span{
+			font-size: 14px;
+		}
+		.privilege{
+			overflow: hidden;
+		}
+		.privilege i{
+			font-style: normal;
+			float: left;
+		}
+		.privilege span{
+			overflow: hidden;
+			float: right;
+		}
+		.pris{
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 13px;
+			color: #666;
+			line-height: 21px;
+			padding: 0 6px;
+			margin-right: 8px;
+		}
+		.mainpic{
+			width: 100% !important;
+		    height: 180px !important;
+		    position: absolute !important;
+		    top: 0 !important;
+		    left: 0 !important;
+		}
+		.inside{
+			position: absolute;
+			top: 20px;
+			left: 25px;
+			width: 90px;
+			border-radius: 6px;
+		}
+		.inside p{
+			background-color: #33a0f5;
+			color: white;
+			margin-bottom: 0;
+			text-align: center;
+			line-height: 33px;
+			border-radius: 4px 4px 0 0;
+		}
+		.inside p span{
+			font-size: 14px;
+		}
+		.inside p i{
+			font-style: normal;
+			font-size: 18px;
+		}
+		.inside .hui{
+			display: block;
+			text-align: center;
+			font-size: 14px;
+			color: #33a0f5;
+			background-color: white;
+			line-height: 26px;
+			border-radius: 0 0 4px 4px
+		}
+		.circle{
+			position: absolute;
+			bottom: -15px;
+			right: 15px;
+			width: 30px;
+			height: 30px;
+			background-color: #33a0f5;
+			text-align: center;
+			border-radius: 50%;
+			z-index: 999;
+			padding-top: 5px;
+		}
+		.icon-heartcoloring{
+			color: red;
+		}
+		.icon_mid{
+			font-size: 26px !important;
+		}
+		.mui-bar-tab .mui-tab-item.mui-active{
+			color: #0087d5 !important;
+		}
+		.mui-bar-tab{
+			z-index: 1000 !important;
+		}

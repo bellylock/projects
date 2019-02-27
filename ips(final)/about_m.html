@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<title>关于我们</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/common_m.css">
+	<link rel="stylesheet" type="text/css" href="css/about_m.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="menu">
+			<img class="img" data-status="0" src="images/menu.png">
+			<a href="index_m.html" class="tit_log"><img src="images/title.png" ></a>
+		</div>
+		<ul class="menues">
+			<li><a href="index_m.html">首页</a></li>
+			<li><a href="about_m.html">关于我们</a></li>
+			<li><a href="pptp_m.html">PPTP</a></li>
+			<li><a href="list_m.html">地区列表</a></li>
+			<li><a href="introduce_m.html">使用说明</a></li>
+			<li><a href="agency_m.html">代理合作</a></li>
+			<li><a href="contact_m.html">联系我们</a></li>
+		</ul>
+		<img src="images/bgi.jpg" class="banner">
+	</div>
+	<div class="content">
+		<h3>我们的优势</h3>
+		<p class="adv">嘉和数码（www.jhsm.cn）是昆明晏宇科技有限公司旗下互联网云基础服务平台致力于提供专业的云主机、虚拟主机、服务器租用、ADSL动态VPS主机、云建站、可信企业网站认证、以及互联网安全业务等</p>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="col-xs-6 c6 c1">
+					<span>7</span>
+					<em>X</em>
+					<span>24</span>
+					<p>免费无忧服务</p>
+				</div>
+				<div class="col-xs-6 c6 c2">
+					<span>30</span>
+					<em>+</em>
+					<p>合作伙伴</p>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-6 c6 c3">
+					<span>200w</span>
+					<em>+</em>
+					<p>个ip地址存量</p>
+				</div>
+				<div class="col-xs-6 c6 c4">
+					<span>2w</span>
+					<em>+</em>
+					<p>云主机保有量</p>
+				</div>
+			</div>
+		</div>
+		<p class="adv">嘉和一路走来，市场主流云计算的所有顶级代理自己开发的云计算整合平台，云主机管理系统，PPTP，SSTP,L2TP软件多个客户端。已成为拥有核心竞争力的互联网服务提供商</p>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="butt">
+				<span>Copyright © 2004-2017</span>
+				<span>昆明晏宇科技有限公司</span>
+				<span>All Rights Reserved.</span>
+				<span>滇ICP备16000201号-1</span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	    var status = $(".menu img").attr("data-status");
+	    $(".menu .img").click(function(){
+	    	// $(".menues").toggle()
+	    	if( status == 0){
+	    		$(".menues").slideDown(300);
+	    		status = 1 ;
+	    		$(".menu img").attr("data-status",1);
+	    		console.log($(".menu img").attr("data-status"))
+	    	}else if( status == 1){
+	    		$(".menues").slideUp(300);
+	    		status = 0;
+	    		$(".menu img").attr("data-status",0);
+	    		console.log($(".menu img").attr("data-status"))
+	    	}
+	    })
+	</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>提现记录</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="fontes/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="css/cashin.css"/>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left back"></a>
+	    <h1 class="mui-title">充值记录</h1>
+	</header>
+	<div class="mui-content content ">
+		<div class="mui-slider">
+		    <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+		        <a class="mui-control-item mui-active" href="#item1">已支付</a>
+		        <a class="mui-control-item" href="#item2">未支付</a>
+		    </div>
+		    <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
+		    <div class="mui-slider-group group">
+		        <div id="item1" class="mui-slider-item mui-control-content mui-active">
+		            <ul class="mui-table-view chargerecord">
+	                    <li class="mui-table-view-cell">
+	                        <div class="top">
+	                        	<span>充值方式：</span>
+	                        	<span class="pw">微信</span>
+	                        	<em>2018-4-20</em>
+	                        	<em>支付时间：</em>
+	                        </div>
+	                        <p>￥<span>2000.00</span></p>
+	                    </li>
+	                    <li class="mui-table-view-cell">
+	                        <div class="top">
+	                        	<span>充值方式：</span>
+	                        	<span class="pw">支付宝</span>
+	                        	<em>2018-4-20</em>
+	                        	<em>支付时间：</em>
+	                        </div>
+	                        <p>￥<span>2000.00</span></p>
+	                    </li>
+	                </ul>
+		        </div>
+		        <div id="item2" class="mui-slider-item mui-control-content">
+		            <ul class="mui-table-view chargerecord">
+	                    <li class="mui-table-view-cell">
+	                        <div class="top">
+	                        	<span>充值方式：</span>
+	                        	<span class="pw">支付宝</span>
+	                        	<em>2018-5-30</em>
+	                        	<em>支付时间：</em>
+	                        </div>
+	                        <p>￥<span>1000.00</span></p>
+	                    </li>
+	                    <li class="mui-table-view-cell">
+	                        <div class="top">
+	                        	<span>充值方式：</span>
+	                        	<span class="pw">微信</span>
+	                        	<em>2018-6-12</em>
+	                        	<em>支付时间：</em>
+	                        </div>
+	                        <p>￥<span>1500.00</span></p>
+	                    </li>
+	                </ul>
+		        </div>
+		    </div>
+		</div>
+	</div>
+	
+    <script src="js/echarts-all.js"></script>
+	<script type="text/javascript">
+		mui.init();	
+		
+	</script>
+</body>
+</html>

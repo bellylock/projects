@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+	<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/backstage.css">
+	<link rel="stylesheet" type="text/css" href="css/layui.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.zclip.min.js"></script>
+	<script type="text/javascript" src="js/backstage.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="left">
+			管理系统
+		</div>
+		<div class="right">
+			<div class="box hello">
+				<span>您好！</span>
+				<p>123456789</p>
+			</div>
+			<div class="box">
+				<img src="images/rmb.png">
+				<em>余额：</em>
+				<em>211.00</em>
+				<a href="###" class="charge">在线充值</a>
+			</div>
+			<div class="box">
+				<img src="images/time.png">
+				<em>临期账号：</em>
+				<em>2</em>
+				<a href="backstageaccount.html">查看</a>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="left">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation" class="active"><a href="backstage.html"><img src="images/home.png" height="250" width="250">首页</a></li>
+			    <li role="presentation"><a href="backstageopen.html" ><img src="images/open.png" height="250" width="250">新开账号</a></li>
+			    <li role="presentation" class="checkli2"><a href="backstageaccount.html" ><img src="images/accoount.png" height="250" width="250">账号管理</a></li>
+			    <li role="presentation"><a href="backstagefinan.html" ><img src="images/rmb.png" height="250" width="250">财务管理</a></li>
+			    <li role="presentation"><a href="backstagefile.html" ><img src="images/shield.png" height="250" width="250">资料修改</a></li>
+			    <li role="presentation"><a href="arrange.html" ><img src="images/exit.png" height="250" width="250">退出</a></li>
+			</ul>
+		</div>
+		<div class="right">
+			<!-- Tab panes -->
+			<div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="home">
+			    	<div class="text text1">
+			    		<div class="top_title">
+			    			<span>服务器列表</span>
+			    		</div>
+			    		<div class="text_list">
+			    			<div class="list_title">
+			    				<strong class="str1">名称</strong>
+			    				<strong class="str2">连接地址</strong>
+			    				<strong class="str3">运行状态</strong>
+			    			</div>
+			    			<div class="list_main">
+			    				<div class="box">
+			    					<p class="box_title">混拨</p>
+			    					<div class="boxes">
+			    						<p class="name">全国混拨</p>
+			    						<p class="address">shh.ipzuiduo.net</p>
+			    						<p class="status"><span class="normal">正常运行</span></p>
+			    						<p class="name">全国混拨1</p>
+			    						<p class="address">hb1.ipzuiduo.net</p>
+			    						<p class="status"><span class="unnormal">维护中</span></p>
+			    						<p class="name">全国混拨2</p>
+			    						<p class="address">hb2.ipzuiduo.net</p>
+			    						<p class="status"><span class="normal">正常运行</span></p>
+			    					</div>
+			    				</div>
+			    				<div class="box">
+			    					<p class="box_title">混拨</p>
+			    					<div class="boxes">
+			    						<p class="name">全国混拨</p>
+			    						<p class="address">shh.ipzuiduo.net</p>
+			    						<p class="status"><span class="normal">正常运行</span></p>
+			    						<p class="name">全国混拨1</p>
+			    						<p class="address">hb1.ipzuiduo.net</p>
+			    						<p class="status"><span class="unnormal">维护中</span></p>
+			    						<p class="name">全国混拨2</p>
+			    						<p class="address">hb2.ipzuiduo.net</p>
+			    						<p class="status"><span class="normal">正常运行</span></p>
+			    					</div>
+			    				</div>
+			    				<div class="box">
+			    					<p class="box_title">混拨</p>
+			    					<div class="boxes">
+			    						<p class="name">全国混拨</p>
+			    						<p class="address">shh.ipzuiduo.net</p>
+			    						<p class="status"><span class="normal">正常运行</span></p>
+			    						<p class="name">全国混拨1</p>
+			    						<p class="address">hb1.ipzuiduo.net</p>
+			    						<p class="status"><span class="unnormal">维护中</span></p>
+			    						<p class="name">全国混拨2</p>
+			    						<p class="address">hb2.ipzuiduo.net</p>
+			    						<p class="status"><span class="normal">正常运行</span></p>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div id="edit_text" style="display: none;">
+		<div class="context">
+			<div class="bbb"></div>
+		</div>
+	</div>
+	<div id="fee_text" style="display: none;">
+		<div class="context1">
+			<p class="fee_names">续费账户</p>
+			<p class="names"></p>
+			<div class="fee_box">
+				<input type="text" value="1" />
+				<div class="fee_bar bar1">
+					<i class="fee_pick"></i>
+					<span><span class="pri">4</span>元/天</span>
+				</div>
+				<div class="fee_bar bar2">
+					<i></i>
+					<span><span class="pri">6</span>元/周</span>
+				</div>
+				<div class="fee_bar bar3">
+					<i></i>
+					<span><span class="pri">10</span>元/月</span>
+				</div>
+			</div>
+			<p class="fee_total">
+				<em>总价：</em>
+				<span><span>￥</span><span id="fee_tals">12</span></span>
+			</p>
+		</div>
+	</div>
+	<div id="online_text" style="display: none;">
+		<div class="context2">
+			<table>
+				<thead>
+					<tr>
+						<th>账户名</th>
+						<th>连接地区</th>
+						<th>在线时长</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+	</div>
+	<div id="modify_text" style="display: none;">
+		<div class="context3">
+			<input class="ma" type="text" placeholder="账号">
+			<input class="mp" type="password" placeholder="密码">
+			<textarea class="mi" type="text" placeholder="备注"></textarea>
+		</div>
+	</div>
+	<script type="text/javascript" src="layui.js"></script>
+</body>
+</html>
+
+

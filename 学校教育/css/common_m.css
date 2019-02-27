@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: '微软雅黑';
+}
+body{
+    /*font-size: 0;*/
+}
+ul{
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+ul li{
+    float: left;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    /*去除a点击时背景*/
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+}
+a:focus{
+    outline: none;
+}
+.headBox{
+    position: relative;
+}
+.headBox .nav{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    top: 0;
+    background-color: rgba(249,73,78,.6);
+    z-index: 999;
+}
+.headBox .nav a{
+    display: inline-block;
+    float: left;
+    width: 130px;
+    height: 35px;
+    margin-left: 33%;
+    margin-top: 8px;
+}
+.headBox .nav a img{
+    width: 100%;
+    height: 100%;
+}
+.headBox .nav span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    background: url(../images/menu.png) no-repeat center;
+    background-size: 30px;
+    margin-top: 10px;
+    margin-right: 16px;
+}
+#menulist{
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 999999;
+    top: 50px;
+    left: 0;
+}
+#menulist li{
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+#menulist li a{
+    display: block;
+    line-height: 44px;
+    font-size: 15px;
+    color: #333;
+    padding-left: 20px;
+}
+.footer{
+     background: #000;
+     padding: 12px 0;
+ }
+.footer p{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+.draw{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

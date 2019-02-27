@@ -1,0 +1,388 @@
+*{
+	font-family: "微软雅黑" !important;
+}
+.mui-bar-nav{
+	background-color: #4299ff;
+}
+.mui-title{
+	color: white;
+}
+.mui-pull-left{
+	color: white;
+}
+.Date_lr{    width: 30%;float: left;}
+.Date_lr p{
+	line-height: 25px;
+    color: #999;
+    font-size: 15px;
+    float: left;
+    width: 40%;
+    margin-bottom: 0 !important;
+}
+.span21{
+	font-size: 15px;
+    color: #666;
+    line-height: 24px;
+    background-color: #fff;
+    float: left;
+    width: 14%;
+    text-align: center;
+}
+.modify_time{
+	float: right;
+    font-size: 15px;
+    line-height: 25px;
+    color: #00c1de;
+    margin-right: 10px;
+}
+#checkinout{
+	padding: 0px 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+#startDate{    
+	border: 0;
+    font-size: 15px;
+    line-height: 25px;
+    color: #333;
+    float: left;
+    width: 60%;
+    padding: 0 !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+}
+#endDate{    
+	border: 0;
+    width: 60%;
+    font-size: 15px;
+    line-height: 25px;
+    color: #333;
+    text-align: center;
+    float: left;
+    padding: 0 !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+}
+.mask_calendar {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.4);
+	display: none;
+	z-index: 9999;
+}
+.calendar {
+	height: 400px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+@keyframes slideInDown {
+	from {
+		transform: translate3d(0, -100%, 0);
+		visibility: visible;
+	}
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+.slideInDown {
+	animation-name: slideInDown;
+}
+.title{
+	width: 100%;
+	background-color: white;
+	margin-top: 10px;
+	padding-top: 5px;
+}
+.pick_time{
+	width: 100%;
+	background-color: white;
+	padding-bottom: 5px;
+}
+.title h4{
+	font-size: 16px;
+	color: #333;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+.title p{
+	margin-bottom: 0;
+	font-size: 14px;
+	color: #666;
+	padding-left: 10px;
+}
+.room{
+	margin-top: 15px;
+	padding: 5px 10px;
+	background-color: white;
+}
+.room_num{
+	/*overflow: hidden;*/
+	clear: both;
+	width: 100%;
+	height: 44px;
+	line-height: 44px; 
+}
+label{
+	float: left;
+	width: 30%;
+	font-weight: 600;
+	font-size: 15px;
+	color: #000;
+}
+.room_num .mid{
+	float: left;
+	width: 30%;
+}
+.room_num em{
+	font-style: normal;
+	font-size: 16px;
+	color: #333;
+}
+.room_rig{
+	float: right;
+}
+.room_rig .add{
+	color: #00c1de;
+	font-size: 18px !important;
+}
+.room_rig .reduce{
+	color: #666;
+	font-size: 18px !important;
+}
+.room1{
+	margin: 0 5px;
+	font-size: 18px !important;
+}
+.room_num span{
+	font-size: 16px;
+}
+.room_num .name{
+	width: 37%;
+	border: none;
+	font-size: 15px;  
+	color: #333;
+	float: left;
+	height: auto !important;
+	padding: 0 !important;
+	margin-bottom: 0 !important;
+	margin-top: 12px;
+}
+.nums{
+	border-bottom: 1px solid #eee;
+}
+.adds{
+	color: #00c1de;
+	font-size: 18px !important;
+}
+.add_per{
+	width: 100%;
+	height: 40px;
+	clear: both; 
+	background-color: white;
+}
+.add_per input{
+	width: 40%;
+    display: block;
+    font-size: 15px;
+    border: none;
+    margin-bottom: 0;
+    padding: 0;
+    float: left;
+    margin-left: 30%;
+}
+.reduce_per{
+	float: right;
+    line-height: 40px;
+    color: red;
+    display: inline-block;
+    z-index: 10;
+}
+.code{
+	font-size: 16px !important;
+	color: #00c1de !important; 
+	float: right;
+	padding: 0 !important;
+	border: none !important;
+	margin-top: 11px; 
+}
+.hui{
+	margin: 15px 0;
+}
+.hui span{
+	float: left;
+	font-size: 15px;
+	color: #333;
+}
+.hui i{
+	font-style: normal;
+	font-size: 15px;
+	color: #00c1de;
+	float: right;
+	margin-right: 20px;
+}
+.mui-table-view-cell{
+	padding: 11px 13px;
+}
+.time span{
+	font-size: 15px;
+	color: #333;
+}
+.select{
+	float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+.mui-table-view-cell>a:not(.mui-btn).mui-active>.select{
+	background-color: #ececec;
+}
+.bill{
+	margin: 15px 0;
+}
+.bill span{
+	font-size: 15px;
+}
+.bill input{
+	border: none;
+	width:50%;
+	padding: 0;
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 0;
+	height: auto;
+}
+.special_nav:after{
+	content:none !important;
+}
+.mui-table-view-cell:after{
+	left: 10px !important;
+}
+.ps{
+	width: 100%;
+	background-color: white;
+	padding: 12px 10px;
+	overflow: hidden;
+	margin-bottom: 46px;
+}
+.ps .pic{
+	float: left;
+	width: 10%;
+	margin-right: 2%;
+}
+.ps .pic img{
+	width: 75%; 
+	margin-top: 5px;
+}
+.ps p{
+	float: left;
+	width: 88%;
+	margin-bottom: 0; 
+}
+.tail{
+	background-color: white; 
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	border-top: 1px solid #EEEEEE;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	/*overflow: hidden;*/ 
+}
+#up{
+	/*display: inline-block !important;*/
+}
+.tail .details{
+	width: 60%;
+	float: left;
+	padding: 0 10px;
+}
+.tail .details .left{
+	float: left;
+	width: 50%;
+	color: red;
+}
+.tail .details .left i{
+	font-style: normal;
+	font-size: 14px;
+}
+.tail .details .left span{
+	font-size: 20px;
+}
+.tail .details .right{
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+.tail .details .right span{
+	font-size: 15px !important;
+	color: #666;
+	display: inline-block;
+}
+.tail .pay{
+	width: 40%;
+	float: left;
+	font-size: 15px;
+	background-color: #33a0f5;
+	color: white;
+	text-align: center;
+}
+
+.pay_detail>div{
+	padding: 8px 15px;	
+}
+.pay_detail p{
+	margin-bottom: 0;
+	overflow: hidden;
+	color: #000;
+	font-size: 15px;
+}
+.pay_detail .tit, .roomes{
+	border-bottom: 1px solid #ccc;
+}
+.roomes span, .total span{
+	float: left;	
+}
+.tit span{
+	font-size: 15px;
+}
+.roomes em, .total em{ 
+	float: right;
+	font-style: normal;
+}
+.room_fee{
+	margin-bottom: 10px !important;
+}
+.room_time{
+	color: #999 !important;
+}
+
+.check_details{
+	overflow: hidden;
+    display: block;
+} 
+.check_details span{
+	float: right
+}
+.check_details .iconfont{
+	margin-left: 5px;
+}
+.mui-popover.mui-popover-action{
+	bottom: 46px !important;
+	left: 0;
+	background-color: white;
+}
+.mui-backdrop{
+	bottom: 49px !important;
+}
